@@ -1,0 +1,81 @@
+{
+  "levels": [
+    {
+      "level": 0,
+      "label": "Completamente rilassato",
+      "color": "#4DA87A",
+      "physical": "Corpo morbido e pesante, respiro lento e profondo, muscoli completamente rilasciati.",
+      "emotional": "Mente libera e silenziosa. Piena sensazione di pace e benessere."
+    },
+    {
+      "level": 1,
+      "label": "Calmo",
+      "color": "#62B56E",
+      "physical": "Tono muscolare di base, respiro regolare, nessuna tensione percepibile.",
+      "emotional": "Tranquillità di fondo. Presenza nel momento attuale senza preoccupazioni attive."
+    },
+    {
+      "level": 2,
+      "label": "A proprio agio",
+      "color": "#7DC05E",
+      "physical": "Leggera attivazione positiva. Corpo sveglio ma non teso.",
+      "emotional": "Senso di sicurezza. Pensieri chiari, attenzione fluida e disponibile."
+    },
+    {
+      "level": 3,
+      "label": "Lievemente attivato",
+      "color": "#A0C44A",
+      "physical": "Piccola tensione percepibile, soprattutto a spalle e mascella.",
+      "emotional": "Attenzione leggermente aumentata. Inizio di una preoccupazione sottile."
+    },
+    {
+      "level": 4,
+      "label": "Teso",
+      "color": "#C8BE36",
+      "physical": "Tensione a collo e spalle, respirazione un po' più superficiale.",
+      "emotional": "Pensieri più veloci. Difficoltà a staccare la mente da certi temi."
+    },
+    {
+      "level": 5,
+      "label": "Preoccupato",
+      "color": "#D4A028",
+      "physical": "Stomaco che si stringe, leggera accelerazione del battito cardiaco.",
+      "emotional": "Senso di allerta. Pensieri ricorrenti, difficoltà a concentrarsi su altro."
+    },
+    {
+      "level": 6,
+      "label": "Ansioso",
+      "color": "#D07828",
+      "physical": "Respiro corto, cuore accelerato, sensazione improvvisa di calore o freddo.",
+      "emotional": "Nervosismo, difficoltà a stare fermi. Pensieri negativi che si rincorrono."
+    },
+    {
+      "level": 7,
+      "label": "Molto ansioso",
+      "color": "#C85028",
+      "physical": "Tachicardia, sudorazione, tensione muscolare intensa, nodo alla gola.",
+      "emotional": "Senso di pericolo imminente. Difficoltà a ragionare con lucidità."
+    },
+    {
+      "level": 8,
+      "label": "Agitato",
+      "color": "#B83028",
+      "physical": "Forte disagio fisico, tremore leggero, bocca secca, respiro irregolare.",
+      "emotional": "Paura intensa, sensazione di perdere il controllo. Pensieri catastrofici."
+    },
+    {
+      "level": 9,
+      "label": "In crisi",
+      "color": "#A01818",
+      "physical": "Difficoltà respiratorie, tremori, vertigini, nausea.",
+      "emotional": "Senso di irrealtà, paura estrema. Incapacità di calmarsi autonomamente."
+    },
+    {
+      "level": 10,
+      "label": "Attacco di panico",
+      "color": "#7B0000",
+      "physical": "Palpitazioni forti, mancanza d'aria, formicolii, senso di svenimento.",
+      "emotional": "Paura di morire o impazzire. Perdita completa del senso di controllo."
+    }
+  ]
+}

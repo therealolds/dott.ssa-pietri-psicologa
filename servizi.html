@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Servizi – Nome Cognome</title>
+  <link rel="stylesheet" href="graphics/style.css" />
+</head>
+
+<body>
+
+  <!-- ═══════════ HEADER ═══════════ -->
+  <header>
+    <div class="header-inner">
+      <a href="home.html" class="site-name">
+        Nome Cognome
+        <span>Psicologa &amp; Psicoterapeuta</span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Apri menu" aria-expanded="false">☰</button>
+
+      <nav id="main-nav">
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="servizi.html" class="active">Servizi</a></li>
+          <li><a href="contatti.html">Contatti</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ═══════════ PAGE HEADER ═══════════ -->
+  <section class="page-header">
+    <div class="page-header-inner">
+      <p class="hero-eyebrow">Cosa posso fare per te</p>
+      <h1>I miei servizi</h1>
+      <p>Ogni percorso è costruito su misura, nel rispetto dei tuoi tempi e dei tuoi bisogni.</p>
+    </div>
+  </section>
+
+  <!-- ═══════════ MAIN ═══════════ -->
+  <main>
+
+    <!-- Intro -->
+    <div class="section">
+      <p class="section-label">Il mio approccio</p>
+      <h2>Un ascolto senza giudizio</h2>
+      <p>Ogni persona arriva con la propria storia, i propri tempi e i propri bisogni. Il mio lavoro non è dare risposte preconfezionate, ma creare uno spazio in cui sia possibile esplorarsi senza timore di essere giudicati. Che si tratti di un momento difficile o di un percorso più lungo, ci muoviamo insieme, un passo alla volta.</p>
+    </div>
+
+    <div class="divider"><span class="divider-dot"></span></div>
+
+    <!-- Griglia servizi -->
+    <div class="section">
+      <p class="section-label">Percorsi disponibili</p>
+      <h2>Cosa offro</h2>
+
+      <div class="service-filters">
+        <div class="filter-group">
+          <span class="filter-label">Per chi</span>
+          <div class="filter-buttons">
+            <button class="filter-btn tag--pill tag--sage active" data-group="persone" data-value="">Tutti</button>
+            <button class="filter-btn tag--pill tag--sage" data-group="persone" data-value="Individuale">Individuale</button>
+            <button class="filter-btn tag--pill tag--rose" data-group="persone" data-value="Coppia">Coppia</button>
+            <button class="filter-btn tag--pill tag--amber" data-group="persone" data-value="Genitori">Genitori</button>
+          </div>
+        </div>
+        <div class="filter-group">
+          <span class="filter-label">Modalità di erogazione</span>
+          <div class="filter-buttons">
+            <button class="filter-btn tag--rect tag--sage active" data-group="modalita" data-value="">Tutte</button>
+            <button class="filter-btn tag--rect tag--sage" data-group="modalita" data-value="In studio">In studio</button>
+            <button class="filter-btn tag--rect tag--rose" data-group="modalita" data-value="Online">Online</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="service-grid">
+
+        <!-- 1. Colloquio di valutazione -->
+        <div class="service-card">
+          <div class="service-card-top">
+            <h3>Colloquio di valutazione</h3>
+          </div>
+          <div class="service-card-body">
+            <div class="service-tags">
+              <span class="tag tag--pill tag--sage">Individuale</span>
+              <span class="tag tag--rect tag--sage">In studio</span>
+              <span class="tag tag--rect tag--rose">Online</span>
+            </div>
+            <p>Un primo incontro per conoscersi, capire le tue esigenze e valutare insieme il tipo di percorso più adatto. Non è un impegno: è un punto di partenza.</p>
+          </div>
+          <div class="service-meta">
+            <span class="service-meta-item">⏱ Durata: <strong>50 min</strong></span>
+            <span class="service-meta-item">📋 Prima sessione</span>
+          </div>
+        </div>
+
+        <!-- 2. Terapia individuale -->
+        <div class="service-card">
+          <div class="service-card-top">
+            <h3>Terapia individuale</h3>
+          </div>
+          <div class="service-card-body">
+            <div class="service-tags">
+              <span class="tag tag--pill tag--sage">Individuale</span>
+              <span class="tag tag--rect tag--sage">In studio</span>
+              <span class="tag tag--rect tag--rose">Online</span>
+            </div>
+            <p>Un percorso strutturato per esplorare le proprie difficoltà, sviluppare consapevolezza e costruire nuove risorse interiori. Indicato per ansia, depressione, bassa autostima, difficoltà relazionali e momenti di crisi.</p>
+          </div>
+          <div class="service-meta">
+            <span class="service-meta-item">⏱ Durata: <strong>50 min</strong></span>
+            <span class="service-meta-item">📅 Frequenza: <strong>settimanale - bisettimanale</strong></span>
+          </div>
+        </div>
+
+        <!-- 3. Terapia di coppia -->
+        <div class="service-card">
+          <div class="service-card-top">
+            <h3>Terapia di coppia</h3>
+          </div>
+          <div class="service-card-body">
+            <div class="service-tags">
+              <span class="tag tag--pill tag--rose">Coppia</span>
+              <span class="tag tag--rect tag--sage">In studio</span>
+              <span class="tag tag--rect tag--rose">Online</span>
+            </div>
+            <p>Un percorso per coppie che attraversano conflitti, crisi comunicative o momenti di distanza emotiva. L'obiettivo è migliorare il dialogo, recuperare la connessione e ridefinire il progetto comune.</p>
+          </div>
+          <div class="service-meta">
+            <span class="service-meta-item">⏱ Durata: <strong>75–90 min</strong></span>
+            <span class="service-meta-item">📅 Frequenza: <strong>mensile</strong></span>
+          </div>
+        </div>
+
+        <!-- 4. Supporto psicologico breve -->
+        <div class="service-card">
+          <div class="service-card-top">
+            <h3>Supporto psicologico</h3>
+          </div>
+          <div class="service-card-body">
+            <div class="service-tags">
+              <span class="tag tag--pill tag--sage">Individuale</span>
+              <span class="tag tag--pill tag--rose">Coppia</span>
+              <span class="tag tag--rect tag--sage">In studio</span>
+              <span class="tag tag--rect tag--rose">Online</span>
+            </div>
+            <p>Un intervento breve, focalizzato su una specifica difficoltà o momento di vita — lutto, separazione, cambiamento lavorativo, stress acuto. Adatto a chi ha bisogno di un sostegno concreto in un tempo definito.</p>
+          </div>
+          <div class="service-meta">
+            <span class="service-meta-item">⏱ Durata: <strong>50 min</strong></span>
+            <span class="service-meta-item">📋 Ciclo: <strong>4–8 sedute</strong></span>
+          </div>
+        </div>
+
+        <!-- 5. Consulenza genitoriale -->
+        <div class="service-card">
+          <div class="service-card-top">
+            <h3>Consulenza genitoriale</h3>
+          </div>
+          <div class="service-card-body">
+            <div class="service-tags">
+              <span class="tag tag--pill tag--amber">Genitori</span>
+              <span class="tag tag--rect tag--sage">In studio</span>
+              <span class="tag tag--rect tag--rose">Online</span>
+            </div>
+            <p>Uno spazio di riflessione per genitori che vivono difficoltà nel rapporto con i figli: gestione delle emozioni, limiti e regole, comunicazione in famiglia, situazioni di separazione.</p>
+          </div>
+          <div class="service-meta">
+            <span class="service-meta-item">⏱ Durata: <strong>60 min</strong></span>
+            <span class="service-meta-item">📅 Frequenza: <strong>mensile o al bisogno</strong></span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- CTA finale -->
+    <div class="cta-section">
+      <h2>Non sai da dove iniziare?</h2>
+      <p>Scrivimi o chiamami: il primo colloquio è pensato proprio per capire insieme di cosa hai bisogno.</p>
+      <a href="contatti.html" class="btn btn-sage">Prenota un colloquio</a>
+    </div>
+
+  </main>
+
+  <!-- ═══════════ FOOTER ═══════════ -->
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <strong>Nome Cognome</strong>
+        Psicologa – Psicoterapeuta<br>
+        Laurea in Psicologia Clinica
+      </div>
+      <div>
+        <strong>Contatti</strong>
+        email@esempio.it<br>
+        +39 000 000 0000
+      </div>
+      <div>
+        <strong>Albo</strong>
+        Ordine degli Psicologi<br>
+        della Regione XXXX<br>
+        n. XXXX
+      </div>
+      <div>
+        <strong>Dati fiscali</strong>
+        P.IVA xxxxxx
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Nome Cognome</span>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Cookie Policy</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+
+</html>
