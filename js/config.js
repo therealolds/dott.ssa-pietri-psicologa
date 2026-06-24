@@ -1,7 +1,7 @@
 (function () {
   'use strict';
 
-  var pageName = location.pathname.split('/').pop() || 'home.html';
+  var pageName = location.pathname.split('/').pop() || 'index.html';
 
   Promise.all([
     fetch('resources/config.json').then(function (r) { return r.json(); }),
@@ -30,7 +30,7 @@
 
     document.querySelectorAll('#main-nav a').forEach(function (a) {
       var href = a.getAttribute('href');
-      if (href === page || (!page && href === 'home.html')) {
+      if (href === page || (!page && href === 'index.html')) {
         a.classList.add('active');
       }
     });
