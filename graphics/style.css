@@ -1300,7 +1300,7 @@ footer a:hover { color: var(--white); }
 
 .therm-tube {
   width: 22px;
-  height: 308px; /* 28px × 11 livelli */
+  height: 308px; /* fallback — overridden by JS based on level count */
   background: #EDE8E2;
   border-radius: 11px 11px 0 0;
   position: relative;
