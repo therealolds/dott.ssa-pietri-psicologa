@@ -72,6 +72,8 @@
         cell.className = 'mm-cell';
         cell.style.background = cellGradient(ri, ci);
         cell.dataset.key = key;
+        cell.dataset.row = ri;
+        cell.dataset.col = ci;
         var span  = document.createElement('span');
         span.className = 'mm-cell-name';
         span.textContent = name;
@@ -201,7 +203,18 @@
     touches = t;
   }
 
-  function onTouchEnd(e) { touches = Array.from(e.touches); }
+  function onTouchEnd(e) {
+    var prev = touches;
+    touches = Array.from(e.touches);
+
+    // Tap: single finger lifted with no drag → open modal
+    if (!hasDragged && prev.length === 1 && touches.length === 0 && e.changedTouches.length === 1) {
+      var t  = e.changedTouches[0];
+      var el = document.elementFromPoint(t.clientX, t.clientY);
+      var cell = el && el.closest ? el.closest('.mm-cell') : null;
+      if (cell) openModal(cell.dataset.key, +cell.dataset.row, +cell.dataset.col);
+    }
+  }
 
   // ── Zoom buttons ────────────────────────────────────────────────────────────
   function zoomBy(factor) {

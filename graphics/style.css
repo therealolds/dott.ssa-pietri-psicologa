@@ -1160,6 +1160,11 @@ footer a:hover { color: var(--white); }
 }
 
 @media (max-width: 580px) {
+  .mm-stage-wrap {
+    height: auto;
+    aspect-ratio: 1 / 1;
+    max-height: none;
+  }
   .mm-legend { grid-template-columns: 1fr; }
   .mm-hint   { display: none; }
 }

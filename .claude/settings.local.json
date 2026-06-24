@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(New-Item -Path \"c:\\\\Users\\\\marco\\\\dott.ssa-pietri-psicologa\\\\.nojekyll\" -ItemType File -Force)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)"
+    ]
+  }
+}
