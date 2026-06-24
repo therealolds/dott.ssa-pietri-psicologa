@@ -1,902 +1,1002 @@
-{
-    "Enraged": {
-        "feeling": -5,
-        "pleasantness": 5,
-        "name": { "en": "Enraged", "it": "Infuriato" },
-        "description": {
-            "en": "Enraged is a powerful emotion that can be triggered by various factors such as frustration, injustice, or betrayal. It is characterized by intense feelings of anger and can lead to aggressive behavior if not managed properly. People who are enraged may experience physical symptoms such as increased heart rate, muscle tension, and a surge of adrenaline. It is important to find healthy ways to cope with and express this emotion to prevent it from negatively impacting oneself and others.",
-            "it": "Infuriato è un'emozione potente che può essere scatenata da vari fattori come frustrazione, ingiustizia o tradimento. È caratterizzata da sentimenti intensi di rabbia e può portare a comportamenti aggressivi se non gestita correttamente. Le persone che sono infuriate possono sperimentare sintomi fisici come aumento della frequenza cardiaca, tensione muscolare e un'ondata di adrenalina. È importante trovare modi sani per affrontare ed esprimere questa emozione per evitare che influisca negativamente su se stessi e sugli altri."
-        }
-    },
-    "Panicked": {
-        "feeling": -5,
-        "pleasantness": 4,
-        "name": { "en": "Panicked", "it": "In Preda al Panico" },
-        "description": {
-            "en": "Panicked is a state of intense fear and anxiety that can be triggered by perceived threats or dangerous situations. It is characterized by a sense of urgency and the need to escape or fight. People who are panicked may experience physical symptoms such as rapid heartbeat, sweating, and difficulty breathing. It is important to find healthy ways to cope with and express this emotion to prevent it from negatively impacting oneself and others.",
-            "it": "In preda al panico è uno stato di paura e ansia intensa che può essere scatenato da minacce percepite o situazioni pericolose. È caratterizzato da un senso di urgenza e dal bisogno di fuggire o combattere. Le persone in preda al panico possono sperimentare sintomi fisici come battito cardiaco accelerato, sudorazione e difficoltà respiratorie. È importante trovare modi sani per affrontare ed esprimere questa emozione per evitare che influisca negativamente su se stessi e sugli altri."
-        }
-    },
-    "Stressed": {
-        "feeling": -5,
-        "pleasantness": 3,
-        "name": { "en": "Stressed", "it": "Stressato" },
-        "description": {
-            "en": "Stressed is a state of mental or emotional strain resulting from demanding circumstances. It often involves feeling overwhelmed and unable to cope with pressure. Chronic stress can have significant effects on physical and mental health, making it important to develop effective stress management strategies.",
-            "it": "Stressato è uno stato di tensione mentale o emotiva derivante da circostanze impegnative. Spesso comporta la sensazione di essere sopraffatti e incapaci di far fronte alle pressioni. Lo stress cronico può avere effetti significativi sulla salute fisica e mentale, rendendo importante sviluppare strategie efficaci di gestione dello stress."
-        }
-    },
-    "Jittery": {
-        "feeling": -5,
-        "pleasantness": 2,
-        "name": { "en": "Jittery", "it": "Agitato" },
-        "description": {
-            "en": "Jittery describes a state of nervous excitement or anxiety, often accompanied by restlessness and an inability to keep still. It may arise before important events or in response to excessive stimulants like caffeine. Recognizing and addressing the source of this tension can help restore calm.",
-            "it": "Agitato descrive uno stato di eccitazione nervosa o ansia, spesso accompagnato da irrequietezza e incapacità di stare fermi. Può manifestarsi prima di eventi importanti o in risposta a stimolanti eccessivi come la caffeina. Riconoscere e affrontare la fonte di questa tensione può aiutare a ripristinare la calma."
-        }
-    },
-    "Shocked": {
-        "feeling": -5,
-        "pleasantness": 1,
-        "name": { "en": "Shocked", "it": "Scioccato" },
-        "description": {
-            "en": "Shocked is a state of sudden and intense emotional disturbance caused by an unexpected or disturbing event. It can temporarily disrupt normal thinking and functioning. Allowing time to process the shock and seeking support are important steps toward recovery.",
-            "it": "Scioccato è uno stato di turbamento emotivo improvviso e intenso causato da un evento inaspettato o sconvolgente. Può temporaneamente compromettere il pensiero normale e il funzionamento quotidiano. Concedersi il tempo di elaborare lo shock e cercare supporto sono passi importanti verso la ripresa."
-        }
-    },
-    "Surprised": {
-        "feeling": -5,
-        "pleasantness": 1,
-        "name": { "en": "Surprised", "it": "Sorpreso" },
-        "description": {
-            "en": "Surprised is an emotional reaction to something unexpected, which can be either positive or negative in nature. It is typically brief and gives way to other emotions once the situation is assessed. Surprise heightens attention and can enhance memory of the triggering event.",
-            "it": "Sorpreso è una reazione emotiva a qualcosa di inaspettato, che può essere di natura positiva o negativa. È tipicamente breve e lascia spazio ad altre emozioni una volta valutata la situazione. La sorpresa aumenta l'attenzione e può potenziare la memoria dell'evento scatenante."
-        }
-    },
-    "Upbeat": {
-        "feeling": -5,
-        "pleasantness": 2,
-        "name": { "en": "Upbeat", "it": "Su di Giri" },
-        "description": {
-            "en": "Upbeat describes a positive and optimistic frame of mind often accompanied by high energy and enthusiasm. People feeling upbeat tend to approach challenges with confidence and resilience. This state is associated with increased productivity and social engagement.",
-            "it": "Su di giri descrive uno stato d'animo positivo e ottimista spesso accompagnato da alta energia ed entusiasmo. Le persone che si sentono su di giri tendono ad affrontare le sfide con fiducia e resilienza. Questo stato è associato a maggiore produttività e coinvolgimento sociale."
-        }
-    },
-    "Festive": {
-        "feeling": -5,
-        "pleasantness": 3,
-        "name": { "en": "Festive", "it": "Festoso" },
-        "description": {
-            "en": "Festive is a joyful and celebratory emotional state typically associated with special occasions or gatherings. It involves a sense of shared happiness and community spirit. Embracing festive feelings can strengthen social bonds and contribute to overall well-being.",
-            "it": "Festoso è uno stato emotivo gioioso e celebrativo tipicamente associato a occasioni speciali o raduni. Implica un senso di felicità condivisa e spirito comunitario. Abbracciare i sentimenti festosi può rafforzare i legami sociali e contribuire al benessere generale."
-        }
-    },
-    "Exhilarated": {
-        "feeling": -5,
-        "pleasantness": 4,
-        "name": { "en": "Exhilarated", "it": "Esaltato" },
-        "description": {
-            "en": "Exhilarated is an intense state of joy, excitement, and energized happiness often following a significant achievement or thrilling experience. It is characterized by a powerful sense of aliveness and heightened awareness. This feeling can serve as a powerful motivator and reinforce positive behaviors.",
-            "it": "Esaltato è uno stato intenso di gioia, eccitazione e felicità energizzata che spesso segue un risultato significativo o un'esperienza emozionante. È caratterizzato da un potente senso di vitalità e consapevolezza amplificata. Questa sensazione può fungere da potente motivatore e rinforzare comportamenti positivi."
-        }
-    },
-    "Ecstatic": {
-        "feeling": -5,
-        "pleasantness": 5,
-        "name": { "en": "Ecstatic", "it": "Estatico" },
-        "description": {
-            "en": "Ecstatic describes an overwhelming state of joy and happiness that can feel almost transcendent. It often arises from deeply meaningful experiences such as falling in love, creative breakthroughs, or spiritual moments. While intense and fleeting, ecstasy leaves a lasting positive impression on emotional memory.",
-            "it": "Estatico descrive uno stato travolgente di gioia e felicità che può sembrare quasi trascendente. Emerge spesso da esperienze profondamente significative come innamorarsi, intuizioni creative o momenti spirituali. Sebbene intenso e fugace, l'estasi lascia un'impressione positiva duratura sulla memoria emotiva."
-        }
-    },
-    "Livid": {
-        "feeling": -4,
-        "pleasantness": 5,
-        "name": { "en": "Livid", "it": "Fuori di Sé" },
-        "description": {
-            "en": "Livid is a state of intense anger that can border on rage. It is characterized by a strong sense of injustice or violation and may be accompanied by visible physical changes such as flushing or trembling. Channeling this emotion constructively is essential to avoid harmful consequences.",
-            "it": "Fuori di sé è uno stato di rabbia intensa che può rasentare la furia. È caratterizzato da un forte senso di ingiustizia o violazione e può essere accompagnato da cambiamenti fisici visibili come arrossamento o tremori. Incanalare questa emozione in modo costruttivo è essenziale per evitare conseguenze dannose."
-        }
-    },
-    "Furious": {
-        "feeling": -4,
-        "pleasantness": 4,
-        "name": { "en": "Furious", "it": "Furioso" },
-        "description": {
-            "en": "Furious describes an extreme level of anger in which rational thinking can become impaired. It is often triggered by perceived wrongs, betrayal, or persistent frustration. Finding constructive outlets and de-escalation strategies is key to managing this intense emotion.",
-            "it": "Furioso descrive un livello estremo di rabbia in cui il pensiero razionale può risultare compromesso. È spesso scatenato da torti percepiti, tradimenti o frustrazione persistente. Trovare sfoghi costruttivi e strategie di de-escalation è fondamentale per gestire questa emozione intensa."
-        }
-    },
-    "Frustrated": {
-        "feeling": -4,
-        "pleasantness": 3,
-        "name": { "en": "Frustrated", "it": "Frustrato" },
-        "description": {
-            "en": "Frustrated arises when efforts to achieve a goal are repeatedly blocked or when expectations go unmet. It involves a mix of tension, dissatisfaction, and sometimes helplessness. Reframing the situation and adjusting expectations can help transform frustration into productive problem-solving.",
-            "it": "Frustrato emerge quando gli sforzi per raggiungere un obiettivo vengono ripetutamente ostacolati o quando le aspettative non vengono soddisfatte. Implica un mix di tensione, insoddisfazione e talvolta senso di impotenza. Riformulare la situazione e adattare le aspettative può aiutare a trasformare la frustrazione in una risoluzione produttiva dei problemi."
-        }
-    },
-    "Tense": {
-        "feeling": -4,
-        "pleasantness": 2,
-        "name": { "en": "Tense", "it": "Teso" },
-        "description": {
-            "en": "Tense is a state of mental and physical strain often preceding a stressful event or arising from unresolved conflict. It is characterized by muscle tightness, difficulty relaxing, and heightened vigilance. Relaxation techniques and addressing the underlying source of tension can provide relief.",
-            "it": "Teso è uno stato di tensione mentale e fisica che spesso precede un evento stressante o deriva da conflitti irrisolti. È caratterizzato da rigidità muscolare, difficoltà a rilassarsi e vigilanza accentuata. Tecniche di rilassamento e l'affrontare la fonte della tensione possono fornire sollievo."
-        }
-    },
-    "Stunned": {
-        "feeling": -4,
-        "pleasantness": 1,
-        "name": { "en": "Stunned", "it": "Attonito" },
-        "description": {
-            "en": "Stunned is a temporary state of shock and disbelief following an unexpected event. It can impair the ability to think clearly or respond immediately. Allowing time for the initial shock to pass before making decisions is generally advisable.",
-            "it": "Attonito è uno stato temporaneo di shock e incredulità successivo a un evento inaspettato. Può compromettere la capacità di pensare chiaramente o rispondere immediatamente. Concedersi il tempo che lo shock iniziale si dissipi prima di prendere decisioni è generalmente consigliabile."
-        }
-    },
-    "Hyper": {
-        "feeling": -4,
-        "pleasantness": 1,
-        "name": { "en": "Hyper", "it": "Iperattivo" },
-        "description": {
-            "en": "Hyper describes a state of excessive energy, excitement, and activity that can be difficult to moderate. It is often accompanied by rapid speech, racing thoughts, and reduced need for rest. While sometimes enjoyable, sustained hyperactivity can be exhausting and may interfere with focus.",
-            "it": "Iperattivo descrive uno stato di energia eccessiva, eccitazione e attività difficile da moderare. È spesso accompagnato da eloquio rapido, pensieri frenetici e ridotto bisogno di riposo. Sebbene a volte piacevole, l'iperattività sostenuta può essere estenuante e interferire con la concentrazione."
-        }
-    },
-    "Cheerful": {
-        "feeling": -4,
-        "pleasantness": 2,
-        "name": { "en": "Cheerful", "it": "Allegro" },
-        "description": {
-            "en": "Cheerful is a pleasant and light-hearted emotional state characterized by happiness and a positive outlook. It tends to be contagious and can uplift those around us. Cultivating cheerfulness supports resilience and strengthens interpersonal relationships.",
-            "it": "Allegro è uno stato emotivo piacevole e spensierato caratterizzato da felicità e un'attitudine positiva. Tende a essere contagioso e può sollevare il morale delle persone intorno a noi. Coltivare l'allegria supporta la resilienza e rafforza le relazioni interpersonali."
-        }
-    },
-    "Motivated": {
-        "feeling": -4,
-        "pleasantness": 3,
-        "name": { "en": "Motivated", "it": "Motivato" },
-        "description": {
-            "en": "Motivated is a state of driven enthusiasm and determination toward achieving a goal. It provides the energy and direction needed to persist through challenges. Understanding the sources of one's motivation can help sustain it over the long term.",
-            "it": "Motivato è uno stato di entusiasmo determinato e propositivo verso il raggiungimento di un obiettivo. Fornisce l'energia e la direzione necessarie per perseverare di fronte alle sfide. Comprendere le fonti della propria motivazione può aiutare a mantenerla nel lungo periodo."
-        }
-    },
-    "Inspired": {
-        "feeling": -4,
-        "pleasantness": 4,
-        "name": { "en": "Inspired", "it": "Ispirato" },
-        "description": {
-            "en": "Inspired is a state of elevated creativity and purpose often sparked by an idea, person, or experience. It is characterized by a strong desire to create, contribute, or grow. Inspiration can be a powerful catalyst for meaningful personal and professional change.",
-            "it": "Ispirato è uno stato di creatività elevata e senso di scopo, spesso scaturito da un'idea, una persona o un'esperienza. È caratterizzato da un forte desiderio di creare, contribuire o crescere. L'ispirazione può essere un potente catalizzatore per un cambiamento personale e professionale significativo."
-        }
-    },
-    "Elated": {
-        "feeling": -4,
-        "pleasantness": 5,
-        "name": { "en": "Elated", "it": "Esultante" },
-        "description": {
-            "en": "Elated is a state of great happiness and pride, often following a significant success or positive news. It is accompanied by high energy, optimism, and a sense that anything is possible. While elation is temporary, its positive effects on mood and confidence can persist.",
-            "it": "Esultante è uno stato di grande felicità e orgoglio, spesso successivo a un successo significativo o a buone notizie. È accompagnato da alta energia, ottimismo e dalla sensazione che tutto sia possibile. Sebbene temporaneo, gli effetti positivi dell'esultanza sull'umore e sulla fiducia possono persistere."
-        }
-    },
-    "Fuming": {
-        "feeling": -3,
-        "pleasantness": 5,
-        "name": { "en": "Fuming", "it": "Esasperato" },
-        "description": {
-            "en": "Fuming describes a state of seething anger that may not yet have been expressed outwardly. It often involves rumination and a feeling of injustice. Finding healthy ways to express and release this emotion is important to prevent it from escalating.",
-            "it": "Esasperato descrive uno stato di rabbia ribollente che potrebbe non essere stata ancora espressa esteriormente. Spesso implica ruminazione e un senso di ingiustizia. Trovare modi sani per esprimere e liberare questa emozione è importante per evitare che si intensifichi."
-        }
-    },
-    "Frightened": {
-        "feeling": -3,
-        "pleasantness": 4,
-        "name": { "en": "Frightened", "it": "Spaventato" },
-        "description": {
-            "en": "Frightened is a response to perceived danger or threat, involving heightened alertness and the urge to escape or hide. It is a natural protective emotion but can become debilitating when experienced excessively. Gradual exposure and coping strategies can help manage chronic fear.",
-            "it": "Spaventato è una risposta al pericolo o alla minaccia percepita, che comporta allerta accentuata e l'impulso di fuggire o nascondersi. È un'emozione protettiva naturale ma può diventare debilitante se vissuta eccessivamente. L'esposizione graduale e le strategie di coping possono aiutare a gestire la paura cronica."
-        }
-    },
-    "Angry": {
-        "feeling": -3,
-        "pleasantness": 3,
-        "name": { "en": "Angry", "it": "Arrabbiato" },
-        "description": {
-            "en": "Angry is a natural emotional response to perceived injustice, hurt, or frustration. When expressed appropriately, anger can motivate constructive change and boundary-setting. Learning to recognize anger's triggers and communicate it assertively is a key emotional skill.",
-            "it": "Arrabbiato è una risposta emotiva naturale all'ingiustizia percepita, al dolore o alla frustrazione. Quando espressa in modo appropriato, la rabbia può motivare cambiamenti costruttivi e la definizione di confini. Imparare a riconoscere i fattori scatenanti della rabbia e comunicarla in modo assertivo è un'abilità emotiva fondamentale."
-        }
-    },
-    "Nervous": {
-        "feeling": -3,
-        "pleasantness": 2,
-        "name": { "en": "Nervous", "it": "Nervoso" },
-        "description": {
-            "en": "Nervous describes a state of mild anxiety and apprehension, typically anticipating an uncertain or challenging situation. It is accompanied by physical sensations such as butterflies in the stomach or trembling. Preparation and breathing techniques can help manage nervousness effectively.",
-            "it": "Nervoso descrive uno stato di lieve ansia e apprensione, tipicamente in attesa di una situazione incerta o impegnativa. È accompagnato da sensazioni fisiche come le farfalle nello stomaco o i tremori. La preparazione e le tecniche di respirazione possono aiutare a gestire efficacemente il nervosismo."
-        }
-    },
-    "Restless": {
-        "feeling": -3,
-        "pleasantness": 1,
-        "name": { "en": "Restless", "it": "Irrequieto" },
-        "description": {
-            "en": "Restless is a state of inability to remain still or at ease, often driven by boredom, anxiety, or unmet needs. It manifests as a constant urge to move, change activity, or seek stimulation. Identifying the underlying need can help resolve restlessness constructively.",
-            "it": "Irrequieto è uno stato di incapacità a restare fermi o a proprio agio, spesso guidato dalla noia, dall'ansia o da bisogni insoddisfatti. Si manifesta come un costante impulso a muoversi, cambiare attività o cercare stimolazione. Identificare il bisogno sottostante può aiutare a risolvere l'irrequietezza in modo costruttivo."
-        }
-    },
-    "Energized": {
-        "feeling": -3,
-        "pleasantness": 1,
-        "name": { "en": "Energized", "it": "Energico" },
-        "description": {
-            "en": "Energized is a state of heightened vitality and readiness to engage with tasks or activities. It supports productivity, focus, and a sense of capability. Regular exercise, good sleep, and meaningful goals are key contributors to sustained energy levels.",
-            "it": "Energico è uno stato di vitalità accentuata e prontezza a impegnarsi in compiti o attività. Supporta la produttività, la concentrazione e il senso di capacità. L'esercizio fisico regolare, il buon sonno e gli obiettivi significativi sono fattori chiave per livelli di energia sostenuti."
-        }
-    },
-    "Lively": {
-        "feeling": -3,
-        "pleasantness": 2,
-        "name": { "en": "Lively", "it": "Vivace" },
-        "description": {
-            "en": "Lively describes an animated and spirited emotional state full of enthusiasm and engagement. It is often associated with social interaction and physical activity. Embracing a lively spirit enhances creativity, connection, and enjoyment of daily life.",
-            "it": "Vivace descrive uno stato emotivo animato e frizzante, pieno di entusiasmo e coinvolgimento. È spesso associato all'interazione sociale e all'attività fisica. Abbracciare uno spirito vivace migliora la creatività, la connessione e il godimento della vita quotidiana."
-        }
-    },
-    "Enthusiastic": {
-        "feeling": -3,
-        "pleasantness": 3,
-        "name": { "en": "Enthusiastic", "it": "Entusiasta" },
-        "description": {
-            "en": "Enthusiastic is a state of eager and energetic interest in a particular activity or idea. It fuels persistence and makes effort feel rewarding. Enthusiasm is contagious and can inspire those around us to engage more deeply.",
-            "it": "Entusiasta è uno stato di interesse vivace ed energico per una particolare attività o idea. Alimenta la perseveranza e rende lo sforzo gratificante. L'entusiasmo è contagioso e può ispirare chi ci circonda a impegnarsi più profondamente."
-        }
-    },
-    "Optimistic": {
-        "feeling": -3,
-        "pleasantness": 4,
-        "name": { "en": "Optimistic", "it": "Ottimista" },
-        "description": {
-            "en": "Optimistic describes a hopeful and positive outlook on future events and outcomes. It is associated with resilience, better coping strategies, and improved well-being. Cultivating optimism does not mean ignoring challenges but approaching them with confidence.",
-            "it": "Ottimista descrive una prospettiva speranzosa e positiva sugli eventi e i risultati futuri. È associato alla resilienza, a migliori strategie di coping e a un benessere migliorato. Coltivare l'ottimismo non significa ignorare le sfide, ma affrontarle con fiducia."
-        }
-    },
-    "Excited": {
-        "feeling": -3,
-        "pleasantness": 5,
-        "name": { "en": "Excited", "it": "Eccitato" },
-        "description": {
-            "en": "Excited is a state of eager anticipation and heightened emotion, usually preceding a positive event or opportunity. It is energizing and motivating, making it easier to take action. Excitement channels high arousal into enthusiasm and forward movement.",
-            "it": "Eccitato è uno stato di anticipazione entusiasta ed emozione accentuata, generalmente precedente a un evento o un'opportunità positivi. È energizzante e motivante, rendendo più facile passare all'azione. L'eccitazione canalizza l'alta attivazione in entusiasmo e slancio in avanti."
-        }
-    },
-    "Anxious": {
-        "feeling": -2,
-        "pleasantness": 5,
-        "name": { "en": "Anxious", "it": "Ansioso" },
-        "description": {
-            "en": "Anxious is a state of worry and unease about uncertain future events. It often involves intrusive thoughts, physical tension, and difficulty concentrating. Mindfulness, cognitive reframing, and professional support can be effective in managing anxiety.",
-            "it": "Ansioso è uno stato di preoccupazione e disagio riguardo a eventi futuri incerti. Spesso comporta pensieri intrusivi, tensione fisica e difficoltà di concentrazione. La mindfulness, la ristrutturazione cognitiva e il supporto professionale possono essere efficaci nella gestione dell'ansia."
-        }
-    },
-    "Apprehensive": {
-        "feeling": -2,
-        "pleasantness": 4,
-        "name": { "en": "Apprehensive", "it": "Apprensivo" },
-        "description": {
-            "en": "Apprehensive describes a mild but persistent sense of dread or unease about what lies ahead. It may signal that preparation or reassurance is needed before facing a challenge. Acknowledging this emotion and planning accordingly can reduce its intensity.",
-            "it": "Apprensivo descrive un senso lieve ma persistente di timore o disagio riguardo a ciò che si prospetta. Può segnalare la necessità di preparazione o rassicurazione prima di affrontare una sfida. Riconoscere questa emozione e pianificare di conseguenza può ridurne l'intensità."
-        }
-    },
-    "Worried": {
-        "feeling": -2,
-        "pleasantness": 3,
-        "name": { "en": "Worried", "it": "Preoccupato" },
-        "description": {
-            "en": "Worried involves repetitive thoughts about potential negative outcomes, often in the absence of immediate threat. It can be adaptive when it motivates problem-solving but becomes harmful when it is excessive and uncontrollable. Distinguishing productive concern from rumination is an important coping skill.",
-            "it": "Preoccupato implica pensieri ripetitivi riguardo a possibili esiti negativi, spesso in assenza di una minaccia immediata. Può essere adattivo quando motiva la risoluzione dei problemi, ma diventa dannoso quando è eccessivo e incontrollabile. Distinguere la preoccupazione produttiva dalla ruminazione è un'importante abilità di coping."
-        }
-    },
-    "Irritated": {
-        "feeling": -2,
-        "pleasantness": 2,
-        "name": { "en": "Irritated", "it": "Irritato" },
-        "description": {
-            "en": "Irritated is a mild form of anger triggered by minor annoyances or repeated disruptions. It is often a signal that a boundary has been crossed or a need is unmet. Addressing the source calmly and assertively usually resolves the irritation.",
-            "it": "Irritato è una forma lieve di rabbia scatenata da piccoli fastidi o interruzioni ripetute. È spesso un segnale che un confine è stato oltrepassato o che un bisogno non è soddisfatto. Affrontare la fonte con calma e assertività di solito risolve l'irritazione."
-        }
-    },
-    "Annoyed": {
-        "feeling": -2,
-        "pleasantness": 1,
-        "name": { "en": "Annoyed", "it": "Infastidito" },
-        "description": {
-            "en": "Annoyed is a feeling of mild displeasure caused by persistent minor disturbances. While less intense than anger, ongoing annoyance can erode patience and well-being if left unaddressed. Taking a short break or communicating the issue can help restore equilibrium.",
-            "it": "Infastidito è una sensazione di lieve dispiacere causata da piccoli disturbi persistenti. Sebbene meno intenso della rabbia, il fastidio continuato può erodere la pazienza e il benessere se non affrontato. Una breve pausa o la comunicazione del problema possono aiutare a ripristinare l'equilibrio."
-        }
-    },
-    "Pleased": {
-        "feeling": -2,
-        "pleasantness": 1,
-        "name": { "en": "Pleased", "it": "Compiaciuto" },
-        "description": {
-            "en": "Pleased is a mild and satisfying positive emotion arising when expectations are met or small successes are achieved. It is a quiet but meaningful form of happiness that reinforces positive behaviors. Taking time to notice and appreciate these moments contributes to overall life satisfaction.",
-            "it": "Compiaciuto è un'emozione positiva lieve e soddisfacente che emerge quando le aspettative vengono soddisfatte o si raggiungono piccoli successi. È una forma silenziosa ma significativa di felicità che rinforza comportamenti positivi. Prendersi il tempo di notare e apprezzare questi momenti contribuisce alla soddisfazione generale nella vita."
-        }
-    },
-    "Happy": {
-        "feeling": -2,
-        "pleasantness": 2,
-        "name": { "en": "Happy", "it": "Felice" },
-        "description": {
-            "en": "Happy is a fundamental positive emotional state characterized by a sense of well-being, contentment, and joy. It can arise from both simple pleasures and meaningful achievements. Research consistently links happiness with stronger relationships, better health, and greater resilience.",
-            "it": "Felice è uno stato emotivo positivo fondamentale caratterizzato da un senso di benessere, contentezza e gioia. Può emergere sia da semplici piaceri che da risultati significativi. La ricerca collega costantemente la felicità a relazioni più solide, migliore salute e maggiore resilienza."
-        }
-    },
-    "Focused": {
-        "feeling": -2,
-        "pleasantness": 3,
-        "name": { "en": "Focused", "it": "Concentrato" },
-        "description": {
-            "en": "Focused describes a state of clear and directed attention toward a task or goal. It is associated with high productivity and a sense of flow. Creating an environment with minimal distractions and setting clear intentions supports sustained focus.",
-            "it": "Concentrato descrive uno stato di attenzione chiara e diretta verso un compito o un obiettivo. È associato ad alta produttività e a una sensazione di flusso. Creare un ambiente con distrazioni minime e stabilire intenzioni chiare supporta una concentrazione sostenuta."
-        }
-    },
-    "Proud": {
-        "feeling": -2,
-        "pleasantness": 4,
-        "name": { "en": "Proud", "it": "Orgoglioso" },
-        "description": {
-            "en": "Proud is a positive emotion arising from a sense of achievement, competence, or alignment with one's values. It reinforces self-esteem and motivates continued effort. Distinguishing healthy pride from arrogance is important for maintaining balanced self-perception.",
-            "it": "Orgoglioso è un'emozione positiva che emerge da un senso di realizzazione, competenza o allineamento con i propri valori. Rafforza l'autostima e motiva lo sforzo continuo. Distinguere il sano orgoglio dall'arroganza è importante per mantenere una percezione di sé equilibrata."
-        }
-    },
-    "Thrilled": {
-        "feeling": -2,
-        "pleasantness": 5,
-        "name": { "en": "Thrilled", "it": "Emozionato" },
-        "description": {
-            "en": "Thrilled is an intense state of excitement and pleasure, often arising from extraordinary experiences or great news. It combines high energy with strong positive affect, creating a memorable emotional peak. Thrilling experiences can serve as powerful anchors for positive memory.",
-            "it": "Emozionato è uno stato intenso di eccitazione e piacere, che spesso deriva da esperienze straordinarie o grandi notizie. Combina alta energia con un forte affetto positivo, creando un picco emotivo memorabile. Le esperienze emozionanti possono fungere da potenti ancore per la memoria positiva."
-        }
-    },
-    "Repulsed": {
-        "feeling": -1,
-        "pleasantness": 5,
-        "name": { "en": "Repulsed", "it": "Ripugnato" },
-        "description": {
-            "en": "Repulsed is a strong feeling of disgust and aversion toward something perceived as offensive or morally objectionable. It serves as a protective signal that helps individuals avoid harmful stimuli. Understanding this emotion can reveal personal values and boundaries.",
-            "it": "Ripugnato è una forte sensazione di disgusto e avversione verso qualcosa percepito come offensivo o moralmente riprovevole. Funge da segnale protettivo che aiuta gli individui a evitare stimoli nocivi. Comprendere questa emozione può rivelare valori personali e confini."
-        }
-    },
-    "Troubled": {
-        "feeling": -1,
-        "pleasantness": 4,
-        "name": { "en": "Troubled", "it": "Turbato" },
-        "description": {
-            "en": "Troubled describes a state of emotional distress and inner conflict, often arising from unresolved problems or moral dilemmas. It is a signal that something important needs attention. Seeking perspective through reflection or conversation can help clarify the source and guide resolution.",
-            "it": "Turbato descrive uno stato di disagio emotivo e conflitto interiore, spesso emergente da problemi irrisolti o dilemmi morali. È un segnale che qualcosa di importante richiede attenzione. Cercare prospettiva attraverso la riflessione o la conversazione può aiutare a chiarire la fonte e guidare la risoluzione."
-        }
-    },
-    "Concerned": {
-        "feeling": -1,
-        "pleasantness": 3,
-        "name": { "en": "Concerned", "it": "In Apprensione" },
-        "description": {
-            "en": "Concerned is a mild form of worry directed at someone else's well-being or a shared problem. It is an empathic emotion that motivates caring and supportive behavior. Expressing concern openly and constructively strengthens relationships and fosters problem-solving.",
-            "it": "In apprensione è una forma lieve di preoccupazione diretta al benessere altrui o a un problema condiviso. È un'emozione empatica che motiva comportamenti premurosi e di supporto. Esprimere apprensione in modo aperto e costruttivo rafforza le relazioni e favorisce la risoluzione dei problemi."
-        }
-    },
-    "Uneasy": {
-        "feeling": -1,
-        "pleasantness": 2,
-        "name": { "en": "Uneasy", "it": "A Disagio" },
-        "description": {
-            "en": "Uneasy describes a diffuse sense of discomfort or anxiety that is difficult to pinpoint. It often serves as an intuitive signal that something in the environment or relationship requires closer attention. Taking time to explore the source of unease can prevent it from growing into more significant distress.",
-            "it": "A disagio descrive un senso diffuso di scomfort o ansia difficile da individuare. Spesso funge da segnale intuitivo che qualcosa nell'ambiente o nella relazione richiede maggiore attenzione. Prendersi il tempo di esplorare la fonte del disagio può impedire che cresca in un'angoscia più significativa."
-        }
-    },
-    "Peeved": {
-        "feeling": -1,
-        "pleasantness": 1,
-        "name": { "en": "Peeved", "it": "Seccato" },
-        "description": {
-            "en": "Peeved is a mild and often transient feeling of irritation or exasperation. It typically arises from small frustrations or perceived inconsiderateness. Addressing it with light humor or direct communication usually resolves the feeling quickly.",
-            "it": "Seccato è una sensazione lieve e spesso transitoria di irritazione o esasperazione. Nasce tipicamente da piccole frustrazioni o da percepita mancanza di riguardo. Affrontarla con umorismo leggero o comunicazione diretta di solito risolve rapidamente il sentimento."
-        }
-    },
-    "Pleasant": {
-        "feeling": -1,
-        "pleasantness": 1,
-        "name": { "en": "Pleasant", "it": "Piacevole" },
-        "description": {
-            "en": "Pleasant is a gentle and agreeable positive emotional state that arises from comfortable and enjoyable experiences. It is a quiet form of happiness that contributes to a sense of ease and satisfaction. Cultivating pleasant everyday moments is an important component of well-being.",
-            "it": "Piacevole è uno stato emotivo positivo, gentile e gradevole che emerge da esperienze confortevoli e piacevoli. È una forma silenziosa di felicità che contribuisce a un senso di facilità e soddisfazione. Coltivare momenti piacevoli quotidiani è un componente importante del benessere."
-        }
-    },
-    "Joyful": {
-        "feeling": -1,
-        "pleasantness": 2,
-        "name": { "en": "Joyful", "it": "Gioioso" },
-        "description": {
-            "en": "Joyful is a deep and radiant positive emotion that arises from meaningful experiences, connections, and accomplishments. Unlike fleeting happiness, joy is often associated with a profound sense of rightness and belonging. Nurturing joyful experiences is central to a flourishing life.",
-            "it": "Gioioso è un'emozione positiva profonda e radiosa che emerge da esperienze significative, connessioni e realizzazioni. A differenza della felicità fugace, la gioia è spesso associata a un profondo senso di giustizia e appartenenza. Coltivare esperienze gioiose è centrale per una vita fiorente."
-        }
-    },
-    "Hopeful": {
-        "feeling": -1,
-        "pleasantness": 3,
-        "name": { "en": "Hopeful", "it": "Speranzoso" },
-        "description": {
-            "en": "Hopeful is a forward-looking emotional state characterized by confidence that positive outcomes are possible. It provides the motivation to persist through difficulties and envision a better future. Hope is a core component of psychological resilience and recovery.",
-            "it": "Speranzoso è uno stato emotivo orientato al futuro, caratterizzato dalla fiducia che risultati positivi siano possibili. Fornisce la motivazione per perseverare attraverso le difficoltà e immaginare un futuro migliore. La speranza è una componente fondamentale della resilienza psicologica e del recupero."
-        }
-    },
-    "Playful": {
-        "feeling": -1,
-        "pleasantness": 4,
-        "name": { "en": "Playful", "it": "Giocoso" },
-        "description": {
-            "en": "Playful describes a light and fun-loving emotional state that embraces spontaneity, humor, and creativity. It supports social bonding and cognitive flexibility. Maintaining a playful attitude, even in adulthood, is associated with greater creativity and stress relief.",
-            "it": "Giocoso descrive uno stato emotivo leggero e amante del divertimento che abbraccia spontaneità, umorismo e creatività. Supporta il legame sociale e la flessibilità cognitiva. Mantenere un atteggiamento giocoso, anche in età adulta, è associato a maggiore creatività e riduzione dello stress."
-        }
-    },
-    "Blissful": {
-        "feeling": -1,
-        "pleasantness": 5,
-        "name": { "en": "Blissful", "it": "Beato" },
-        "description": {
-            "en": "Blissful is a state of supreme happiness and serene joy, often described as a sense of perfect contentment. It arises from moments of deep connection, beauty, or inner peace. While brief, blissful experiences can profoundly reshape one's outlook and sense of meaning.",
-            "it": "Beato è uno stato di suprema felicità e gioia serena, spesso descritto come un senso di perfetta contentezza. Emerge da momenti di profonda connessione, bellezza o pace interiore. Sebbene brevi, le esperienze beate possono profondamente ridisegnare la propria prospettiva e il senso del significato."
-        }
-    },
-    "Disgusted": {
-        "feeling": 0,
-        "pleasantness": 5,
-        "name": { "en": "Disgusted", "it": "Disgustato" },
-        "description": {
-            "en": "Disgusted is a strong aversion response to something perceived as offensive, contaminating, or morally wrong. It is one of the basic human emotions and plays a role in moral judgment and social cohesion. Examining the source of disgust can reveal deeply held values and cultural influences.",
-            "it": "Disgustato è una forte risposta di avversione a qualcosa percepito come offensivo, contaminante o moralmente sbagliato. È una delle emozioni umane di base e svolge un ruolo nel giudizio morale e nella coesione sociale. Esaminare la fonte del disgusto può rivelare valori profondamente radicati e influenze culturali."
-        }
-    },
-    "Glum": {
-        "feeling": 0,
-        "pleasantness": 4,
-        "name": { "en": "Glum", "it": "Cupo" },
-        "description": {
-            "en": "Glum describes a quiet and subdued sadness, often without a clear specific cause. It is characterized by low energy, withdrawal, and a dull emotional tone. Gentle self-care and social connection can help lift a glum mood.",
-            "it": "Cupo descrive una tristezza silenziosa e sommessa, spesso senza una causa specifica chiara. È caratterizzato da bassa energia, ritiro e un tono emotivo opaco. La cura gentile di sé e la connessione sociale possono aiutare a sollevare un umore cupo."
-        }
-    },
-    "Disappointed": {
-        "feeling": 0,
-        "pleasantness": 3,
-        "name": { "en": "Disappointed", "it": "Deluso" },
-        "description": {
-            "en": "Disappointed is an emotional response to unmet expectations, whether in oneself, others, or circumstances. It involves a sense of loss and sadness but can also motivate reflection and adjustment of future expectations. Processing disappointment constructively is an important emotional growth skill.",
-            "it": "Deluso è una risposta emotiva alle aspettative non soddisfatte, che si tratti di se stessi, degli altri o delle circostanze. Implica un senso di perdita e tristezza, ma può anche motivare la riflessione e l'adeguamento delle aspettative future. Elaborare la delusione in modo costruttivo è un'importante abilità di crescita emotiva."
-        }
-    },
-    "Down": {
-        "feeling": 0,
-        "pleasantness": 2,
-        "name": { "en": "Down", "it": "Giù di Corda" },
-        "description": {
-            "en": "Down describes a low mood state characterized by sadness, lack of motivation, and reduced enjoyment of activities. It is a common human experience but can deepen into depression if persistent. Reaching out to trusted others and engaging in self-care are helpful first steps.",
-            "it": "Giù di corda descrive uno stato d'umore basso caratterizzato da tristezza, mancanza di motivazione e ridotto godimento delle attività. È un'esperienza umana comune ma può approfondirsi in depressione se persistente. Raggiungere persone fidate e dedicarsi alla cura di sé sono i primi passi utili."
-        }
-    },
-    "Apathetic": {
-        "feeling": 0,
-        "pleasantness": 1,
-        "name": { "en": "Apathetic", "it": "Apatico" },
-        "description": {
-            "en": "Apathetic is a state of emotional flatness and indifference, in which little seems to matter or generate interest. It can arise from exhaustion, depression, or prolonged stress. Reengaging with meaningful activities and values can help restore emotional vitality.",
-            "it": "Apatico è uno stato di piattezza emotiva e indifferenza, in cui poco sembra importare o generare interesse. Può emergere dall'esaurimento, dalla depressione o dallo stress prolungato. Riaccostarsi ad attività significative e ai propri valori può aiutare a ripristinare la vitalità emotiva."
-        }
-    },
-    "At Ease": {
-        "feeling": 0,
-        "pleasantness": 1,
-        "name": { "en": "At Ease", "it": "A Proprio Agio" },
-        "description": {
-            "en": "At ease is a comfortable and relaxed emotional state free from tension or anxiety. It signals that the current environment feels safe and manageable. Cultivating this sense of ease is an important goal in stress management and therapeutic work.",
-            "it": "A proprio agio è uno stato emotivo confortevole e rilassato, libero da tensione o ansia. Segnala che l'ambiente attuale si sente sicuro e gestibile. Coltivare questo senso di facilità è un obiettivo importante nella gestione dello stress e nel lavoro terapeutico."
-        }
-    },
-    "Easygoing": {
-        "feeling": 0,
-        "pleasantness": 2,
-        "name": { "en": "Easygoing", "it": "Accomodante" },
-        "description": {
-            "en": "Easygoing describes a relaxed and flexible disposition that adapts readily to changing circumstances without distress. It involves an absence of rigidity and a willingness to go with the flow. This temperament supports harmonious relationships and reduced reactivity to stress.",
-            "it": "Accomodante descrive una disposizione rilassata e flessibile che si adatta prontamente alle circostanze mutevoli senza disagio. Implica assenza di rigidità e volontà di seguire il flusso. Questo temperamento supporta relazioni armoniose e ridotta reattività allo stress."
-        }
-    },
-    "Content": {
-        "feeling": 0,
-        "pleasantness": 3,
-        "name": { "en": "Content", "it": "Contento" },
-        "description": {
-            "en": "Content is a quiet and satisfying emotional state in which one feels at peace with the present moment and one's circumstances. Unlike excitement, contentment is stable and sustainable. It is considered a cornerstone of lasting well-being and life satisfaction.",
-            "it": "Contento è uno stato emotivo quieto e soddisfacente in cui ci si sente in pace con il momento presente e le proprie circostanze. A differenza dell'eccitazione, la contentezza è stabile e sostenibile. È considerato un pilastro del benessere duraturo e della soddisfazione nella vita."
-        }
-    },
-    "Loving": {
-        "feeling": 0,
-        "pleasantness": 4,
-        "name": { "en": "Loving", "it": "Amorevole" },
-        "description": {
-            "en": "Loving is a warm and tender emotional state characterized by deep affection, care, and connection toward another person or being. It fosters empathy, generosity, and a sense of belonging. Love in its many forms is one of the most powerful contributors to human happiness and meaning.",
-            "it": "Amorevole è uno stato emotivo caldo e tenero caratterizzato da profondo affetto, cura e connessione verso un'altra persona o essere. Favorisce l'empatia, la generosità e un senso di appartenenza. L'amore nelle sue molteplici forme è uno dei contribuenti più potenti alla felicità umana e al senso del significato."
-        }
-    },
-    "Fulfilled": {
-        "feeling": 0,
-        "pleasantness": 5,
-        "name": { "en": "Fulfilled", "it": "Realizzato" },
-        "description": {
-            "en": "Fulfilled is a deep and lasting sense of satisfaction arising from living in alignment with one's values and purpose. It reflects the feeling that life is meaningful and that one's efforts have made a difference. Fulfillment is often considered the highest form of well-being.",
-            "it": "Realizzato è un profondo e duraturo senso di soddisfazione che emerge dal vivere in accordo con i propri valori e scopo. Riflette la sensazione che la vita sia significativa e che i propri sforzi abbiano fatto la differenza. La realizzazione è spesso considerata la forma più alta di benessere."
-        }
-    },
-    "Pessimistic": {
-        "feeling": 1,
-        "pleasantness": 5,
-        "name": { "en": "Pessimistic", "it": "Pessimista" },
-        "description": {
-            "en": "Pessimistic describes a tendency to expect negative outcomes and to see the worst in situations. While sometimes a realistic coping mechanism, chronic pessimism is associated with reduced resilience and motivation. Cognitive approaches can help shift pessimistic thinking patterns toward a more balanced perspective.",
-            "it": "Pessimista descrive la tendenza ad aspettarsi esiti negativi e a vedere il peggio nelle situazioni. Sebbene a volte sia un meccanismo di coping realistico, il pessimismo cronico è associato a resilienza e motivazione ridotte. Approcci cognitivi possono aiutare a spostare i modelli di pensiero pessimistici verso una prospettiva più equilibrata."
-        }
-    },
-    "Morose": {
-        "feeling": 1,
-        "pleasantness": 4,
-        "name": { "en": "Morose", "it": "Abbacchiato" },
-        "description": {
-            "en": "Morose is a sullen and gloomy emotional state characterized by a tendency toward dark thoughts and social withdrawal. It often accompanies grief, loss, or chronic dissatisfaction. Gentle engagement and compassionate support are more helpful than pressure to cheer up.",
-            "it": "Abbacchiato è uno stato emotivo cupo e tetro caratterizzato da una tendenza verso pensieri oscuri e ritiro sociale. Accompagna spesso il lutto, la perdita o la cronica insoddisfazione. Il coinvolgimento gentile e il supporto compassionevole sono più utili della pressione a tirarsi su."
-        }
-    },
-    "Discouraged": {
-        "feeling": 1,
-        "pleasantness": 3,
-        "name": { "en": "Discouraged", "it": "Avvilito" },
-        "description": {
-            "en": "Discouraged is a feeling of lost confidence and reduced motivation, often following setbacks or a series of failures. It involves doubts about one's ability to succeed. Recognizing past achievements and breaking goals into smaller steps can help rebuild confidence.",
-            "it": "Avvilito è una sensazione di fiducia perduta e motivazione ridotta, spesso successiva a battute d'arresto o a una serie di fallimenti. Implica dubbi sulla propria capacità di avere successo. Riconoscere i risultati passati e suddividere gli obiettivi in passi più piccoli può aiutare a ricostruire la fiducia."
-        }
-    },
-    "Sad": {
-        "feeling": 1,
-        "pleasantness": 2,
-        "name": { "en": "Sad", "it": "Triste" },
-        "description": {
-            "en": "Sad is a fundamental human emotion associated with loss, disappointment, or longing. It is a natural and healthy response to painful experiences and can facilitate reflection, empathy, and healing. Allowing oneself to feel and express sadness, rather than suppressing it, is important for emotional processing.",
-            "it": "Triste è un'emozione umana fondamentale associata alla perdita, alla delusione o alla nostalgia. È una risposta naturale e sana a esperienze dolorose e può facilitare riflessione, empatia e guarigione. Permettersi di sentire ed esprimere la tristezza, invece di sopprimerla, è importante per l'elaborazione emotiva."
-        }
-    },
-    "Bored": {
-        "feeling": 1,
-        "pleasantness": 1,
-        "name": { "en": "Bored", "it": "Annoiato" },
-        "description": {
-            "en": "Bored is a state of disengagement and lack of stimulation that arises when activities feel meaningless or insufficiently challenging. While often dismissed, boredom can signal a need for change, creativity, or deeper connection with one's interests. Learning to tolerate and use boredom productively is a valuable skill.",
-            "it": "Annoiato è uno stato di disimpegno e mancanza di stimolazione che emerge quando le attività sembrano prive di significato o insufficientemente stimolanti. Sebbene spesso ignorata, la noia può segnalare un bisogno di cambiamento, creatività o connessione più profonda con i propri interessi. Imparare a tollerare e usare produttivamente la noia è un'abilità preziosa."
-        }
-    },
-    "Calm": {
-        "feeling": 1,
-        "pleasantness": 1,
-        "name": { "en": "Calm", "it": "Calmo" },
-        "description": {
-            "en": "Calm is a state of mental and emotional tranquility, free from agitation or distress. It allows for clear thinking, thoughtful decision-making, and emotional regulation. Practices such as mindfulness, deep breathing, and time in nature support the cultivation of calm.",
-            "it": "Calmo è uno stato di tranquillità mentale ed emotiva, libero da agitazione o angoscia. Consente un pensiero chiaro, decisioni ponderate e regolazione emotiva. Pratiche come la mindfulness, la respirazione profonda e il tempo nella natura supportano la coltivazione della calma."
-        }
-    },
-    "Secure": {
-        "feeling": 1,
-        "pleasantness": 2,
-        "name": { "en": "Secure", "it": "Al Sicuro" },
-        "description": {
-            "en": "Secure describes a sense of emotional safety and confidence in oneself and in one's relationships. It is the foundation of healthy attachment and allows for open exploration of the world. Building a sense of security often involves developing trust and consistent self-care.",
-            "it": "Al sicuro descrive un senso di sicurezza emotiva e fiducia in se stessi e nelle proprie relazioni. È il fondamento dell'attaccamento sano e consente un'esplorazione aperta del mondo. Costruire un senso di sicurezza implica spesso sviluppare fiducia e una cura di sé costante."
-        }
-    },
-    "Satisfied": {
-        "feeling": 1,
-        "pleasantness": 3,
-        "name": { "en": "Satisfied", "it": "Soddisfatto" },
-        "description": {
-            "en": "Satisfied is a feeling of completion and adequacy arising when needs or goals have been met. It provides a sense of closure and quiet pleasure. Regularly acknowledging moments of satisfaction helps counteract the tendency to focus only on what is still missing.",
-            "it": "Soddisfatto è una sensazione di completezza e adeguatezza che emerge quando bisogni o obiettivi sono stati raggiunti. Fornisce un senso di chiusura e piacere quieto. Riconoscere regolarmente i momenti di soddisfazione aiuta a contrastare la tendenza a concentrarsi solo su ciò che manca ancora."
-        }
-    },
-    "Grateful": {
-        "feeling": 1,
-        "pleasantness": 4,
-        "name": { "en": "Grateful", "it": "Grato" },
-        "description": {
-            "en": "Grateful is an emotion that arises when one recognizes and appreciates the goodness in one's life, often attributing it to others or to fortunate circumstances. Research consistently shows that gratitude is strongly linked to happiness, stronger relationships, and improved mental health. Practicing gratitude deliberately amplifies its positive effects.",
-            "it": "Grato è un'emozione che emerge quando si riconosce e si apprezza il bene nella propria vita, spesso attribuendolo agli altri o a circostanze fortunate. La ricerca mostra costantemente che la gratitudine è fortemente collegata alla felicità, a relazioni più solide e a una migliore salute mentale. Praticare intenzionalmente la gratitudine ne amplifica gli effetti positivi."
-        }
-    },
-    "Touched": {
-        "feeling": 1,
-        "pleasantness": 5,
-        "name": { "en": "Touched", "it": "Commosso" },
-        "description": {
-            "en": "Touched is a gentle and moving emotional response to a moment of kindness, beauty, or unexpected goodness. It often brings a sense of warmth and connection, sometimes accompanied by tears. Being touched opens the heart and deepens appreciation for human bonds.",
-            "it": "Commosso è una risposta emotiva gentile e toccante a un momento di gentilezza, bellezza o bontà inaspettata. Porta spesso un senso di calore e connessione, talvolta accompagnato da lacrime. Essere commossi apre il cuore e approfondisce l'apprezzamento per i legami umani."
-        }
-    },
-    "Alienated": {
-        "feeling": 2,
-        "pleasantness": 5,
-        "name": { "en": "Alienated", "it": "Alienato" },
-        "description": {
-            "en": "Alienated is a deep sense of disconnection from others, society, or oneself. It can arise from social exclusion, identity conflicts, or prolonged isolation. Addressing alienation often requires rebuilding a sense of belonging through authentic connection and community.",
-            "it": "Alienato è un profondo senso di disconnessione dagli altri, dalla società o da se stessi. Può derivare dall'esclusione sociale, dai conflitti di identità o dall'isolamento prolungato. Affrontare l'alienazione richiede spesso di ricostruire un senso di appartenenza attraverso la connessione autentica e la comunità."
-        }
-    },
-    "Miserable": {
-        "feeling": 2,
-        "pleasantness": 4,
-        "name": { "en": "Miserable", "it": "Infelice" },
-        "description": {
-            "en": "Miserable describes a state of intense and pervasive unhappiness that affects all aspects of daily life. It may arise from chronic pain, loss, or depression. Professional support and compassionate connection are especially important when misery is persistent.",
-            "it": "Infelice descrive uno stato di intensa e pervasiva infelicità che colpisce tutti gli aspetti della vita quotidiana. Può derivare da dolore cronico, perdita o depressione. Il supporto professionale e la connessione compassionevole sono particolarmente importanti quando la miseria è persistente."
-        }
-    },
-    "Lonely": {
-        "feeling": 2,
-        "pleasantness": 3,
-        "name": { "en": "Lonely", "it": "Solo" },
-        "description": {
-            "en": "Lonely is the painful awareness of a gap between the social connection one desires and what one currently experiences. It is distinct from being alone and can occur even in crowds. Loneliness signals a core human need for belonging and is associated with serious health consequences when chronic.",
-            "it": "Solo è la dolorosa consapevolezza di un divario tra la connessione sociale desiderata e quella attualmente vissuta. È distinto dall'essere soli e può presentarsi anche in mezzo alla folla. La solitudine segnala un bisogno umano fondamentale di appartenenza ed è associata a gravi conseguenze per la salute quando è cronica."
-        }
-    },
-    "Disheartened": {
-        "feeling": 2,
-        "pleasantness": 2,
-        "name": { "en": "Disheartened", "it": "Scoraggiato" },
-        "description": {
-            "en": "Disheartened describes a loss of hope and enthusiasm following disappointment or repeated failure. It involves a weakening of the will to continue trying. Reconnecting with one's values and small achievable goals can help restore a sense of direction and heart.",
-            "it": "Scoraggiato descrive una perdita di speranza ed entusiasmo a seguito di delusioni o fallimenti ripetuti. Implica un indebolimento della volontà di continuare a provare. Riconnettersi con i propri valori e con piccoli obiettivi raggiungibili può aiutare a ripristinare un senso di direzione e slancio."
-        }
-    },
-    "Tired": {
-        "feeling": 2,
-        "pleasantness": 1,
-        "name": { "en": "Tired", "it": "Stanco" },
-        "description": {
-            "en": "Tired is a state of physical and mental depletion resulting from extended effort, stress, or lack of rest. It reduces performance and emotional resilience. Prioritizing adequate sleep, rest, and recovery is essential for restoring energy and well-being.",
-            "it": "Stanco è uno stato di esaurimento fisico e mentale derivante da sforzo prolungato, stress o mancanza di riposo. Riduce le prestazioni e la resilienza emotiva. Dare priorità a un sonno adeguato, al riposo e al recupero è essenziale per ripristinare l'energia e il benessere."
-        }
-    },
-    "Relaxed": {
-        "feeling": 2,
-        "pleasantness": 1,
-        "name": { "en": "Relaxed", "it": "Rilassato" },
-        "description": {
-            "en": "Relaxed is a comfortable state of low tension and ease in both body and mind. It allows for rest, enjoyment, and gentle reflection. Regularly creating space for relaxation is essential to counterbalance the demands of daily life.",
-            "it": "Rilassato è uno stato confortevole di bassa tensione e facilità sia nel corpo che nella mente. Consente il riposo, il godimento e la riflessione gentile. Creare regolarmente spazio per il rilassamento è essenziale per controbilanciare le esigenze della vita quotidiana."
-        }
-    },
-    "Chill": {
-        "feeling": 2,
-        "pleasantness": 2,
-        "name": { "en": "Chill", "it": "Disteso" },
-        "description": {
-            "en": "Chill describes a laid-back and easygoing state characterized by minimal stress and a relaxed attitude. It involves an ability to let things flow without excessive effort or worry. Cultivating a chill mindset supports emotional flexibility and stress tolerance.",
-            "it": "Disteso descrive uno stato disinvolto e tranquillo caratterizzato da stress minimo e atteggiamento sereno. Implica la capacità di lasciare fluire le cose senza eccessivo sforzo o preoccupazione. Coltivare una mentalità distesa supporta la flessibilità emotiva e la tolleranza allo stress."
-        }
-    },
-    "Restful": {
-        "feeling": 2,
-        "pleasantness": 3,
-        "name": { "en": "Restful", "it": "Riposante" },
-        "description": {
-            "en": "Restful is a quiet and restorative emotional state associated with recuperation and inner stillness. It signals that the body and mind are recharging effectively. Creating conditions for restful states, including quiet environments and reduced stimulation, is a vital self-care practice.",
-            "it": "Riposante è uno stato emotivo quieto e rigenerante associato al recupero e alla quiete interiore. Segnala che il corpo e la mente si stanno ricaricando efficacemente. Creare condizioni per stati riposanti, inclusi ambienti silenziosi e stimolazione ridotta, è una pratica vitale di cura di sé."
-        }
-    },
-    "Blessed": {
-        "feeling": 2,
-        "pleasantness": 4,
-        "name": { "en": "Blessed", "it": "Benedetto" },
-        "description": {
-            "en": "Blessed is a profound sense of gratitude and good fortune, often carrying a spiritual or transcendent dimension. It involves feeling that one's life holds special meaning and that one has received gifts beyond what was deserved. This emotion fosters humility, generosity, and deep appreciation.",
-            "it": "Benedetto è un profondo senso di gratitudine e buona fortuna, spesso con una dimensione spirituale o trascendente. Implica la sensazione che la propria vita abbia un significato speciale e che si siano ricevuti doni al di là di quanto meritato. Questa emozione favorisce umiltà, generosità e profonda gratitudine."
-        }
-    },
-    "Balanced": {
-        "feeling": 2,
-        "pleasantness": 5,
-        "name": { "en": "Balanced", "it": "Equilibrato" },
-        "description": {
-            "en": "Balanced describes a stable and harmonious emotional state in which various life demands are managed with equanimity. It involves a sense of integration between different aspects of one's life and self. Maintaining balance is an ongoing and dynamic process rather than a fixed achievement.",
-            "it": "Equilibrato descrive uno stato emotivo stabile e armonioso in cui le varie esigenze della vita vengono gestite con equanimità. Implica un senso di integrazione tra i diversi aspetti della propria vita e del sé. Mantenere l'equilibrio è un processo continuo e dinamico piuttosto che un risultato fisso."
-        }
-    },
-    "Despondent": {
-        "feeling": 3,
-        "pleasantness": 5,
-        "name": { "en": "Despondent", "it": "Abbattuto" },
-        "description": {
-            "en": "Despondent is a deep state of hopelessness and low mood in which the possibility of improvement seems out of reach. It is more intense than sadness and can be an indicator of significant emotional distress. Professional support is particularly valuable when despondency is prolonged.",
-            "it": "Abbattuto è un profondo stato di disperazione e umore basso in cui la possibilità di miglioramento sembra irraggiungibile. È più intenso della tristezza e può essere un indicatore di significativo disagio emotivo. Il supporto professionale è particolarmente prezioso quando l'abbattimento è prolungato."
-        }
-    },
-    "Depressed": {
-        "feeling": 3,
-        "pleasantness": 4,
-        "name": { "en": "Depressed", "it": "Depresso" },
-        "description": {
-            "en": "Depressed describes a clinical and persistent emotional state characterized by pervasive low mood, loss of interest, fatigue, and often feelings of worthlessness. Depression affects functioning across all domains of life and requires professional attention. It is a treatable condition, and seeking help is a sign of strength.",
-            "it": "Depresso descrive uno stato emotivo clinico e persistente caratterizzato da umore pervasivamente basso, perdita di interesse, affaticamento e spesso sentimenti di inutilità. La depressione colpisce il funzionamento in tutti i domini della vita e richiede attenzione professionale. È una condizione trattabile, e chiedere aiuto è un segno di forza."
-        }
-    },
-    "Sullen": {
-        "feeling": 3,
-        "pleasantness": 3,
-        "name": { "en": "Sullen", "it": "Imbronciato" },
-        "description": {
-            "en": "Sullen is a resentful and withdrawn emotional state, often expressed through silence and reluctance to engage. It may conceal underlying hurt, anger, or disappointment. Gently exploring the feelings beneath sullenness can open the path to more direct and constructive communication.",
-            "it": "Imbronciato è uno stato emotivo risentito e ritirato in sé, spesso espresso attraverso il silenzio e la riluttanza a impegnarsi. Può nascondere ferite, rabbia o delusioni sottostanti. Esplorare delicatamente i sentimenti sotto l'imbronciatura può aprire la strada a una comunicazione più diretta e costruttiva."
-        }
-    },
-    "Exhausted": {
-        "feeling": 3,
-        "pleasantness": 2,
-        "name": { "en": "Exhausted", "it": "Esausto" },
-        "description": {
-            "en": "Exhausted describes an extreme state of physical and mental depletion in which normal functioning becomes very difficult. It often results from prolonged stress, overwork, or illness. Recovery from exhaustion requires substantial rest, support, and often a reassessment of demands and boundaries.",
-            "it": "Esausto descrive uno stato estremo di esaurimento fisico e mentale in cui il funzionamento normale diventa molto difficile. Spesso deriva da stress prolungato, eccesso di lavoro o malattia. Il recupero dall'esaurimento richiede riposo sostanziale, supporto e spesso una rivalutazione delle richieste e dei confini."
-        }
-    },
-    "Fatigued": {
-        "feeling": 3,
-        "pleasantness": 1,
-        "name": { "en": "Fatigued", "it": "Affaticato" },
-        "description": {
-            "en": "Fatigued is a persistent state of weariness and reduced capacity that does not resolve with ordinary rest. It may accompany illness, chronic stress, or burnout. Addressing the underlying causes and adopting sustainable routines are essential steps toward recovery.",
-            "it": "Affaticato è uno stato persistente di stanchezza e capacità ridotta che non si risolve con il riposo ordinario. Può accompagnare malattia, stress cronico o burnout. Affrontare le cause sottostanti e adottare routine sostenibili sono passi essenziali verso il recupero."
-        }
-    },
-    "Mellow": {
-        "feeling": 3,
-        "pleasantness": 1,
-        "name": { "en": "Mellow", "it": "Pacato" },
-        "description": {
-            "en": "Mellow describes a gently relaxed and softened emotional state with a warm, unhurried quality. It often arises in the context of comfort, good company, or a pleasant environment. A mellow mood fosters openness and ease in interactions.",
-            "it": "Pacato descrive uno stato emotivo dolcemente rilassato e ammorbidito, con una qualità calda e senza fretta. Emerge spesso nel contesto del comfort, della buona compagnia o di un ambiente piacevole. Un umore pacato favorisce l'apertura e la facilità nelle interazioni."
-        }
-    },
-    "Thoughtful": {
-        "feeling": 3,
-        "pleasantness": 2,
-        "name": { "en": "Thoughtful", "it": "Riflessivo" },
-        "description": {
-            "en": "Thoughtful describes a reflective and attentive state in which one is absorbed in considerate and careful thinking. It involves empathy toward others and mindfulness about one's own actions. Thoughtfulness deepens understanding and supports wise decision-making.",
-            "it": "Riflessivo descrive uno stato attento e meditativo in cui si è assorti in un pensiero ponderato e attento. Implica empatia verso gli altri e consapevolezza delle proprie azioni. La riflessività approfondisce la comprensione e supporta il processo decisionale saggio."
-        }
-    },
-    "Peaceful": {
-        "feeling": 3,
-        "pleasantness": 3,
-        "name": { "en": "Peaceful", "it": "Pacifico" },
-        "description": {
-            "en": "Peaceful is a profound sense of inner stillness and freedom from conflict or disturbance. It arises when one feels in harmony with oneself and the surrounding environment. Peace is often cultivated through mindfulness, acceptance, and alignment with one's values.",
-            "it": "Pacifico è un profondo senso di quiete interiore e libertà dal conflitto o dal disturbo. Emerge quando ci si sente in armonia con se stessi e con l'ambiente circostante. La pace è spesso coltivata attraverso la mindfulness, l'accettazione e l'allineamento con i propri valori."
-        }
-    },
-    "Comfy": {
-        "feeling": 3,
-        "pleasantness": 4,
-        "name": { "en": "Comfy", "it": "Comodo" },
-        "description": {
-            "en": "Comfy describes a cozy and physically comfortable emotional state that promotes relaxation and ease. It involves a sense of safety, warmth, and simple pleasure. Comfy moments nourish the nervous system and provide an important counterpoint to the stresses of daily life.",
-            "it": "Comodo descrive uno stato emotivo accogliente e fisicamente confortevole che promuove rilassamento e facilità. Implica un senso di sicurezza, calore e semplice piacere. I momenti comodi nutrono il sistema nervoso e forniscono un importante contrappunto agli stress della vita quotidiana."
-        }
-    },
-    "Carefree": {
-        "feeling": 3,
-        "pleasantness": 5,
-        "name": { "en": "Carefree", "it": "Spensierato" },
-        "description": {
-            "en": "Carefree is a light and unburdened emotional state free from worries and responsibilities. It invites spontaneity and a childlike sense of joy. Allowing oneself moments of carefreeness is a healthy and necessary respite from the demands of adult life.",
-            "it": "Spensierato è uno stato emotivo leggero e senza pesi, libero da preoccupazioni e responsabilità. Invita alla spontaneità e a un senso di gioia infantile. Concedersi momenti di spensieratezza è un respiro sano e necessario dalle esigenze della vita adulta."
-        }
-    },
-    "Despair": {
-        "feeling": 4,
-        "pleasantness": 5,
-        "name": { "en": "Despair", "it": "Disperato" },
-        "description": {
-            "en": "Despair is the deepest form of hopelessness, in which all possibility of improvement seems gone. It is a serious emotional state that can accompany severe loss, trauma, or clinical depression. Immediate professional and social support is essential when despair is present.",
-            "it": "Disperato è la forma più profonda di mancanza di speranza, in cui ogni possibilità di miglioramento sembra svanita. È uno stato emotivo grave che può accompagnare perdite severe, traumi o depressione clinica. Il supporto professionale e sociale immediato è essenziale quando è presente la disperazione."
-        }
-    },
-    "Hopeless": {
-        "feeling": 4,
-        "pleasantness": 4,
-        "name": { "en": "Hopeless", "it": "Senza Speranza" },
-        "description": {
-            "en": "Hopeless is the belief that the future holds no positive possibilities and that one's situation cannot improve. It is a core feature of depression and a significant risk factor for self-harm. Challenging hopeless thinking with compassionate support and evidence of past resilience is a crucial therapeutic task.",
-            "it": "Senza speranza è la convinzione che il futuro non contenga possibilità positive e che la propria situazione non possa migliorare. È una caratteristica fondamentale della depressione e un significativo fattore di rischio per l'autolesionismo. Sfidare il pensiero senza speranza con supporto compassionevole e prove di resilienza passata è un compito terapeutico cruciale."
-        }
-    },
-    "Desolate": {
-        "feeling": 4,
-        "pleasantness": 3,
-        "name": { "en": "Desolate", "it": "Desolato" },
-        "description": {
-            "en": "Desolate describes an extreme sense of emptiness, abandonment, and loss. It often follows profound personal loss or isolation. Reconnecting with any source of warmth, meaning, or human contact is an important first step toward healing from desolation.",
-            "it": "Desolato descrive un senso estremo di vuoto, abbandono e perdita. Segue spesso una perdita personale profonda o l'isolamento. Riconnettersi con qualsiasi fonte di calore, significato o contatto umano è un primo passo importante verso la guarigione dalla desolazione."
-        }
-    },
-    "Spent": {
-        "feeling": 4,
-        "pleasantness": 2,
-        "name": { "en": "Spent", "it": "Sfinito" },
-        "description": {
-            "en": "Spent describes a state of complete depletion in which no physical or emotional reserves remain. It arises after extreme effort, crisis, or sustained hardship. Deep rest, nourishment, and the absence of demands are necessary to begin recovery from being spent.",
-            "it": "Sfinito descrive uno stato di esaurimento completo in cui non rimangono riserve fisiche o emotive. Emerge dopo uno sforzo estremo, una crisi o difficoltà prolungate. Il riposo profondo, il nutrimento e l'assenza di richieste sono necessari per iniziare il recupero dall'essere sfiniti."
-        }
-    },
-    "Drained": {
-        "feeling": 4,
-        "pleasantness": 1,
-        "name": { "en": "Drained", "it": "Svuotato" },
-        "description": {
-            "en": "Drained is a feeling of emptiness and severe energy deficit, often following emotionally or physically demanding experiences. It signals that essential resources have been depleted. Rebuilding from a drained state requires intentional recuperation and often a review of draining patterns or relationships.",
-            "it": "Svuotato è una sensazione di vuoto e grave deficit di energia, spesso successiva a esperienze emotivamente o fisicamente impegnative. Segnala che le risorse essenziali sono state esaurite. Ricostruirsi da uno stato svuotato richiede recupero intenzionale e spesso una revisione di modelli o relazioni prosciuganti."
-        }
-    },
-    "Sleepy": {
-        "feeling": 4,
-        "pleasantness": 1,
-        "name": { "en": "Sleepy", "it": "Assonnato" },
-        "description": {
-            "en": "Sleepy is a pleasant state of drowsiness and readiness for rest. It is the body's natural signal that sleep is needed and that the nervous system is winding down. Honoring the sleepy state and allowing for adequate sleep is fundamental to physical and mental health.",
-            "it": "Assonnato è uno stato piacevole di sonnolenza e prontezza al riposo. È il segnale naturale del corpo che il sonno è necessario e che il sistema nervoso si sta placando. Rispettare lo stato assonnato e permettere un sonno adeguato è fondamentale per la salute fisica e mentale."
-        }
-    },
-    "Complacent": {
-        "feeling": 4,
-        "pleasantness": 2,
-        "name": { "en": "Complacent", "it": "Autocompiaciuto" },
-        "description": {
-            "en": "Complacent is a state of self-satisfied inertia in which one feels little need to improve or change. While it signals a degree of comfort, excessive complacency can inhibit growth and leave one vulnerable to missed opportunities. Gentle challenge and renewed goals can awaken motivation from a complacent state.",
-            "it": "Autocompiaciuto è uno stato di inerzia soddisfatta di sé in cui si sente poco bisogno di migliorare o cambiare. Sebbene segnali un certo grado di comfort, l'eccessiva autocompiacenza può inibire la crescita e lasciare vulnerabili alle opportunità mancate. Una sfida gentile e obiettivi rinnovati possono risvegliare la motivazione."
-        }
-    },
-    "Tranquil": {
-        "feeling": 4,
-        "pleasantness": 3,
-        "name": { "en": "Tranquil", "it": "Tranquillo" },
-        "description": {
-            "en": "Tranquil is a deep and serene state of peacefulness and stillness. It involves an absence of disturbance and a profound sense of harmony with oneself and the environment. Tranquility is cultivated through practices such as meditation, time in nature, and the release of unnecessary mental burdens.",
-            "it": "Tranquillo è un profondo e sereno stato di pace e immobilità. Implica un'assenza di disturbo e un profondo senso di armonia con se stessi e l'ambiente. La tranquillità è coltivata attraverso pratiche come la meditazione, il tempo nella natura e il rilascio di pesi mentali non necessari."
-        }
-    },
-    "Cozy": {
-        "feeling": 4,
-        "pleasantness": 4,
-        "name": { "en": "Cozy", "it": "Accogliente" },
-        "description": {
-            "en": "Cozy describes a warm, sheltered, and comforting emotional state associated with safety and simple pleasures. It often arises in familiar, nurturing environments with loved ones. Cozy moments replenish emotional reserves and reinforce a sense of home and belonging.",
-            "it": "Accogliente descrive uno stato emotivo caldo, riparato e confortante associato alla sicurezza e ai piaceri semplici. Emerge spesso in ambienti familiari e nutrienti con le persone care. I momenti accoglienti ricostituiscono le riserve emotive e rafforzano il senso di casa e appartenenza."
-        }
-    },
-    "Serene": {
-        "feeling": 4,
-        "pleasantness": 5,
-        "name": { "en": "Serene", "it": "Sereno" },
-        "description": {
-            "en": "Serene is the deepest state of calm and peacefulness, in which the mind is completely at rest and the heart is open. It is the emotional counterpart of wisdom and acceptance. Serenity is not the absence of life's difficulties but the capacity to remain centered in the face of them.",
-            "it": "Sereno è il più profondo stato di calma e pace, in cui la mente è completamente a riposo e il cuore è aperto. È il corrispettivo emotivo della saggezza e dell'accettazione. La serenità non è l'assenza delle difficoltà della vita, ma la capacità di rimanere centrati di fronte ad esse."
-        }
-    }
+﻿{
+    "Enraged":  {
+                    "name":  {
+                                 "en":  "Enraged",
+                                 "it":  "Infuriato"
+                             },
+                    "description":  {
+                                        "en":  "Enraged is a powerful emotion that can be triggered by various factors such as frustration, injustice, or betrayal. It is characterized by intense feelings of anger and can lead to aggressive behavior if not managed properly. People who are enraged may experience physical symptoms such as increased heart rate, muscle tension, and a surge of adrenaline. It is important to find healthy ways to cope with and express this emotion to prevent it from negatively impacting oneself and others.",
+                                        "it":  "Infuriato è un\u0027emozione potente che può essere scatenata da vari fattori come frustrazione, ingiustizia o tradimento. È caratterizzata da sentimenti intensi di rabbia e può portare a comportamenti aggressivi se non gestita correttamente. Le persone che sono infuriate possono sperimentare sintomi fisici come aumento della frequenza cardiaca, tensione muscolare e un\u0027ondata di adrenalina. È importante trovare modi sani per affrontare ed esprimere questa emozione per evitare che influisca negativamente su se stessi e sugli altri."
+                                    }
+                },
+    "Panicked":  {
+                     "name":  {
+                                  "en":  "Panicked",
+                                  "it":  "In Preda al Panico"
+                              },
+                     "description":  {
+                                         "en":  "Panicked is a state of intense fear and anxiety that can be triggered by perceived threats or dangerous situations. It is characterized by a sense of urgency and the need to escape or fight. People who are panicked may experience physical symptoms such as rapid heartbeat, sweating, and difficulty breathing. It is important to find healthy ways to cope with and express this emotion to prevent it from negatively impacting oneself and others.",
+                                         "it":  "In preda al panico è uno stato di paura e ansia intensa che può essere scatenato da minacce percepite o situazioni pericolose. È caratterizzato da un senso di urgenza e dal bisogno di fuggire o combattere. Le persone in preda al panico possono sperimentare sintomi fisici come battito cardiaco accelerato, sudorazione e difficoltà respiratorie. È importante trovare modi sani per affrontare ed esprimere questa emozione per evitare che influisca negativamente su se stessi e sugli altri."
+                                     }
+                 },
+    "Stressed":  {
+                     "name":  {
+                                  "en":  "Stressed",
+                                  "it":  "Stressato"
+                              },
+                     "description":  {
+                                         "en":  "Stressed is a state of mental or emotional strain resulting from demanding circumstances. It often involves feeling overwhelmed and unable to cope with pressure. Chronic stress can have significant effects on physical and mental health, making it important to develop effective stress management strategies.",
+                                         "it":  "Stressato è uno stato di tensione mentale o emotiva derivante da circostanze impegnative. Spesso comporta la sensazione di essere sopraffatti e incapaci di far fronte alle pressioni. Lo stress cronico può avere effetti significativi sulla salute fisica e mentale, rendendo importante sviluppare strategie efficaci di gestione dello stress."
+                                     }
+                 },
+    "Jittery":  {
+                    "name":  {
+                                 "en":  "Jittery",
+                                 "it":  "Agitato"
+                             },
+                    "description":  {
+                                        "en":  "Jittery describes a state of nervous excitement or anxiety, often accompanied by restlessness and an inability to keep still. It may arise before important events or in response to excessive stimulants like caffeine. Recognizing and addressing the source of this tension can help restore calm.",
+                                        "it":  "Agitato descrive uno stato di eccitazione nervosa o ansia, spesso accompagnato da irrequietezza e incapacità di stare fermi. Può manifestarsi prima di eventi importanti o in risposta a stimolanti eccessivi come la caffeina. Riconoscere e affrontare la fonte di questa tensione può aiutare a ripristinare la calma."
+                                    }
+                },
+    "Shocked":  {
+                    "name":  {
+                                 "en":  "Shocked",
+                                 "it":  "Scioccato"
+                             },
+                    "description":  {
+                                        "en":  "Shocked is a state of sudden and intense emotional disturbance caused by an unexpected or disturbing event. It can temporarily disrupt normal thinking and functioning. Allowing time to process the shock and seeking support are important steps toward recovery.",
+                                        "it":  "Scioccato è uno stato di turbamento emotivo improvviso e intenso causato da un evento inaspettato o sconvolgente. Può temporaneamente compromettere il pensiero normale e il funzionamento quotidiano. Concedersi il tempo di elaborare lo shock e cercare supporto sono passi importanti verso la ripresa."
+                                    }
+                },
+    "Surprised":  {
+                      "name":  {
+                                   "en":  "Surprised",
+                                   "it":  "Sorpreso"
+                               },
+                      "description":  {
+                                          "en":  "Surprised is an emotional reaction to something unexpected, which can be either positive or negative in nature. It is typically brief and gives way to other emotions once the situation is assessed. Surprise heightens attention and can enhance memory of the triggering event.",
+                                          "it":  "Sorpreso è una reazione emotiva a qualcosa di inaspettato, che può essere di natura positiva o negativa. È tipicamente breve e lascia spazio ad altre emozioni una volta valutata la situazione. La sorpresa aumenta l\u0027attenzione e può potenziare la memoria dell\u0027evento scatenante."
+                                      }
+                  },
+    "Upbeat":  {
+                   "name":  {
+                                "en":  "Upbeat",
+                                "it":  "Su di Giri"
+                            },
+                   "description":  {
+                                       "en":  "Upbeat describes a positive and optimistic frame of mind often accompanied by high energy and enthusiasm. People feeling upbeat tend to approach challenges with confidence and resilience. This state is associated with increased productivity and social engagement.",
+                                       "it":  "Su di giri descrive uno stato d\u0027animo positivo e ottimista spesso accompagnato da alta energia ed entusiasmo. Le persone che si sentono su di giri tendono ad affrontare le sfide con fiducia e resilienza. Questo stato è associato a maggiore produttività e coinvolgimento sociale."
+                                   }
+               },
+    "Festive":  {
+                    "name":  {
+                                 "en":  "Festive",
+                                 "it":  "Festoso"
+                             },
+                    "description":  {
+                                        "en":  "Festive is a joyful and celebratory emotional state typically associated with special occasions or gatherings. It involves a sense of shared happiness and community spirit. Embracing festive feelings can strengthen social bonds and contribute to overall well-being.",
+                                        "it":  "Festoso è uno stato emotivo gioioso e celebrativo tipicamente associato a occasioni speciali o raduni. Implica un senso di felicità condivisa e spirito comunitario. Abbracciare i sentimenti festosi può rafforzare i legami sociali e contribuire al benessere generale."
+                                    }
+                },
+    "Exhilarated":  {
+                        "name":  {
+                                     "en":  "Exhilarated",
+                                     "it":  "Esaltato"
+                                 },
+                        "description":  {
+                                            "en":  "Exhilarated is an intense state of joy, excitement, and energized happiness often following a significant achievement or thrilling experience. It is characterized by a powerful sense of aliveness and heightened awareness. This feeling can serve as a powerful motivator and reinforce positive behaviors.",
+                                            "it":  "Esaltato è uno stato intenso di gioia, eccitazione e felicità energizzata che spesso segue un risultato significativo o un\u0027esperienza emozionante. È caratterizzato da un potente senso di vitalità e consapevolezza amplificata. Questa sensazione può fungere da potente motivatore e rinforzare comportamenti positivi."
+                                        }
+                    },
+    "Ecstatic":  {
+                     "name":  {
+                                  "en":  "Ecstatic",
+                                  "it":  "Estatico"
+                              },
+                     "description":  {
+                                         "en":  "Ecstatic describes an overwhelming state of joy and happiness that can feel almost transcendent. It often arises from deeply meaningful experiences such as falling in love, creative breakthroughs, or spiritual moments. While intense and fleeting, ecstasy leaves a lasting positive impression on emotional memory.",
+                                         "it":  "Estatico descrive uno stato travolgente di gioia e felicità che può sembrare quasi trascendente. Emerge spesso da esperienze profondamente significative come innamorarsi, intuizioni creative o momenti spirituali. Sebbene intenso e fugace, l\u0027estasi lascia un\u0027impressione positiva duratura sulla memoria emotiva."
+                                     }
+                 },
+    "Livid":  {
+                  "name":  {
+                               "en":  "Livid",
+                               "it":  "Fuori di Sé"
+                           },
+                  "description":  {
+                                      "en":  "Livid is a state of intense anger that can border on rage. It is characterized by a strong sense of injustice or violation and may be accompanied by visible physical changes such as flushing or trembling. Channeling this emotion constructively is essential to avoid harmful consequences.",
+                                      "it":  "Fuori di sé è uno stato di rabbia intensa che può rasentare la furia. È caratterizzato da un forte senso di ingiustizia o violazione e può essere accompagnato da cambiamenti fisici visibili come arrossamento o tremori. Incanalare questa emozione in modo costruttivo è essenziale per evitare conseguenze dannose."
+                                  }
+              },
+    "Furious":  {
+                    "name":  {
+                                 "en":  "Furious",
+                                 "it":  "Furioso"
+                             },
+                    "description":  {
+                                        "en":  "Furious describes an extreme level of anger in which rational thinking can become impaired. It is often triggered by perceived wrongs, betrayal, or persistent frustration. Finding constructive outlets and de-escalation strategies is key to managing this intense emotion.",
+                                        "it":  "Furioso descrive un livello estremo di rabbia in cui il pensiero razionale può risultare compromesso. È spesso scatenato da torti percepiti, tradimenti o frustrazione persistente. Trovare sfoghi costruttivi e strategie di de-escalation è fondamentale per gestire questa emozione intensa."
+                                    }
+                },
+    "Frustrated":  {
+                       "name":  {
+                                    "en":  "Frustrated",
+                                    "it":  "Frustrato"
+                                },
+                       "description":  {
+                                           "en":  "Frustrated arises when efforts to achieve a goal are repeatedly blocked or when expectations go unmet. It involves a mix of tension, dissatisfaction, and sometimes helplessness. Reframing the situation and adjusting expectations can help transform frustration into productive problem-solving.",
+                                           "it":  "Frustrato emerge quando gli sforzi per raggiungere un obiettivo vengono ripetutamente ostacolati o quando le aspettative non vengono soddisfatte. Implica un mix di tensione, insoddisfazione e talvolta senso di impotenza. Riformulare la situazione e adattare le aspettative può aiutare a trasformare la frustrazione in una risoluzione produttiva dei problemi."
+                                       }
+                   },
+    "Tense":  {
+                  "name":  {
+                               "en":  "Tense",
+                               "it":  "Teso"
+                           },
+                  "description":  {
+                                      "en":  "Tense is a state of mental and physical strain often preceding a stressful event or arising from unresolved conflict. It is characterized by muscle tightness, difficulty relaxing, and heightened vigilance. Relaxation techniques and addressing the underlying source of tension can provide relief.",
+                                      "it":  "Teso è uno stato di tensione mentale e fisica che spesso precede un evento stressante o deriva da conflitti irrisolti. È caratterizzato da rigidità muscolare, difficoltà a rilassarsi e vigilanza accentuata. Tecniche di rilassamento e l\u0027affrontare la fonte della tensione possono fornire sollievo."
+                                  }
+              },
+    "Stunned":  {
+                    "name":  {
+                                 "en":  "Stunned",
+                                 "it":  "Attonito"
+                             },
+                    "description":  {
+                                        "en":  "Stunned is a temporary state of shock and disbelief following an unexpected event. It can impair the ability to think clearly or respond immediately. Allowing time for the initial shock to pass before making decisions is generally advisable.",
+                                        "it":  "Attonito è uno stato temporaneo di shock e incredulità successivo a un evento inaspettato. Può compromettere la capacità di pensare chiaramente o rispondere immediatamente. Concedersi il tempo che lo shock iniziale si dissipi prima di prendere decisioni è generalmente consigliabile."
+                                    }
+                },
+    "Hyper":  {
+                  "name":  {
+                               "en":  "Hyper",
+                               "it":  "Iperattivo"
+                           },
+                  "description":  {
+                                      "en":  "Hyper describes a state of excessive energy, excitement, and activity that can be difficult to moderate. It is often accompanied by rapid speech, racing thoughts, and reduced need for rest. While sometimes enjoyable, sustained hyperactivity can be exhausting and may interfere with focus.",
+                                      "it":  "Iperattivo descrive uno stato di energia eccessiva, eccitazione e attività difficile da moderare. È spesso accompagnato da eloquio rapido, pensieri frenetici e ridotto bisogno di riposo. Sebbene a volte piacevole, l\u0027iperattività sostenuta può essere estenuante e interferire con la concentrazione."
+                                  }
+              },
+    "Cheerful":  {
+                     "name":  {
+                                  "en":  "Cheerful",
+                                  "it":  "Allegro"
+                              },
+                     "description":  {
+                                         "en":  "Cheerful is a pleasant and light-hearted emotional state characterized by happiness and a positive outlook. It tends to be contagious and can uplift those around us. Cultivating cheerfulness supports resilience and strengthens interpersonal relationships.",
+                                         "it":  "Allegro è uno stato emotivo piacevole e spensierato caratterizzato da felicità e un\u0027attitudine positiva. Tende a essere contagioso e può sollevare il morale delle persone intorno a noi. Coltivare l\u0027allegria supporta la resilienza e rafforza le relazioni interpersonali."
+                                     }
+                 },
+    "Motivated":  {
+                      "name":  {
+                                   "en":  "Motivated",
+                                   "it":  "Motivato"
+                               },
+                      "description":  {
+                                          "en":  "Motivated is a state of driven enthusiasm and determination toward achieving a goal. It provides the energy and direction needed to persist through challenges. Understanding the sources of one\u0027s motivation can help sustain it over the long term.",
+                                          "it":  "Motivato è uno stato di entusiasmo determinato e propositivo verso il raggiungimento di un obiettivo. Fornisce l\u0027energia e la direzione necessarie per perseverare di fronte alle sfide. Comprendere le fonti della propria motivazione può aiutare a mantenerla nel lungo periodo."
+                                      }
+                  },
+    "Inspired":  {
+                     "name":  {
+                                  "en":  "Inspired",
+                                  "it":  "Ispirato"
+                              },
+                     "description":  {
+                                         "en":  "Inspired is a state of elevated creativity and purpose often sparked by an idea, person, or experience. It is characterized by a strong desire to create, contribute, or grow. Inspiration can be a powerful catalyst for meaningful personal and professional change.",
+                                         "it":  "Ispirato è uno stato di creatività elevata e senso di scopo, spesso scaturito da un\u0027idea, una persona o un\u0027esperienza. È caratterizzato da un forte desiderio di creare, contribuire o crescere. L\u0027ispirazione può essere un potente catalizzatore per un cambiamento personale e professionale significativo."
+                                     }
+                 },
+    "Elated":  {
+                   "name":  {
+                                "en":  "Elated",
+                                "it":  "Esultante"
+                            },
+                   "description":  {
+                                       "en":  "Elated is a state of great happiness and pride, often following a significant success or positive news. It is accompanied by high energy, optimism, and a sense that anything is possible. While elation is temporary, its positive effects on mood and confidence can persist.",
+                                       "it":  "Esultante è uno stato di grande felicità e orgoglio, spesso successivo a un successo significativo o a buone notizie. È accompagnato da alta energia, ottimismo e dalla sensazione che tutto sia possibile. Sebbene temporaneo, gli effetti positivi dell\u0027esultanza sull\u0027umore e sulla fiducia possono persistere."
+                                   }
+               },
+    "Fuming":  {
+                   "name":  {
+                                "en":  "Fuming",
+                                "it":  "Esasperato"
+                            },
+                   "description":  {
+                                       "en":  "Fuming describes a state of seething anger that may not yet have been expressed outwardly. It often involves rumination and a feeling of injustice. Finding healthy ways to express and release this emotion is important to prevent it from escalating.",
+                                       "it":  "Esasperato descrive uno stato di rabbia ribollente che potrebbe non essere stata ancora espressa esteriormente. Spesso implica ruminazione e un senso di ingiustizia. Trovare modi sani per esprimere e liberare questa emozione è importante per evitare che si intensifichi."
+                                   }
+               },
+    "Frightened":  {
+                       "name":  {
+                                    "en":  "Frightened",
+                                    "it":  "Spaventato"
+                                },
+                       "description":  {
+                                           "en":  "Frightened is a response to perceived danger or threat, involving heightened alertness and the urge to escape or hide. It is a natural protective emotion but can become debilitating when experienced excessively. Gradual exposure and coping strategies can help manage chronic fear.",
+                                           "it":  "Spaventato è una risposta al pericolo o alla minaccia percepita, che comporta allerta accentuata e l\u0027impulso di fuggire o nascondersi. È un\u0027emozione protettiva naturale ma può diventare debilitante se vissuta eccessivamente. L\u0027esposizione graduale e le strategie di coping possono aiutare a gestire la paura cronica."
+                                       }
+                   },
+    "Angry":  {
+                  "name":  {
+                               "en":  "Angry",
+                               "it":  "Arrabbiato"
+                           },
+                  "description":  {
+                                      "en":  "Angry is a natural emotional response to perceived injustice, hurt, or frustration. When expressed appropriately, anger can motivate constructive change and boundary-setting. Learning to recognize anger\u0027s triggers and communicate it assertively is a key emotional skill.",
+                                      "it":  "Arrabbiato è una risposta emotiva naturale all\u0027ingiustizia percepita, al dolore o alla frustrazione. Quando espressa in modo appropriato, la rabbia può motivare cambiamenti costruttivi e la definizione di confini. Imparare a riconoscere i fattori scatenanti della rabbia e comunicarla in modo assertivo è un\u0027abilità emotiva fondamentale."
+                                  }
+              },
+    "Nervous":  {
+                    "name":  {
+                                 "en":  "Nervous",
+                                 "it":  "Nervoso"
+                             },
+                    "description":  {
+                                        "en":  "Nervous describes a state of mild anxiety and apprehension, typically anticipating an uncertain or challenging situation. It is accompanied by physical sensations such as butterflies in the stomach or trembling. Preparation and breathing techniques can help manage nervousness effectively.",
+                                        "it":  "Nervoso descrive uno stato di lieve ansia e apprensione, tipicamente in attesa di una situazione incerta o impegnativa. È accompagnato da sensazioni fisiche come le farfalle nello stomaco o i tremori. La preparazione e le tecniche di respirazione possono aiutare a gestire efficacemente il nervosismo."
+                                    }
+                },
+    "Restless":  {
+                     "name":  {
+                                  "en":  "Restless",
+                                  "it":  "Irrequieto"
+                              },
+                     "description":  {
+                                         "en":  "Restless is a state of inability to remain still or at ease, often driven by boredom, anxiety, or unmet needs. It manifests as a constant urge to move, change activity, or seek stimulation. Identifying the underlying need can help resolve restlessness constructively.",
+                                         "it":  "Irrequieto è uno stato di incapacità a restare fermi o a proprio agio, spesso guidato dalla noia, dall\u0027ansia o da bisogni insoddisfatti. Si manifesta come un costante impulso a muoversi, cambiare attività o cercare stimolazione. Identificare il bisogno sottostante può aiutare a risolvere l\u0027irrequietezza in modo costruttivo."
+                                     }
+                 },
+    "Energized":  {
+                      "name":  {
+                                   "en":  "Energized",
+                                   "it":  "Energico"
+                               },
+                      "description":  {
+                                          "en":  "Energized is a state of heightened vitality and readiness to engage with tasks or activities. It supports productivity, focus, and a sense of capability. Regular exercise, good sleep, and meaningful goals are key contributors to sustained energy levels.",
+                                          "it":  "Energico è uno stato di vitalità accentuata e prontezza a impegnarsi in compiti o attività. Supporta la produttività, la concentrazione e il senso di capacità. L\u0027esercizio fisico regolare, il buon sonno e gli obiettivi significativi sono fattori chiave per livelli di energia sostenuti."
+                                      }
+                  },
+    "Lively":  {
+                   "name":  {
+                                "en":  "Lively",
+                                "it":  "Vivace"
+                            },
+                   "description":  {
+                                       "en":  "Lively describes an animated and spirited emotional state full of enthusiasm and engagement. It is often associated with social interaction and physical activity. Embracing a lively spirit enhances creativity, connection, and enjoyment of daily life.",
+                                       "it":  "Vivace descrive uno stato emotivo animato e frizzante, pieno di entusiasmo e coinvolgimento. È spesso associato all\u0027interazione sociale e all\u0027attività fisica. Abbracciare uno spirito vivace migliora la creatività, la connessione e il godimento della vita quotidiana."
+                                   }
+               },
+    "Enthusiastic":  {
+                         "name":  {
+                                      "en":  "Enthusiastic",
+                                      "it":  "Entusiasta"
+                                  },
+                         "description":  {
+                                             "en":  "Enthusiastic is a state of eager and energetic interest in a particular activity or idea. It fuels persistence and makes effort feel rewarding. Enthusiasm is contagious and can inspire those around us to engage more deeply.",
+                                             "it":  "Entusiasta è uno stato di interesse vivace ed energico per una particolare attività o idea. Alimenta la perseveranza e rende lo sforzo gratificante. L\u0027entusiasmo è contagioso e può ispirare chi ci circonda a impegnarsi più profondamente."
+                                         }
+                     },
+    "Optimistic":  {
+                       "name":  {
+                                    "en":  "Optimistic",
+                                    "it":  "Ottimista"
+                                },
+                       "description":  {
+                                           "en":  "Optimistic describes a hopeful and positive outlook on future events and outcomes. It is associated with resilience, better coping strategies, and improved well-being. Cultivating optimism does not mean ignoring challenges but approaching them with confidence.",
+                                           "it":  "Ottimista descrive una prospettiva speranzosa e positiva sugli eventi e i risultati futuri. È associato alla resilienza, a migliori strategie di coping e a un benessere migliorato. Coltivare l\u0027ottimismo non significa ignorare le sfide, ma affrontarle con fiducia."
+                                       }
+                   },
+    "Excited":  {
+                    "name":  {
+                                 "en":  "Excited",
+                                 "it":  "Eccitato"
+                             },
+                    "description":  {
+                                        "en":  "Excited is a state of eager anticipation and heightened emotion, usually preceding a positive event or opportunity. It is energizing and motivating, making it easier to take action. Excitement channels high arousal into enthusiasm and forward movement.",
+                                        "it":  "Eccitato è uno stato di anticipazione entusiasta ed emozione accentuata, generalmente precedente a un evento o un\u0027opportunità positivi. È energizzante e motivante, rendendo più facile passare all\u0027azione. L\u0027eccitazione canalizza l\u0027alta attivazione in entusiasmo e slancio in avanti."
+                                    }
+                },
+    "Anxious":  {
+                    "name":  {
+                                 "en":  "Anxious",
+                                 "it":  "Ansioso"
+                             },
+                    "description":  {
+                                        "en":  "Anxious is a state of worry and unease about uncertain future events. It often involves intrusive thoughts, physical tension, and difficulty concentrating. Mindfulness, cognitive reframing, and professional support can be effective in managing anxiety.",
+                                        "it":  "Ansioso è uno stato di preoccupazione e disagio riguardo a eventi futuri incerti. Spesso comporta pensieri intrusivi, tensione fisica e difficoltà di concentrazione. La mindfulness, la ristrutturazione cognitiva e il supporto professionale possono essere efficaci nella gestione dell\u0027ansia."
+                                    }
+                },
+    "Apprehensive":  {
+                         "name":  {
+                                      "en":  "Apprehensive",
+                                      "it":  "Apprensivo"
+                                  },
+                         "description":  {
+                                             "en":  "Apprehensive describes a mild but persistent sense of dread or unease about what lies ahead. It may signal that preparation or reassurance is needed before facing a challenge. Acknowledging this emotion and planning accordingly can reduce its intensity.",
+                                             "it":  "Apprensivo descrive un senso lieve ma persistente di timore o disagio riguardo a ciò che si prospetta. Può segnalare la necessità di preparazione o rassicurazione prima di affrontare una sfida. Riconoscere questa emozione e pianificare di conseguenza può ridurne l\u0027intensità."
+                                         }
+                     },
+    "Worried":  {
+                    "name":  {
+                                 "en":  "Worried",
+                                 "it":  "Preoccupato"
+                             },
+                    "description":  {
+                                        "en":  "Worried involves repetitive thoughts about potential negative outcomes, often in the absence of immediate threat. It can be adaptive when it motivates problem-solving but becomes harmful when it is excessive and uncontrollable. Distinguishing productive concern from rumination is an important coping skill.",
+                                        "it":  "Preoccupato implica pensieri ripetitivi riguardo a possibili esiti negativi, spesso in assenza di una minaccia immediata. Può essere adattivo quando motiva la risoluzione dei problemi, ma diventa dannoso quando è eccessivo e incontrollabile. Distinguere la preoccupazione produttiva dalla ruminazione è un\u0027importante abilità di coping."
+                                    }
+                },
+    "Irritated":  {
+                      "name":  {
+                                   "en":  "Irritated",
+                                   "it":  "Irritato"
+                               },
+                      "description":  {
+                                          "en":  "Irritated is a mild form of anger triggered by minor annoyances or repeated disruptions. It is often a signal that a boundary has been crossed or a need is unmet. Addressing the source calmly and assertively usually resolves the irritation.",
+                                          "it":  "Irritato è una forma lieve di rabbia scatenata da piccoli fastidi o interruzioni ripetute. È spesso un segnale che un confine è stato oltrepassato o che un bisogno non è soddisfatto. Affrontare la fonte con calma e assertività di solito risolve l\u0027irritazione."
+                                      }
+                  },
+    "Annoyed":  {
+                    "name":  {
+                                 "en":  "Annoyed",
+                                 "it":  "Infastidito"
+                             },
+                    "description":  {
+                                        "en":  "Annoyed is a feeling of mild displeasure caused by persistent minor disturbances. While less intense than anger, ongoing annoyance can erode patience and well-being if left unaddressed. Taking a short break or communicating the issue can help restore equilibrium.",
+                                        "it":  "Infastidito è una sensazione di lieve dispiacere causata da piccoli disturbi persistenti. Sebbene meno intenso della rabbia, il fastidio continuato può erodere la pazienza e il benessere se non affrontato. Una breve pausa o la comunicazione del problema possono aiutare a ripristinare l\u0027equilibrio."
+                                    }
+                },
+    "Pleased":  {
+                    "name":  {
+                                 "en":  "Pleased",
+                                 "it":  "Compiaciuto"
+                             },
+                    "description":  {
+                                        "en":  "Pleased is a mild and satisfying positive emotion arising when expectations are met or small successes are achieved. It is a quiet but meaningful form of happiness that reinforces positive behaviors. Taking time to notice and appreciate these moments contributes to overall life satisfaction.",
+                                        "it":  "Compiaciuto è un\u0027emozione positiva lieve e soddisfacente che emerge quando le aspettative vengono soddisfatte o si raggiungono piccoli successi. È una forma silenziosa ma significativa di felicità che rinforza comportamenti positivi. Prendersi il tempo di notare e apprezzare questi momenti contribuisce alla soddisfazione generale nella vita."
+                                    }
+                },
+    "Happy":  {
+                  "name":  {
+                               "en":  "Happy",
+                               "it":  "Felice"
+                           },
+                  "description":  {
+                                      "en":  "Happy is a fundamental positive emotional state characterized by a sense of well-being, contentment, and joy. It can arise from both simple pleasures and meaningful achievements. Research consistently links happiness with stronger relationships, better health, and greater resilience.",
+                                      "it":  "Felice è uno stato emotivo positivo fondamentale caratterizzato da un senso di benessere, contentezza e gioia. Può emergere sia da semplici piaceri che da risultati significativi. La ricerca collega costantemente la felicità a relazioni più solide, migliore salute e maggiore resilienza."
+                                  }
+              },
+    "Focused":  {
+                    "name":  {
+                                 "en":  "Focused",
+                                 "it":  "Concentrato"
+                             },
+                    "description":  {
+                                        "en":  "Focused describes a state of clear and directed attention toward a task or goal. It is associated with high productivity and a sense of flow. Creating an environment with minimal distractions and setting clear intentions supports sustained focus.",
+                                        "it":  "Concentrato descrive uno stato di attenzione chiara e diretta verso un compito o un obiettivo. È associato ad alta produttività e a una sensazione di flusso. Creare un ambiente con distrazioni minime e stabilire intenzioni chiare supporta una concentrazione sostenuta."
+                                    }
+                },
+    "Proud":  {
+                  "name":  {
+                               "en":  "Proud",
+                               "it":  "Orgoglioso"
+                           },
+                  "description":  {
+                                      "en":  "Proud is a positive emotion arising from a sense of achievement, competence, or alignment with one\u0027s values. It reinforces self-esteem and motivates continued effort. Distinguishing healthy pride from arrogance is important for maintaining balanced self-perception.",
+                                      "it":  "Orgoglioso è un\u0027emozione positiva che emerge da un senso di realizzazione, competenza o allineamento con i propri valori. Rafforza l\u0027autostima e motiva lo sforzo continuo. Distinguere il sano orgoglio dall\u0027arroganza è importante per mantenere una percezione di sé equilibrata."
+                                  }
+              },
+    "Thrilled":  {
+                     "name":  {
+                                  "en":  "Thrilled",
+                                  "it":  "Emozionato"
+                              },
+                     "description":  {
+                                         "en":  "Thrilled is an intense state of excitement and pleasure, often arising from extraordinary experiences or great news. It combines high energy with strong positive affect, creating a memorable emotional peak. Thrilling experiences can serve as powerful anchors for positive memory.",
+                                         "it":  "Emozionato è uno stato intenso di eccitazione e piacere, che spesso deriva da esperienze straordinarie o grandi notizie. Combina alta energia con un forte affetto positivo, creando un picco emotivo memorabile. Le esperienze emozionanti possono fungere da potenti ancore per la memoria positiva."
+                                     }
+                 },
+    "Repulsed":  {
+                     "name":  {
+                                  "en":  "Repulsed",
+                                  "it":  "Ripugnato"
+                              },
+                     "description":  {
+                                         "en":  "Repulsed is a strong feeling of disgust and aversion toward something perceived as offensive or morally objectionable. It serves as a protective signal that helps individuals avoid harmful stimuli. Understanding this emotion can reveal personal values and boundaries.",
+                                         "it":  "Ripugnato è una forte sensazione di disgusto e avversione verso qualcosa percepito come offensivo o moralmente riprovevole. Funge da segnale protettivo che aiuta gli individui a evitare stimoli nocivi. Comprendere questa emozione può rivelare valori personali e confini."
+                                     }
+                 },
+    "Troubled":  {
+                     "name":  {
+                                  "en":  "Troubled",
+                                  "it":  "Turbato"
+                              },
+                     "description":  {
+                                         "en":  "Troubled describes a state of emotional distress and inner conflict, often arising from unresolved problems or moral dilemmas. It is a signal that something important needs attention. Seeking perspective through reflection or conversation can help clarify the source and guide resolution.",
+                                         "it":  "Turbato descrive uno stato di disagio emotivo e conflitto interiore, spesso emergente da problemi irrisolti o dilemmi morali. È un segnale che qualcosa di importante richiede attenzione. Cercare prospettiva attraverso la riflessione o la conversazione può aiutare a chiarire la fonte e guidare la risoluzione."
+                                     }
+                 },
+    "Concerned":  {
+                      "name":  {
+                                   "en":  "Concerned",
+                                   "it":  "In Apprensione"
+                               },
+                      "description":  {
+                                          "en":  "Concerned is a mild form of worry directed at someone else\u0027s well-being or a shared problem. It is an empathic emotion that motivates caring and supportive behavior. Expressing concern openly and constructively strengthens relationships and fosters problem-solving.",
+                                          "it":  "In apprensione è una forma lieve di preoccupazione diretta al benessere altrui o a un problema condiviso. È un\u0027emozione empatica che motiva comportamenti premurosi e di supporto. Esprimere apprensione in modo aperto e costruttivo rafforza le relazioni e favorisce la risoluzione dei problemi."
+                                      }
+                  },
+    "Uneasy":  {
+                   "name":  {
+                                "en":  "Uneasy",
+                                "it":  "A Disagio"
+                            },
+                   "description":  {
+                                       "en":  "Uneasy describes a diffuse sense of discomfort or anxiety that is difficult to pinpoint. It often serves as an intuitive signal that something in the environment or relationship requires closer attention. Taking time to explore the source of unease can prevent it from growing into more significant distress.",
+                                       "it":  "A disagio descrive un senso diffuso di scomfort o ansia difficile da individuare. Spesso funge da segnale intuitivo che qualcosa nell\u0027ambiente o nella relazione richiede maggiore attenzione. Prendersi il tempo di esplorare la fonte del disagio può impedire che cresca in un\u0027angoscia più significativa."
+                                   }
+               },
+    "Peeved":  {
+                   "name":  {
+                                "en":  "Peeved",
+                                "it":  "Seccato"
+                            },
+                   "description":  {
+                                       "en":  "Peeved is a mild and often transient feeling of irritation or exasperation. It typically arises from small frustrations or perceived inconsiderateness. Addressing it with light humor or direct communication usually resolves the feeling quickly.",
+                                       "it":  "Seccato è una sensazione lieve e spesso transitoria di irritazione o esasperazione. Nasce tipicamente da piccole frustrazioni o da percepita mancanza di riguardo. Affrontarla con umorismo leggero o comunicazione diretta di solito risolve rapidamente il sentimento."
+                                   }
+               },
+    "Pleasant":  {
+                     "name":  {
+                                  "en":  "Pleasant",
+                                  "it":  "Piacevole"
+                              },
+                     "description":  {
+                                         "en":  "Pleasant is a gentle and agreeable positive emotional state that arises from comfortable and enjoyable experiences. It is a quiet form of happiness that contributes to a sense of ease and satisfaction. Cultivating pleasant everyday moments is an important component of well-being.",
+                                         "it":  "Piacevole è uno stato emotivo positivo, gentile e gradevole che emerge da esperienze confortevoli e piacevoli. È una forma silenziosa di felicità che contribuisce a un senso di facilità e soddisfazione. Coltivare momenti piacevoli quotidiani è un componente importante del benessere."
+                                     }
+                 },
+    "Joyful":  {
+                   "name":  {
+                                "en":  "Joyful",
+                                "it":  "Gioioso"
+                            },
+                   "description":  {
+                                       "en":  "Joyful is a deep and radiant positive emotion that arises from meaningful experiences, connections, and accomplishments. Unlike fleeting happiness, joy is often associated with a profound sense of rightness and belonging. Nurturing joyful experiences is central to a flourishing life.",
+                                       "it":  "Gioioso è un\u0027emozione positiva profonda e radiosa che emerge da esperienze significative, connessioni e realizzazioni. A differenza della felicità fugace, la gioia è spesso associata a un profondo senso di giustizia e appartenenza. Coltivare esperienze gioiose è centrale per una vita fiorente."
+                                   }
+               },
+    "Hopeful":  {
+                    "name":  {
+                                 "en":  "Hopeful",
+                                 "it":  "Speranzoso"
+                             },
+                    "description":  {
+                                        "en":  "Hopeful is a forward-looking emotional state characterized by confidence that positive outcomes are possible. It provides the motivation to persist through difficulties and envision a better future. Hope is a core component of psychological resilience and recovery.",
+                                        "it":  "Speranzoso è uno stato emotivo orientato al futuro, caratterizzato dalla fiducia che risultati positivi siano possibili. Fornisce la motivazione per perseverare attraverso le difficoltà e immaginare un futuro migliore. La speranza è una componente fondamentale della resilienza psicologica e del recupero."
+                                    }
+                },
+    "Playful":  {
+                    "name":  {
+                                 "en":  "Playful",
+                                 "it":  "Giocoso"
+                             },
+                    "description":  {
+                                        "en":  "Playful describes a light and fun-loving emotional state that embraces spontaneity, humor, and creativity. It supports social bonding and cognitive flexibility. Maintaining a playful attitude, even in adulthood, is associated with greater creativity and stress relief.",
+                                        "it":  "Giocoso descrive uno stato emotivo leggero e amante del divertimento che abbraccia spontaneità, umorismo e creatività. Supporta il legame sociale e la flessibilità cognitiva. Mantenere un atteggiamento giocoso, anche in età adulta, è associato a maggiore creatività e riduzione dello stress."
+                                    }
+                },
+    "Blissful":  {
+                     "name":  {
+                                  "en":  "Blissful",
+                                  "it":  "Beato"
+                              },
+                     "description":  {
+                                         "en":  "Blissful is a state of supreme happiness and serene joy, often described as a sense of perfect contentment. It arises from moments of deep connection, beauty, or inner peace. While brief, blissful experiences can profoundly reshape one\u0027s outlook and sense of meaning.",
+                                         "it":  "Beato è uno stato di suprema felicità e gioia serena, spesso descritto come un senso di perfetta contentezza. Emerge da momenti di profonda connessione, bellezza o pace interiore. Sebbene brevi, le esperienze beate possono profondamente ridisegnare la propria prospettiva e il senso del significato."
+                                     }
+                 },
+    "Disgusted":  {
+                      "name":  {
+                                   "en":  "Disgusted",
+                                   "it":  "Disgustato"
+                               },
+                      "description":  {
+                                          "en":  "Disgusted is a strong aversion response to something perceived as offensive, contaminating, or morally wrong. It is one of the basic human emotions and plays a role in moral judgment and social cohesion. Examining the source of disgust can reveal deeply held values and cultural influences.",
+                                          "it":  "Disgustato è una forte risposta di avversione a qualcosa percepito come offensivo, contaminante o moralmente sbagliato. È una delle emozioni umane di base e svolge un ruolo nel giudizio morale e nella coesione sociale. Esaminare la fonte del disgusto può rivelare valori profondamente radicati e influenze culturali."
+                                      }
+                  },
+    "Glum":  {
+                 "name":  {
+                              "en":  "Glum",
+                              "it":  "Cupo"
+                          },
+                 "description":  {
+                                     "en":  "Glum describes a quiet and subdued sadness, often without a clear specific cause. It is characterized by low energy, withdrawal, and a dull emotional tone. Gentle self-care and social connection can help lift a glum mood.",
+                                     "it":  "Cupo descrive una tristezza silenziosa e sommessa, spesso senza una causa specifica chiara. È caratterizzato da bassa energia, ritiro e un tono emotivo opaco. La cura gentile di sé e la connessione sociale possono aiutare a sollevare un umore cupo."
+                                 }
+             },
+    "Disappointed":  {
+                         "name":  {
+                                      "en":  "Disappointed",
+                                      "it":  "Deluso"
+                                  },
+                         "description":  {
+                                             "en":  "Disappointed is an emotional response to unmet expectations, whether in oneself, others, or circumstances. It involves a sense of loss and sadness but can also motivate reflection and adjustment of future expectations. Processing disappointment constructively is an important emotional growth skill.",
+                                             "it":  "Deluso è una risposta emotiva alle aspettative non soddisfatte, che si tratti di se stessi, degli altri o delle circostanze. Implica un senso di perdita e tristezza, ma può anche motivare la riflessione e l\u0027adeguamento delle aspettative future. Elaborare la delusione in modo costruttivo è un\u0027importante abilità di crescita emotiva."
+                                         }
+                     },
+    "Down":  {
+                 "name":  {
+                              "en":  "Down",
+                              "it":  "Giù di Corda"
+                          },
+                 "description":  {
+                                     "en":  "Down describes a low mood state characterized by sadness, lack of motivation, and reduced enjoyment of activities. It is a common human experience but can deepen into depression if persistent. Reaching out to trusted others and engaging in self-care are helpful first steps.",
+                                     "it":  "Giù di corda descrive uno stato d\u0027umore basso caratterizzato da tristezza, mancanza di motivazione e ridotto godimento delle attività. È un\u0027esperienza umana comune ma può approfondirsi in depressione se persistente. Raggiungere persone fidate e dedicarsi alla cura di sé sono i primi passi utili."
+                                 }
+             },
+    "Apathetic":  {
+                      "name":  {
+                                   "en":  "Apathetic",
+                                   "it":  "Apatico"
+                               },
+                      "description":  {
+                                          "en":  "Apathetic is a state of emotional flatness and indifference, in which little seems to matter or generate interest. It can arise from exhaustion, depression, or prolonged stress. Reengaging with meaningful activities and values can help restore emotional vitality.",
+                                          "it":  "Apatico è uno stato di piattezza emotiva e indifferenza, in cui poco sembra importare o generare interesse. Può emergere dall\u0027esaurimento, dalla depressione o dallo stress prolungato. Riaccostarsi ad attività significative e ai propri valori può aiutare a ripristinare la vitalità emotiva."
+                                      }
+                  },
+    "At Ease":  {
+                    "name":  {
+                                 "en":  "At Ease",
+                                 "it":  "A Proprio Agio"
+                             },
+                    "description":  {
+                                        "en":  "At ease is a comfortable and relaxed emotional state free from tension or anxiety. It signals that the current environment feels safe and manageable. Cultivating this sense of ease is an important goal in stress management and therapeutic work.",
+                                        "it":  "A proprio agio è uno stato emotivo confortevole e rilassato, libero da tensione o ansia. Segnala che l\u0027ambiente attuale si sente sicuro e gestibile. Coltivare questo senso di facilità è un obiettivo importante nella gestione dello stress e nel lavoro terapeutico."
+                                    }
+                },
+    "Easygoing":  {
+                      "name":  {
+                                   "en":  "Easygoing",
+                                   "it":  "Accomodante"
+                               },
+                      "description":  {
+                                          "en":  "Easygoing describes a relaxed and flexible disposition that adapts readily to changing circumstances without distress. It involves an absence of rigidity and a willingness to go with the flow. This temperament supports harmonious relationships and reduced reactivity to stress.",
+                                          "it":  "Accomodante descrive una disposizione rilassata e flessibile che si adatta prontamente alle circostanze mutevoli senza disagio. Implica assenza di rigidità e volontà di seguire il flusso. Questo temperamento supporta relazioni armoniose e ridotta reattività allo stress."
+                                      }
+                  },
+    "Content":  {
+                    "name":  {
+                                 "en":  "Content",
+                                 "it":  "Contento"
+                             },
+                    "description":  {
+                                        "en":  "Content is a quiet and satisfying emotional state in which one feels at peace with the present moment and one\u0027s circumstances. Unlike excitement, contentment is stable and sustainable. It is considered a cornerstone of lasting well-being and life satisfaction.",
+                                        "it":  "Contento è uno stato emotivo quieto e soddisfacente in cui ci si sente in pace con il momento presente e le proprie circostanze. A differenza dell\u0027eccitazione, la contentezza è stabile e sostenibile. È considerato un pilastro del benessere duraturo e della soddisfazione nella vita."
+                                    }
+                },
+    "Loving":  {
+                   "name":  {
+                                "en":  "Loving",
+                                "it":  "Amorevole"
+                            },
+                   "description":  {
+                                       "en":  "Loving is a warm and tender emotional state characterized by deep affection, care, and connection toward another person or being. It fosters empathy, generosity, and a sense of belonging. Love in its many forms is one of the most powerful contributors to human happiness and meaning.",
+                                       "it":  "Amorevole è uno stato emotivo caldo e tenero caratterizzato da profondo affetto, cura e connessione verso un\u0027altra persona o essere. Favorisce l\u0027empatia, la generosità e un senso di appartenenza. L\u0027amore nelle sue molteplici forme è uno dei contribuenti più potenti alla felicità umana e al senso del significato."
+                                   }
+               },
+    "Fulfilled":  {
+                      "name":  {
+                                   "en":  "Fulfilled",
+                                   "it":  "Realizzato"
+                               },
+                      "description":  {
+                                          "en":  "Fulfilled is a deep and lasting sense of satisfaction arising from living in alignment with one\u0027s values and purpose. It reflects the feeling that life is meaningful and that one\u0027s efforts have made a difference. Fulfillment is often considered the highest form of well-being.",
+                                          "it":  "Realizzato è un profondo e duraturo senso di soddisfazione che emerge dal vivere in accordo con i propri valori e scopo. Riflette la sensazione che la vita sia significativa e che i propri sforzi abbiano fatto la differenza. La realizzazione è spesso considerata la forma più alta di benessere."
+                                      }
+                  },
+    "Pessimistic":  {
+                        "name":  {
+                                     "en":  "Pessimistic",
+                                     "it":  "Pessimista"
+                                 },
+                        "description":  {
+                                            "en":  "Pessimistic describes a tendency to expect negative outcomes and to see the worst in situations. While sometimes a realistic coping mechanism, chronic pessimism is associated with reduced resilience and motivation. Cognitive approaches can help shift pessimistic thinking patterns toward a more balanced perspective.",
+                                            "it":  "Pessimista descrive la tendenza ad aspettarsi esiti negativi e a vedere il peggio nelle situazioni. Sebbene a volte sia un meccanismo di coping realistico, il pessimismo cronico è associato a resilienza e motivazione ridotte. Approcci cognitivi possono aiutare a spostare i modelli di pensiero pessimistici verso una prospettiva più equilibrata."
+                                        }
+                    },
+    "Morose":  {
+                   "name":  {
+                                "en":  "Morose",
+                                "it":  "Abbacchiato"
+                            },
+                   "description":  {
+                                       "en":  "Morose is a sullen and gloomy emotional state characterized by a tendency toward dark thoughts and social withdrawal. It often accompanies grief, loss, or chronic dissatisfaction. Gentle engagement and compassionate support are more helpful than pressure to cheer up.",
+                                       "it":  "Abbacchiato è uno stato emotivo cupo e tetro caratterizzato da una tendenza verso pensieri oscuri e ritiro sociale. Accompagna spesso il lutto, la perdita o la cronica insoddisfazione. Il coinvolgimento gentile e il supporto compassionevole sono più utili della pressione a tirarsi su."
+                                   }
+               },
+    "Discouraged":  {
+                        "name":  {
+                                     "en":  "Discouraged",
+                                     "it":  "Avvilito"
+                                 },
+                        "description":  {
+                                            "en":  "Discouraged is a feeling of lost confidence and reduced motivation, often following setbacks or a series of failures. It involves doubts about one\u0027s ability to succeed. Recognizing past achievements and breaking goals into smaller steps can help rebuild confidence.",
+                                            "it":  "Avvilito è una sensazione di fiducia perduta e motivazione ridotta, spesso successiva a battute d\u0027arresto o a una serie di fallimenti. Implica dubbi sulla propria capacità di avere successo. Riconoscere i risultati passati e suddividere gli obiettivi in passi più piccoli può aiutare a ricostruire la fiducia."
+                                        }
+                    },
+    "Sad":  {
+                "name":  {
+                             "en":  "Sad",
+                             "it":  "Triste"
+                         },
+                "description":  {
+                                    "en":  "Sad is a fundamental human emotion associated with loss, disappointment, or longing. It is a natural and healthy response to painful experiences and can facilitate reflection, empathy, and healing. Allowing oneself to feel and express sadness, rather than suppressing it, is important for emotional processing.",
+                                    "it":  "Triste è un\u0027emozione umana fondamentale associata alla perdita, alla delusione o alla nostalgia. È una risposta naturale e sana a esperienze dolorose e può facilitare riflessione, empatia e guarigione. Permettersi di sentire ed esprimere la tristezza, invece di sopprimerla, è importante per l\u0027elaborazione emotiva."
+                                }
+            },
+    "Bored":  {
+                  "name":  {
+                               "en":  "Bored",
+                               "it":  "Annoiato"
+                           },
+                  "description":  {
+                                      "en":  "Bored is a state of disengagement and lack of stimulation that arises when activities feel meaningless or insufficiently challenging. While often dismissed, boredom can signal a need for change, creativity, or deeper connection with one\u0027s interests. Learning to tolerate and use boredom productively is a valuable skill.",
+                                      "it":  "Annoiato è uno stato di disimpegno e mancanza di stimolazione che emerge quando le attività sembrano prive di significato o insufficientemente stimolanti. Sebbene spesso ignorata, la noia può segnalare un bisogno di cambiamento, creatività o connessione più profonda con i propri interessi. Imparare a tollerare e usare produttivamente la noia è un\u0027abilità preziosa."
+                                  }
+              },
+    "Calm":  {
+                 "name":  {
+                              "en":  "Calm",
+                              "it":  "Calmo"
+                          },
+                 "description":  {
+                                     "en":  "Calm is a state of mental and emotional tranquility, free from agitation or distress. It allows for clear thinking, thoughtful decision-making, and emotional regulation. Practices such as mindfulness, deep breathing, and time in nature support the cultivation of calm.",
+                                     "it":  "Calmo è uno stato di tranquillità mentale ed emotiva, libero da agitazione o angoscia. Consente un pensiero chiaro, decisioni ponderate e regolazione emotiva. Pratiche come la mindfulness, la respirazione profonda e il tempo nella natura supportano la coltivazione della calma."
+                                 }
+             },
+    "Secure":  {
+                   "name":  {
+                                "en":  "Secure",
+                                "it":  "Al Sicuro"
+                            },
+                   "description":  {
+                                       "en":  "Secure describes a sense of emotional safety and confidence in oneself and in one\u0027s relationships. It is the foundation of healthy attachment and allows for open exploration of the world. Building a sense of security often involves developing trust and consistent self-care.",
+                                       "it":  "Al sicuro descrive un senso di sicurezza emotiva e fiducia in se stessi e nelle proprie relazioni. È il fondamento dell\u0027attaccamento sano e consente un\u0027esplorazione aperta del mondo. Costruire un senso di sicurezza implica spesso sviluppare fiducia e una cura di sé costante."
+                                   }
+               },
+    "Satisfied":  {
+                      "name":  {
+                                   "en":  "Satisfied",
+                                   "it":  "Soddisfatto"
+                               },
+                      "description":  {
+                                          "en":  "Satisfied is a feeling of completion and adequacy arising when needs or goals have been met. It provides a sense of closure and quiet pleasure. Regularly acknowledging moments of satisfaction helps counteract the tendency to focus only on what is still missing.",
+                                          "it":  "Soddisfatto è una sensazione di completezza e adeguatezza che emerge quando bisogni o obiettivi sono stati raggiunti. Fornisce un senso di chiusura e piacere quieto. Riconoscere regolarmente i momenti di soddisfazione aiuta a contrastare la tendenza a concentrarsi solo su ciò che manca ancora."
+                                      }
+                  },
+    "Grateful":  {
+                     "name":  {
+                                  "en":  "Grateful",
+                                  "it":  "Grato"
+                              },
+                     "description":  {
+                                         "en":  "Grateful is an emotion that arises when one recognizes and appreciates the goodness in one\u0027s life, often attributing it to others or to fortunate circumstances. Research consistently shows that gratitude is strongly linked to happiness, stronger relationships, and improved mental health. Practicing gratitude deliberately amplifies its positive effects.",
+                                         "it":  "Grato è un\u0027emozione che emerge quando si riconosce e si apprezza il bene nella propria vita, spesso attribuendolo agli altri o a circostanze fortunate. La ricerca mostra costantemente che la gratitudine è fortemente collegata alla felicità, a relazioni più solide e a una migliore salute mentale. Praticare intenzionalmente la gratitudine ne amplifica gli effetti positivi."
+                                     }
+                 },
+    "Touched":  {
+                    "name":  {
+                                 "en":  "Touched",
+                                 "it":  "Commosso"
+                             },
+                    "description":  {
+                                        "en":  "Touched is a gentle and moving emotional response to a moment of kindness, beauty, or unexpected goodness. It often brings a sense of warmth and connection, sometimes accompanied by tears. Being touched opens the heart and deepens appreciation for human bonds.",
+                                        "it":  "Commosso è una risposta emotiva gentile e toccante a un momento di gentilezza, bellezza o bontà inaspettata. Porta spesso un senso di calore e connessione, talvolta accompagnato da lacrime. Essere commossi apre il cuore e approfondisce l\u0027apprezzamento per i legami umani."
+                                    }
+                },
+    "Alienated":  {
+                      "name":  {
+                                   "en":  "Alienated",
+                                   "it":  "Alienato"
+                               },
+                      "description":  {
+                                          "en":  "Alienated is a deep sense of disconnection from others, society, or oneself. It can arise from social exclusion, identity conflicts, or prolonged isolation. Addressing alienation often requires rebuilding a sense of belonging through authentic connection and community.",
+                                          "it":  "Alienato è un profondo senso di disconnessione dagli altri, dalla società o da se stessi. Può derivare dall\u0027esclusione sociale, dai conflitti di identità o dall\u0027isolamento prolungato. Affrontare l\u0027alienazione richiede spesso di ricostruire un senso di appartenenza attraverso la connessione autentica e la comunità."
+                                      }
+                  },
+    "Miserable":  {
+                      "name":  {
+                                   "en":  "Miserable",
+                                   "it":  "Infelice"
+                               },
+                      "description":  {
+                                          "en":  "Miserable describes a state of intense and pervasive unhappiness that affects all aspects of daily life. It may arise from chronic pain, loss, or depression. Professional support and compassionate connection are especially important when misery is persistent.",
+                                          "it":  "Infelice descrive uno stato di intensa e pervasiva infelicità che colpisce tutti gli aspetti della vita quotidiana. Può derivare da dolore cronico, perdita o depressione. Il supporto professionale e la connessione compassionevole sono particolarmente importanti quando la miseria è persistente."
+                                      }
+                  },
+    "Lonely":  {
+                   "name":  {
+                                "en":  "Lonely",
+                                "it":  "Solo"
+                            },
+                   "description":  {
+                                       "en":  "Lonely is the painful awareness of a gap between the social connection one desires and what one currently experiences. It is distinct from being alone and can occur even in crowds. Loneliness signals a core human need for belonging and is associated with serious health consequences when chronic.",
+                                       "it":  "Solo è la dolorosa consapevolezza di un divario tra la connessione sociale desiderata e quella attualmente vissuta. È distinto dall\u0027essere soli e può presentarsi anche in mezzo alla folla. La solitudine segnala un bisogno umano fondamentale di appartenenza ed è associata a gravi conseguenze per la salute quando è cronica."
+                                   }
+               },
+    "Disheartened":  {
+                         "name":  {
+                                      "en":  "Disheartened",
+                                      "it":  "Scoraggiato"
+                                  },
+                         "description":  {
+                                             "en":  "Disheartened describes a loss of hope and enthusiasm following disappointment or repeated failure. It involves a weakening of the will to continue trying. Reconnecting with one\u0027s values and small achievable goals can help restore a sense of direction and heart.",
+                                             "it":  "Scoraggiato descrive una perdita di speranza ed entusiasmo a seguito di delusioni o fallimenti ripetuti. Implica un indebolimento della volontà di continuare a provare. Riconnettersi con i propri valori e con piccoli obiettivi raggiungibili può aiutare a ripristinare un senso di direzione e slancio."
+                                         }
+                     },
+    "Tired":  {
+                  "name":  {
+                               "en":  "Tired",
+                               "it":  "Stanco"
+                           },
+                  "description":  {
+                                      "en":  "Tired is a state of physical and mental depletion resulting from extended effort, stress, or lack of rest. It reduces performance and emotional resilience. Prioritizing adequate sleep, rest, and recovery is essential for restoring energy and well-being.",
+                                      "it":  "Stanco è uno stato di esaurimento fisico e mentale derivante da sforzo prolungato, stress o mancanza di riposo. Riduce le prestazioni e la resilienza emotiva. Dare priorità a un sonno adeguato, al riposo e al recupero è essenziale per ripristinare l\u0027energia e il benessere."
+                                  }
+              },
+    "Relaxed":  {
+                    "name":  {
+                                 "en":  "Relaxed",
+                                 "it":  "Rilassato"
+                             },
+                    "description":  {
+                                        "en":  "Relaxed is a comfortable state of low tension and ease in both body and mind. It allows for rest, enjoyment, and gentle reflection. Regularly creating space for relaxation is essential to counterbalance the demands of daily life.",
+                                        "it":  "Rilassato è uno stato confortevole di bassa tensione e facilità sia nel corpo che nella mente. Consente il riposo, il godimento e la riflessione gentile. Creare regolarmente spazio per il rilassamento è essenziale per controbilanciare le esigenze della vita quotidiana."
+                                    }
+                },
+    "Chill":  {
+                  "name":  {
+                               "en":  "Chill",
+                               "it":  "Disteso"
+                           },
+                  "description":  {
+                                      "en":  "Chill describes a laid-back and easygoing state characterized by minimal stress and a relaxed attitude. It involves an ability to let things flow without excessive effort or worry. Cultivating a chill mindset supports emotional flexibility and stress tolerance.",
+                                      "it":  "Disteso descrive uno stato disinvolto e tranquillo caratterizzato da stress minimo e atteggiamento sereno. Implica la capacità di lasciare fluire le cose senza eccessivo sforzo o preoccupazione. Coltivare una mentalità distesa supporta la flessibilità emotiva e la tolleranza allo stress."
+                                  }
+              },
+    "Restful":  {
+                    "name":  {
+                                 "en":  "Restful",
+                                 "it":  "Riposante"
+                             },
+                    "description":  {
+                                        "en":  "Restful is a quiet and restorative emotional state associated with recuperation and inner stillness. It signals that the body and mind are recharging effectively. Creating conditions for restful states, including quiet environments and reduced stimulation, is a vital self-care practice.",
+                                        "it":  "Riposante è uno stato emotivo quieto e rigenerante associato al recupero e alla quiete interiore. Segnala che il corpo e la mente si stanno ricaricando efficacemente. Creare condizioni per stati riposanti, inclusi ambienti silenziosi e stimolazione ridotta, è una pratica vitale di cura di sé."
+                                    }
+                },
+    "Blessed":  {
+                    "name":  {
+                                 "en":  "Blessed",
+                                 "it":  "Benedetto"
+                             },
+                    "description":  {
+                                        "en":  "Blessed is a profound sense of gratitude and good fortune, often carrying a spiritual or transcendent dimension. It involves feeling that one\u0027s life holds special meaning and that one has received gifts beyond what was deserved. This emotion fosters humility, generosity, and deep appreciation.",
+                                        "it":  "Benedetto è un profondo senso di gratitudine e buona fortuna, spesso con una dimensione spirituale o trascendente. Implica la sensazione che la propria vita abbia un significato speciale e che si siano ricevuti doni al di là di quanto meritato. Questa emozione favorisce umiltà, generosità e profonda gratitudine."
+                                    }
+                },
+    "Balanced":  {
+                     "name":  {
+                                  "en":  "Balanced",
+                                  "it":  "Equilibrato"
+                              },
+                     "description":  {
+                                         "en":  "Balanced describes a stable and harmonious emotional state in which various life demands are managed with equanimity. It involves a sense of integration between different aspects of one\u0027s life and self. Maintaining balance is an ongoing and dynamic process rather than a fixed achievement.",
+                                         "it":  "Equilibrato descrive uno stato emotivo stabile e armonioso in cui le varie esigenze della vita vengono gestite con equanimità. Implica un senso di integrazione tra i diversi aspetti della propria vita e del sé. Mantenere l\u0027equilibrio è un processo continuo e dinamico piuttosto che un risultato fisso."
+                                     }
+                 },
+    "Despondent":  {
+                       "name":  {
+                                    "en":  "Despondent",
+                                    "it":  "Abbattuto"
+                                },
+                       "description":  {
+                                           "en":  "Despondent is a deep state of hopelessness and low mood in which the possibility of improvement seems out of reach. It is more intense than sadness and can be an indicator of significant emotional distress. Professional support is particularly valuable when despondency is prolonged.",
+                                           "it":  "Abbattuto è un profondo stato di disperazione e umore basso in cui la possibilità di miglioramento sembra irraggiungibile. È più intenso della tristezza e può essere un indicatore di significativo disagio emotivo. Il supporto professionale è particolarmente prezioso quando l\u0027abbattimento è prolungato."
+                                       }
+                   },
+    "Depressed":  {
+                      "name":  {
+                                   "en":  "Depressed",
+                                   "it":  "Depresso"
+                               },
+                      "description":  {
+                                          "en":  "Depressed describes a clinical and persistent emotional state characterized by pervasive low mood, loss of interest, fatigue, and often feelings of worthlessness. Depression affects functioning across all domains of life and requires professional attention. It is a treatable condition, and seeking help is a sign of strength.",
+                                          "it":  "Depresso descrive uno stato emotivo clinico e persistente caratterizzato da umore pervasivamente basso, perdita di interesse, affaticamento e spesso sentimenti di inutilità. La depressione colpisce il funzionamento in tutti i domini della vita e richiede attenzione professionale. È una condizione trattabile, e chiedere aiuto è un segno di forza."
+                                      }
+                  },
+    "Sullen":  {
+                   "name":  {
+                                "en":  "Sullen",
+                                "it":  "Imbronciato"
+                            },
+                   "description":  {
+                                       "en":  "Sullen is a resentful and withdrawn emotional state, often expressed through silence and reluctance to engage. It may conceal underlying hurt, anger, or disappointment. Gently exploring the feelings beneath sullenness can open the path to more direct and constructive communication.",
+                                       "it":  "Imbronciato è uno stato emotivo risentito e ritirato in sé, spesso espresso attraverso il silenzio e la riluttanza a impegnarsi. Può nascondere ferite, rabbia o delusioni sottostanti. Esplorare delicatamente i sentimenti sotto l\u0027imbronciatura può aprire la strada a una comunicazione più diretta e costruttiva."
+                                   }
+               },
+    "Exhausted":  {
+                      "name":  {
+                                   "en":  "Exhausted",
+                                   "it":  "Esausto"
+                               },
+                      "description":  {
+                                          "en":  "Exhausted describes an extreme state of physical and mental depletion in which normal functioning becomes very difficult. It often results from prolonged stress, overwork, or illness. Recovery from exhaustion requires substantial rest, support, and often a reassessment of demands and boundaries.",
+                                          "it":  "Esausto descrive uno stato estremo di esaurimento fisico e mentale in cui il funzionamento normale diventa molto difficile. Spesso deriva da stress prolungato, eccesso di lavoro o malattia. Il recupero dall\u0027esaurimento richiede riposo sostanziale, supporto e spesso una rivalutazione delle richieste e dei confini."
+                                      }
+                  },
+    "Fatigued":  {
+                     "name":  {
+                                  "en":  "Fatigued",
+                                  "it":  "Affaticato"
+                              },
+                     "description":  {
+                                         "en":  "Fatigued is a persistent state of weariness and reduced capacity that does not resolve with ordinary rest. It may accompany illness, chronic stress, or burnout. Addressing the underlying causes and adopting sustainable routines are essential steps toward recovery.",
+                                         "it":  "Affaticato è uno stato persistente di stanchezza e capacità ridotta che non si risolve con il riposo ordinario. Può accompagnare malattia, stress cronico o burnout. Affrontare le cause sottostanti e adottare routine sostenibili sono passi essenziali verso il recupero."
+                                     }
+                 },
+    "Mellow":  {
+                   "name":  {
+                                "en":  "Mellow",
+                                "it":  "Pacato"
+                            },
+                   "description":  {
+                                       "en":  "Mellow describes a gently relaxed and softened emotional state with a warm, unhurried quality. It often arises in the context of comfort, good company, or a pleasant environment. A mellow mood fosters openness and ease in interactions.",
+                                       "it":  "Pacato descrive uno stato emotivo dolcemente rilassato e ammorbidito, con una qualità calda e senza fretta. Emerge spesso nel contesto del comfort, della buona compagnia o di un ambiente piacevole. Un umore pacato favorisce l\u0027apertura e la facilità nelle interazioni."
+                                   }
+               },
+    "Thoughtful":  {
+                       "name":  {
+                                    "en":  "Thoughtful",
+                                    "it":  "Riflessivo"
+                                },
+                       "description":  {
+                                           "en":  "Thoughtful describes a reflective and attentive state in which one is absorbed in considerate and careful thinking. It involves empathy toward others and mindfulness about one\u0027s own actions. Thoughtfulness deepens understanding and supports wise decision-making.",
+                                           "it":  "Riflessivo descrive uno stato attento e meditativo in cui si è assorti in un pensiero ponderato e attento. Implica empatia verso gli altri e consapevolezza delle proprie azioni. La riflessività approfondisce la comprensione e supporta il processo decisionale saggio."
+                                       }
+                   },
+    "Peaceful":  {
+                     "name":  {
+                                  "en":  "Peaceful",
+                                  "it":  "Pacifico"
+                              },
+                     "description":  {
+                                         "en":  "Peaceful is a profound sense of inner stillness and freedom from conflict or disturbance. It arises when one feels in harmony with oneself and the surrounding environment. Peace is often cultivated through mindfulness, acceptance, and alignment with one\u0027s values.",
+                                         "it":  "Pacifico è un profondo senso di quiete interiore e libertà dal conflitto o dal disturbo. Emerge quando ci si sente in armonia con se stessi e con l\u0027ambiente circostante. La pace è spesso coltivata attraverso la mindfulness, l\u0027accettazione e l\u0027allineamento con i propri valori."
+                                     }
+                 },
+    "Comfy":  {
+                  "name":  {
+                               "en":  "Comfy",
+                               "it":  "Comodo"
+                           },
+                  "description":  {
+                                      "en":  "Comfy describes a cozy and physically comfortable emotional state that promotes relaxation and ease. It involves a sense of safety, warmth, and simple pleasure. Comfy moments nourish the nervous system and provide an important counterpoint to the stresses of daily life.",
+                                      "it":  "Comodo descrive uno stato emotivo accogliente e fisicamente confortevole che promuove rilassamento e facilità. Implica un senso di sicurezza, calore e semplice piacere. I momenti comodi nutrono il sistema nervoso e forniscono un importante contrappunto agli stress della vita quotidiana."
+                                  }
+              },
+    "Carefree":  {
+                     "name":  {
+                                  "en":  "Carefree",
+                                  "it":  "Spensierato"
+                              },
+                     "description":  {
+                                         "en":  "Carefree is a light and unburdened emotional state free from worries and responsibilities. It invites spontaneity and a childlike sense of joy. Allowing oneself moments of carefreeness is a healthy and necessary respite from the demands of adult life.",
+                                         "it":  "Spensierato è uno stato emotivo leggero e senza pesi, libero da preoccupazioni e responsabilità. Invita alla spontaneità e a un senso di gioia infantile. Concedersi momenti di spensieratezza è un respiro sano e necessario dalle esigenze della vita adulta."
+                                     }
+                 },
+    "Despair":  {
+                    "name":  {
+                                 "en":  "Despair",
+                                 "it":  "Disperato"
+                             },
+                    "description":  {
+                                        "en":  "Despair is the deepest form of hopelessness, in which all possibility of improvement seems gone. It is a serious emotional state that can accompany severe loss, trauma, or clinical depression. Immediate professional and social support is essential when despair is present.",
+                                        "it":  "Disperato è la forma più profonda di mancanza di speranza, in cui ogni possibilità di miglioramento sembra svanita. È uno stato emotivo grave che può accompagnare perdite severe, traumi o depressione clinica. Il supporto professionale e sociale immediato è essenziale quando è presente la disperazione."
+                                    }
+                },
+    "Hopeless":  {
+                     "name":  {
+                                  "en":  "Hopeless",
+                                  "it":  "Senza Speranza"
+                              },
+                     "description":  {
+                                         "en":  "Hopeless is the belief that the future holds no positive possibilities and that one\u0027s situation cannot improve. It is a core feature of depression and a significant risk factor for self-harm. Challenging hopeless thinking with compassionate support and evidence of past resilience is a crucial therapeutic task.",
+                                         "it":  "Senza speranza è la convinzione che il futuro non contenga possibilità positive e che la propria situazione non possa migliorare. È una caratteristica fondamentale della depressione e un significativo fattore di rischio per l\u0027autolesionismo. Sfidare il pensiero senza speranza con supporto compassionevole e prove di resilienza passata è un compito terapeutico cruciale."
+                                     }
+                 },
+    "Desolate":  {
+                     "name":  {
+                                  "en":  "Desolate",
+                                  "it":  "Desolato"
+                              },
+                     "description":  {
+                                         "en":  "Desolate describes an extreme sense of emptiness, abandonment, and loss. It often follows profound personal loss or isolation. Reconnecting with any source of warmth, meaning, or human contact is an important first step toward healing from desolation.",
+                                         "it":  "Desolato descrive un senso estremo di vuoto, abbandono e perdita. Segue spesso una perdita personale profonda o l\u0027isolamento. Riconnettersi con qualsiasi fonte di calore, significato o contatto umano è un primo passo importante verso la guarigione dalla desolazione."
+                                     }
+                 },
+    "Spent":  {
+                  "name":  {
+                               "en":  "Spent",
+                               "it":  "Sfinito"
+                           },
+                  "description":  {
+                                      "en":  "Spent describes a state of complete depletion in which no physical or emotional reserves remain. It arises after extreme effort, crisis, or sustained hardship. Deep rest, nourishment, and the absence of demands are necessary to begin recovery from being spent.",
+                                      "it":  "Sfinito descrive uno stato di esaurimento completo in cui non rimangono riserve fisiche o emotive. Emerge dopo uno sforzo estremo, una crisi o difficoltà prolungate. Il riposo profondo, il nutrimento e l\u0027assenza di richieste sono necessari per iniziare il recupero dall\u0027essere sfiniti."
+                                  }
+              },
+    "Drained":  {
+                    "name":  {
+                                 "en":  "Drained",
+                                 "it":  "Svuotato"
+                             },
+                    "description":  {
+                                        "en":  "Drained is a feeling of emptiness and severe energy deficit, often following emotionally or physically demanding experiences. It signals that essential resources have been depleted. Rebuilding from a drained state requires intentional recuperation and often a review of draining patterns or relationships.",
+                                        "it":  "Svuotato è una sensazione di vuoto e grave deficit di energia, spesso successiva a esperienze emotivamente o fisicamente impegnative. Segnala che le risorse essenziali sono state esaurite. Ricostruirsi da uno stato svuotato richiede recupero intenzionale e spesso una revisione di modelli o relazioni prosciuganti."
+                                    }
+                },
+    "Sleepy":  {
+                   "name":  {
+                                "en":  "Sleepy",
+                                "it":  "Assonnato"
+                            },
+                   "description":  {
+                                       "en":  "Sleepy is a pleasant state of drowsiness and readiness for rest. It is the body\u0027s natural signal that sleep is needed and that the nervous system is winding down. Honoring the sleepy state and allowing for adequate sleep is fundamental to physical and mental health.",
+                                       "it":  "Assonnato è uno stato piacevole di sonnolenza e prontezza al riposo. È il segnale naturale del corpo che il sonno è necessario e che il sistema nervoso si sta placando. Rispettare lo stato assonnato e permettere un sonno adeguato è fondamentale per la salute fisica e mentale."
+                                   }
+               },
+    "Complacent":  {
+                       "name":  {
+                                    "en":  "Complacent",
+                                    "it":  "Autocompiaciuto"
+                                },
+                       "description":  {
+                                           "en":  "Complacent is a state of self-satisfied inertia in which one feels little need to improve or change. While it signals a degree of comfort, excessive complacency can inhibit growth and leave one vulnerable to missed opportunities. Gentle challenge and renewed goals can awaken motivation from a complacent state.",
+                                           "it":  "Autocompiaciuto è uno stato di inerzia soddisfatta di sé in cui si sente poco bisogno di migliorare o cambiare. Sebbene segnali un certo grado di comfort, l\u0027eccessiva autocompiacenza può inibire la crescita e lasciare vulnerabili alle opportunità mancate. Una sfida gentile e obiettivi rinnovati possono risvegliare la motivazione."
+                                       }
+                   },
+    "Tranquil":  {
+                     "name":  {
+                                  "en":  "Tranquil",
+                                  "it":  "Tranquillo"
+                              },
+                     "description":  {
+                                         "en":  "Tranquil is a deep and serene state of peacefulness and stillness. It involves an absence of disturbance and a profound sense of harmony with oneself and the environment. Tranquility is cultivated through practices such as meditation, time in nature, and the release of unnecessary mental burdens.",
+                                         "it":  "Tranquillo è un profondo e sereno stato di pace e immobilità. Implica un\u0027assenza di disturbo e un profondo senso di armonia con se stessi e l\u0027ambiente. La tranquillità è coltivata attraverso pratiche come la meditazione, il tempo nella natura e il rilascio di pesi mentali non necessari."
+                                     }
+                 },
+    "Cozy":  {
+                 "name":  {
+                              "en":  "Cozy",
+                              "it":  "Accogliente"
+                          },
+                 "description":  {
+                                     "en":  "Cozy describes a warm, sheltered, and comforting emotional state associated with safety and simple pleasures. It often arises in familiar, nurturing environments with loved ones. Cozy moments replenish emotional reserves and reinforce a sense of home and belonging.",
+                                     "it":  "Accogliente descrive uno stato emotivo caldo, riparato e confortante associato alla sicurezza e ai piaceri semplici. Emerge spesso in ambienti familiari e nutrienti con le persone care. I momenti accoglienti ricostituiscono le riserve emotive e rafforzano il senso di casa e appartenenza."
+                                 }
+             },
+    "Serene":  {
+                   "name":  {
+                                "en":  "Serene",
+                                "it":  "Sereno"
+                            },
+                   "description":  {
+                                       "en":  "Serene is the deepest state of calm and peacefulness, in which the mind is completely at rest and the heart is open. It is the emotional counterpart of wisdom and acceptance. Serenity is not the absence of life\u0027s difficulties but the capacity to remain centered in the face of them.",
+                                       "it":  "Sereno è il più profondo stato di calma e pace, in cui la mente è completamente a riposo e il cuore è aperto. È il corrispettivo emotivo della saggezza e dell\u0027accettazione. La serenità non è l\u0027assenza delle difficoltà della vita, ma la capacità di rimanere centrati di fronte ad esse."
+                                   }
+               }
 }

@@ -16,9 +16,14 @@
       var btn = document.createElement('button');
       btn.className = 'therm-level-btn';
       btn.dataset.level = lvl.level;
-      btn.innerHTML =
-        '<span class="therm-level-num">' + lvl.level + '</span>' +
-        '<span class="therm-level-label">' + lvl.label + '</span>';
+      var numEl = document.createElement('span');
+      numEl.className = 'therm-level-num';
+      numEl.textContent = lvl.level;
+      var labelEl = document.createElement('span');
+      labelEl.className = 'therm-level-label';
+      labelEl.textContent = lvl.label;
+      btn.appendChild(numEl);
+      btn.appendChild(labelEl);
       btn.addEventListener('click', function () { select(lvl); });
       levelsEl.appendChild(btn);
     });
@@ -41,11 +46,22 @@
 
     /* Aggiorna pannello info */
     infoEl.style.backgroundColor = lvl.color + '18'; /* 18 = ~10% opacity hex */
-    infoEl.innerHTML =
-      '<p class="therm-info-title" style="color:' + lvl.color + '">' +
-        lvl.level + ' &ndash; ' + lvl.label +
-      '</p>' +
-      '<p class="therm-info-body"><strong>Corpo:</strong> ' + lvl.physical + '</p>' +
-      '<p class="therm-info-body"><strong>Mente:</strong> ' + lvl.emotional + '</p>';
+    infoEl.innerHTML = '';
+
+    var title = document.createElement('p');
+    title.className = 'therm-info-title';
+    title.style.color = lvl.color;
+    title.textContent = lvl.level + ' – ' + lvl.label;
+    infoEl.appendChild(title);
+
+    [['Corpo', lvl.physical], ['Mente', lvl.emotional]].forEach(function (pair) {
+      var p = document.createElement('p');
+      p.className = 'therm-info-body';
+      var strong = document.createElement('strong');
+      strong.textContent = pair[0] + ':';
+      p.appendChild(strong);
+      p.appendChild(document.createTextNode(' ' + pair[1]));
+      infoEl.appendChild(p);
+    });
   }
 })();

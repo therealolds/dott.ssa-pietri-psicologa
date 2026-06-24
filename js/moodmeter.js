@@ -110,9 +110,9 @@
     var wrap = wrapEl();
     var ww = wrap.clientWidth, wh = wrap.clientHeight;
     var gw = GRID_PX * scale, gh = GRID_PX * scale;
-    var pad = 20; // allow a small margin beyond edge
-    tx = Math.max(-(gw - pad), Math.min(pad, tx));
-    ty = Math.max(-(gh - pad), Math.min(pad, ty));
+    var pad = 20;
+    tx = Math.max(pad - gw, Math.min(ww - pad, tx));
+    ty = Math.max(pad - gh, Math.min(wh - pad, ty));
   }
 
   // ── Mouse wheel ─────────────────────────────────────────────────────────────

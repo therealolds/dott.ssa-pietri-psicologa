@@ -1,0 +1,25 @@
+{
+  "name": "Nome Cognome",
+  "subtitle": "Psicologa & Psicoterapeuta",
+  "degree": "Laurea in Psicologia Clinica",
+  "phone": "+39 000 000 0000",
+  "phone_href": "tel:+39000000000",
+  "email": "email@esempio.it",
+  "email_href": "mailto:email@esempio.it",
+  "address_street": "Via Esempio 12, interno 3",
+  "address_city": "41100 Modena (MO)",
+  "city": "Modena",
+  "albo_region": "Emilia-Romagna",
+  "albo_number": "XXXX",
+  "piva": "xxxxxx",
+  "maps_src": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d546.7429613250994!2d10.897580969829777!3d44.63233480924796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477fef816a17a3c3%3A0x6d0b23b185baf627!2sParrocchia%20di%20San%20Paolo%20Apostolo!5e1!3m2!1sit!2sit!4v1781724962988!5m2!1sit!2sit",
+  "maps_href": "https://maps.google.com/maps?q=Modena+MO+Italy",
+  "maps_label": "Via Esempio 12, Modena",
+  "favicon": "graphics/favicon.png",
+  "page_descriptions": {
+    "home.html": "Psicologa e psicoterapeuta a Modena. Percorsi individuali, di coppia e consulenza genitoriale. Prenota un primo colloquio.",
+    "servizi.html": "Terapia individuale, di coppia, supporto psicologico e consulenza genitoriale a Modena. In studio e online.",
+    "contatti.html": "Contatta lo studio per fissare un primo colloquio. Studio a Modena, disponibile anche online.",
+    "utilities.html": "Strumenti interattivi per il benessere emotivo: Mood Meter, termometro dell'ansia e respirazione guidata."
+  }
+}

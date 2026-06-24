@@ -10,25 +10,7 @@
 
 <body>
 
-  <!-- ═══════════ HEADER ═══════════ -->
-  <header>
-    <div class="header-inner">
-      <a href="home.html" class="site-name">
-        Nome Cognome
-        <span>Psicologa &amp; Psicoterapeuta</span>
-      </a>
-
-      <button class="nav-toggle" aria-label="Apri menu" aria-expanded="false">☰</button>
-
-      <nav id="main-nav">
-        <ul>
-          <li><a href="home.html">Home</a></li>
-          <li><a href="servizi.html">Servizi</a></li>
-          <li><a href="contatti.html" class="active">Contatti</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <div id="site-header"></div>
 
   <!-- ═══════════ PAGE HEADER ═══════════ -->
   <section class="page-header">
@@ -54,7 +36,7 @@
             <div class="contact-icon">✆</div>
             <div class="contact-body">
               <strong>Cellulare</strong>
-              <a href="tel:+39000000000">+39 000 000 0000</a>
+              <a data-cfg="phone" data-cfg-href="phone_href" href="tel:+39000000000">+39 000 000 0000</a>
             </div>
           </div>
 
@@ -62,7 +44,7 @@
             <div class="contact-icon">✉</div>
             <div class="contact-body">
               <strong>Email</strong>
-              <a href="mailto:email@esempio.it">email@esempio.it</a>
+              <a data-cfg="email" data-cfg-href="email_href" href="mailto:email@esempio.it">email@esempio.it</a>
             </div>
           </div>
 
@@ -70,8 +52,8 @@
             <div class="contact-icon">◎</div>
             <div class="contact-body">
               <strong>Studio</strong>
-              <span>Via Esempio 12, interno 3</span>
-              <span>41100 Modena (MO)</span>
+              <span data-cfg="address_street">Via Esempio 12, interno 3</span>
+              <span data-cfg="address_city">41100 Modena (MO)</span>
             </div>
           </div>
         </div>
@@ -102,10 +84,10 @@
             PLACEHOLDER: sostituisci il src con l'URL che ottieni da
             Google Maps → Condividi → Incorpora una mappa → copia il src dell'<iframe>
           -->
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d546.7429613250994!2d10.897580969829777!3d44.63233480924796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477fef816a17a3c3%3A0x6d0b23b185baf627!2sParrocchia%20di%20San%20Paolo%20Apostolo!5e1!3m2!1sit!2sit!4v1781724962988!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<iframe data-cfg-src="maps_src" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d546.7429613250994!2d10.897580969829777!3d44.63233480924796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477fef816a17a3c3%3A0x6d0b23b185baf627!2sParrocchia%20di%20San%20Paolo%20Apostolo!5e1!3m2!1sit!2sit!4v1781724962988!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           <div class="map-note">
-            📍 <strong>Via Esempio 12, Modena</strong> ·
-            <a href="https://maps.google.com/maps?q=Modena+MO+Italy" target="_blank" rel="noopener">
+            📍 <strong data-cfg="maps_label">Via Esempio 12, Modena</strong> ·
+            <a data-cfg-href="maps_href" href="https://maps.google.com/maps?q=Modena+MO+Italy" target="_blank" rel="noopener">
               Apri in Google Maps
             </a>
           </div>
@@ -115,37 +97,9 @@
     </div>
   </main>
 
-  <!-- ═══════════ FOOTER ═══════════ -->
-  <footer>
-    <div class="footer-grid">
-      <div>
-        <strong>Nome Cognome</strong>
-        Psicologa – Psicoterapeuta<br>
-        Laurea in Psicologia Clinica
-      </div>
-      <div>
-        <strong>Contatti</strong>
-        email@esempio.it<br>
-        +39 000 000 0000
-      </div>
-      <div>
-        <strong>Albo</strong>
-        Ordine degli Psicologi<br>
-        della Regione XXXX<br>
-        n. XXXX
-      </div>
-      <div>
-        <strong>Dati fiscali</strong>
-        P.IVA xxxxxx
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>&copy; 2026 Nome Cognome</span>
-      <a href="#">Privacy Policy</a>
-      <a href="#">Cookie Policy</a>
-    </div>
-  </footer>
+  <div id="site-footer"></div>
 
+  <script src="js/config.js" defer></script>
   <script src="js/main.js" defer></script>
 </body>
 

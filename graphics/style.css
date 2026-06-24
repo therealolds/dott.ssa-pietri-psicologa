@@ -90,7 +90,7 @@ header {
   line-height: 1.2;
 }
 
-.site-name span {
+.site-name .site-name-sub {
   display: block;
   font-family: var(--font-body);
   font-size: 0.68rem;

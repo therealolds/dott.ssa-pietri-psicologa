@@ -30,25 +30,3 @@
     });
   });
 })();
-
-/* Menu hamburger mobile */
-(function () {
-  const toggle = document.querySelector('.nav-toggle');
-  const nav    = document.getElementById('main-nav');
-  if (!toggle || !nav) return;
-
-  toggle.addEventListener('click', function () {
-    const isOpen = nav.classList.toggle('open');
-    toggle.setAttribute('aria-expanded', isOpen);
-    toggle.textContent = isOpen ? '✕' : '☰';
-  });
-
-  /* Chiudi il menu cliccando fuori */
-  document.addEventListener('click', function (e) {
-    if (!nav.contains(e.target) && !toggle.contains(e.target)) {
-      nav.classList.remove('open');
-      toggle.setAttribute('aria-expanded', 'false');
-      toggle.textContent = '☰';
-    }
-  });
-})();
