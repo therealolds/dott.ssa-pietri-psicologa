@@ -3,9 +3,10 @@
   var levelsEl = document.getElementById('therm-levels');
   if (!levelsEl) return;
 
-  var fillEl = document.getElementById('therm-fill');
-  var bulbEl = document.getElementById('therm-bulb');
-  var infoEl = document.getElementById('therm-info');
+  var fillEl     = document.getElementById('therm-fill');
+  var bulbEl     = document.getElementById('therm-bulb');
+  var infoEl     = document.getElementById('therm-info');
+  var selectedLvl = null;
 
   var BTN_H       = 28;  /* px — matches .therm-level-btn height in CSS */
   var BULB_OFFSET = 32;  /* bulb height (40px) - tube overlap (8px)     */
@@ -44,6 +45,8 @@
   }
 
   function select(lvl) {
+    selectedLvl = lvl;
+    if (window.Checkin && window.Checkin.update) window.Checkin.update();
     /* Aggiorna bottoni */
     levelsEl.querySelectorAll('.therm-level-btn').forEach(function (b) {
       var active = +b.dataset.level === lvl.level;
@@ -77,4 +80,22 @@
       infoEl.appendChild(p);
     });
   }
+
+  window.Checkin = window.Checkin || {};
+  window.Checkin.getThermText = function () {
+    if (!selectedLvl) return null;
+    return selectedLvl.level + '/10 – ' + selectedLvl.label;
+  };
+  window.Checkin.resetTherm = function () {
+    selectedLvl = null;
+    levelsEl.querySelectorAll('.therm-level-btn').forEach(function (b) {
+      b.classList.remove('active');
+      b.querySelector('.therm-level-num').style.color   = '';
+      b.querySelector('.therm-level-label').style.color = '';
+    });
+    fillEl.style.height          = '0%';
+    fillEl.style.backgroundColor = '';
+    bulbEl.style.backgroundColor = '';
+    infoEl.innerHTML = '<p class="therm-hint">Seleziona un livello per vedere la descrizione</p>';
+  };
 })();

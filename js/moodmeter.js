@@ -24,6 +24,13 @@
 
   function lerp(a, b, t) { return a + (b - a) * t; }
 
+  // Axes: x [-5..-1, +1..+5] left→right, y [+5..+1, -1..-5] top→bottom (skip 0)
+  function cellCoord(ri, ci) {
+    var x = ci < 5 ? ci - 5 : ci - 4;
+    var y = ri < 5 ? 5 - ri : 4 - ri;
+    return (x > 0 ? '+' : '') + x + ' ' + (y > 0 ? '+' : '') + y;
+  }
+
   // Bilinear interpolation across the grid
   function baseRGB(row, col) {
     var u = col / 9, v = row / 9;
@@ -51,6 +58,7 @@
 
   var lang = 'it';
   var data = {};
+  var selectedKey = null;
   var scale = 1, tx = 0, ty = 0;
   var hasDragged = false;
   var GRID_PX = 10 * 72 + 9 * 2; // 738
@@ -78,7 +86,12 @@
         span.className = 'mm-cell-name';
         span.textContent = name;
         cell.appendChild(span);
-        cell.addEventListener('click', function () { openModal(key, ri, ci); });
+        var coord = document.createElement('span');
+        coord.className = 'mm-cell-coord';
+        coord.textContent = cellCoord(ri, ci);
+        cell.appendChild(coord);
+        if (key === selectedKey) cell.classList.add('mm-cell--selected');
+        cell.addEventListener('click', function () { selectCell(key); openModal(key, ri, ci); });
         grid.appendChild(cell);
       });
     });
@@ -100,6 +113,19 @@
 
   function closeModal() {
     document.getElementById('mm-modal-overlay').classList.remove('open');
+  }
+
+  // ── Selection ────────────────────────────────────────────────────────────────
+  function selectCell(key) {
+    if (hasDragged) return;
+    selectedKey = key;
+    var grid = gridEl();
+    if (grid) {
+      grid.querySelectorAll('.mm-cell').forEach(function (c) {
+        c.classList.toggle('mm-cell--selected', c.dataset.key === key);
+      });
+    }
+    if (window.Checkin && window.Checkin.update) window.Checkin.update();
   }
 
   // ── Transform ───────────────────────────────────────────────────────────────
@@ -212,7 +238,7 @@
       var t  = e.changedTouches[0];
       var el = document.elementFromPoint(t.clientX, t.clientY);
       var cell = el && el.closest ? el.closest('.mm-cell') : null;
-      if (cell) openModal(cell.dataset.key, +cell.dataset.row, +cell.dataset.col);
+      if (cell) { selectCell(cell.dataset.key); openModal(cell.dataset.key, +cell.dataset.row, +cell.dataset.col); }
     }
   }
 
@@ -294,5 +320,20 @@
     document.getElementById('mm-zoom-in') .addEventListener('click', function () { zoomBy(1.25); });
     document.getElementById('mm-zoom-out').addEventListener('click', function () { zoomBy(0.8); });
     document.getElementById('mm-zoom-fit').addEventListener('click', fitToStage);
+
+    // Checkin integration
+    window.Checkin = window.Checkin || {};
+    window.Checkin.getMmName = function () {
+      if (!selectedKey) return null;
+      var entry = data[selectedKey] || {};
+      return entry.name ? (entry.name[lang] || selectedKey) : selectedKey;
+    };
+    window.Checkin.resetMm = function () {
+      selectedKey = null;
+      var grid = gridEl();
+      if (grid) grid.querySelectorAll('.mm-cell--selected').forEach(function (c) {
+        c.classList.remove('mm-cell--selected');
+      });
+    };
   });
 })();

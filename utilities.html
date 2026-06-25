@@ -24,22 +24,22 @@
   <!-- ═══════════ MAIN ═══════════ -->
   <main>
 
-    <!-- ── Mood Meter ── -->
+    <!-- ── Check-in ── -->
     <div class="section">
-      <p class="section-label">Emozioni</p>
-      <h2>Mood Meter</h2>
-      <p>Il Mood Meter è uno strumento sviluppato dal <em>Yale Center for Emotional Intelligence</em> per aiutare a
-        riconoscere e nominare le proprie emozioni. La griglia è organizzata su due assi: l'<strong>energia</strong>
-        (verticale) e la <strong>piacevolezza</strong> (orizzontale). Clicca su un'emozione per scoprirne la
-        descrizione.</p>
+      <p class="section-label">Check-in</p>
+      <h2>Come stai adesso?</h2>
+      <p>Usa questi tre strumenti per descrivere il tuo stato in questo momento. Il testo generato in fondo può essere inviato al tuo terapeuta prima della seduta.</p>
 
-      <!-- Barra controlli -->
+      <!-- Mood Meter -->
+      <h3 class="checkin-h3">Emozione</h3>
+      <p class="checkin-sub-desc">Griglia del <em>Yale Center for Emotional Intelligence</em>: asse verticale energia, asse orizzontale piacevolezza. Seleziona l'emozione che senti adesso — clicca per selezionarla e vederne la descrizione.</p>
+
       <div class="mm-controls">
         <div class="mm-ctrl-group">
           <button id="mm-lang-it" class="mm-ctrl-btn active" aria-pressed="true">IT</button>
           <button id="mm-lang-en" class="mm-ctrl-btn" aria-pressed="false">EN</button>
         </div>
-        <span class="mm-hint">Scorri · Pizzica per zoomare · Clicca per i dettagli</span>
+        <span class="mm-hint">Scorri · Pizzica per zoomare · Clicca per selezionare</span>
         <div class="mm-ctrl-group">
           <button id="mm-zoom-out" class="mm-ctrl-btn" aria-label="Rimpicciolisci">−</button>
           <button id="mm-zoom-fit" class="mm-ctrl-btn" aria-label="Adatta alla finestra">⊡</button>
@@ -47,52 +47,31 @@
         </div>
       </div>
 
-      <!-- Asse orizzontale -->
       <div class="mm-axis-row">
         <span>← Spiacevole</span>
         <span>Piacevole →</span>
       </div>
 
-      <!-- Stage pan/zoom -->
       <div id="mm-stage-wrap" class="mm-stage-wrap">
         <div id="mm-stage" class="mm-stage">
           <div id="mm-grid" class="mm-grid"></div>
         </div>
       </div>
 
-      <!-- Nota asse verticale -->
       <p class="mm-axis-note">↑ Alta energia &nbsp;·&nbsp; ↓ Bassa energia</p>
 
-      <!-- Legenda quadranti -->
       <div class="mm-legend">
-        <div class="mm-legend-item">
-          <div class="mm-legend-swatch mm-legend-swatch-red"></div>
-          <span>Alta energia, spiacevole</span>
-        </div>
-        <div class="mm-legend-item">
-          <div class="mm-legend-swatch mm-legend-swatch-yellow"></div>
-          <span>Alta energia, piacevole</span>
-        </div>
-        <div class="mm-legend-item">
-          <div class="mm-legend-swatch mm-legend-swatch-blue"></div>
-          <span>Bassa energia, spiacevole</span>
-        </div>
-        <div class="mm-legend-item">
-          <div class="mm-legend-swatch mm-legend-swatch-green"></div>
-          <span>Bassa energia, piacevole</span>
-        </div>
+        <div class="mm-legend-item"><div class="mm-legend-swatch mm-legend-swatch-red"></div><span>Alta energia, spiacevole</span></div>
+        <div class="mm-legend-item"><div class="mm-legend-swatch mm-legend-swatch-yellow"></div><span>Alta energia, piacevole</span></div>
+        <div class="mm-legend-item"><div class="mm-legend-swatch mm-legend-swatch-blue"></div><span>Bassa energia, spiacevole</span></div>
+        <div class="mm-legend-item"><div class="mm-legend-swatch mm-legend-swatch-green"></div><span>Bassa energia, piacevole</span></div>
       </div>
 
-    </div>
+      <hr class="checkin-hr">
 
-    <div class="divider"><span class="divider-dot"></span></div>
-
-    <!-- ── Termometro dell'ansia ── -->
-    <div class="section">
-      <p class="section-label">Ansia</p>
-      <h2>Termometro dell'ansia</h2>
-      <p>Quanto ti senti ansioso in questo momento? Seleziona il livello che descrive meglio la tua esperienza — sia
-        fisica che emotiva. Può aiutarti a trovare le parole giuste da portare in seduta.</p>
+      <!-- Termometro -->
+      <h3 class="checkin-h3">Livello di ansia</h3>
+      <p class="checkin-sub-desc">Seleziona il livello che descrive meglio la tua esperienza fisica ed emotiva in questo momento.</p>
 
       <div class="therm-wrapper">
         <div class="therm-layout">
@@ -108,8 +87,29 @@
           <p class="therm-hint">Seleziona un livello per vedere la descrizione</p>
         </div>
       </div>
-    </div>
 
+      <hr class="checkin-hr">
+
+      <!-- Mappa corporea -->
+      <h3 class="checkin-h3">Sensazioni corporee</h3>
+      <p class="checkin-sub-desc">Seleziona un tipo di sensazione, poi tocca le zone del corpo dove la senti. Tocca di nuovo la zona per rimuoverla.</p>
+
+      <div id="bm-sensations" class="bm-sensations"></div>
+      <div class="bm-body-wrap">
+        <svg id="bm-svg" class="bm-svg" viewBox="0 0 200 432" xmlns="http://www.w3.org/2000/svg" aria-label="Mappa corporea"></svg>
+      </div>
+
+      <hr class="checkin-hr">
+
+      <!-- Output condiviso -->
+      <h3 class="checkin-h3">Testo per il terapeuta</h3>
+      <textarea id="checkin-output" class="checkin-output" readonly placeholder="Seleziona almeno uno strumento per generare il testo…"></textarea>
+      <div class="checkin-actions">
+        <button id="checkin-copy" class="btn btn-sage">Copia</button>
+        <button id="checkin-reset" class="btn btn-light">Azzera tutto</button>
+      </div>
+
+    </div>
 
     <div class="divider"><span class="divider-dot"></span></div>
 
@@ -121,30 +121,35 @@
         il cerchio: espande durante l'inspiro, si contrae durante l'espiro.</p>
 
       <div class="breath-wrapper">
-
         <div class="breath-pattern-group">
           <button class="breath-pattern-btn active" data-pattern="box">Box breathing &nbsp;4·4·4·4</button>
           <button class="breath-pattern-btn" data-pattern="478">Rilassamento &nbsp;4·7·8</button>
         </div>
-
         <div class="breath-desc" id="breath-desc"></div>
-
         <div class="breath-stage">
           <div class="breath-ring"></div>
           <div class="breath-circle" id="breath-circle">
             <span id="breath-phase">—</span>
           </div>
         </div>
-
         <p class="breath-instruction" id="breath-instruction">Scegli un ritmo e premi <em>Inizia</em></p>
-
         <button class="btn btn-sage" id="breath-start">Inizia</button>
-
         <p class="breath-cycles" id="breath-cycles"></p>
-
       </div>
     </div>
 
+    <div class="divider"><span class="divider-dot"></span></div>
+
+    <!-- ── Ruota delle emozioni ── -->
+    <div class="section">
+      <p class="section-label">Emozioni</p>
+      <h2>Ruota delle emozioni</h2>
+      <p>La ruota di Plutchik organizza le otto emozioni primarie su tre livelli di intensità: l'anello interno è il più lieve, quello esterno il più intenso. Tocca un segmento per esplorarlo.</p>
+      <div class="pw-wrapper">
+        <svg id="pw-svg" class="pw-svg" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" aria-label="Ruota delle emozioni"></svg>
+        <div id="pw-info" class="pw-info"><p class="pw-hint">Tocca un segmento per i dettagli</p></div>
+      </div>
+    </div>
 
   </main>
 
@@ -168,6 +173,9 @@
   <script src="js/moodmeter.js" defer></script>
   <script src="js/breath.js" defer></script>
   <script src="js/anxiety.js" defer></script>
+  <script src="js/plutchik.js" defer></script>
+  <script src="js/bodymap.js" defer></script>
+  <script src="js/checkin.js" defer></script>
 </body>
 
 </html>
