@@ -1,9 +1,12 @@
 {
   "name": "Nome Cognome",
-  "subtitle": "Psicologa & Psicoterapeuta",
+  "short_name": "Dott.ssa Pietri",
+  "subtitle": "Psicologa",
   "degree": "Laurea in Psicologia Clinica",
+  "hero_eyebrow": "Psicologia Clinica · Modena",
   "phone": "+39 000 000 0000",
   "phone_href": "tel:+39000000000",
+  "whatsapp_href": "https://wa.me/39000000000",
   "email": "email@esempio.it",
   "email_href": "mailto:email@esempio.it",
   "address_street": "Via Esempio 12, interno 3",
@@ -16,10 +19,20 @@
   "maps_href": "https://maps.google.com/maps?q=Modena+MO+Italy",
   "maps_label": "Via Esempio 12, Modena",
   "favicon": "graphics/favicon.png",
+  "hours": [
+    { "day": "Lunedì",    "time": "09:00 – 18:00" },
+    { "day": "Martedì",   "time": "09:00 – 18:00" },
+    { "day": "Mercoledì", "time": "09:00 – 18:00" },
+    { "day": "Giovedì",   "time": "09:00 – 18:00" },
+    { "day": "Venerdì",   "time": "09:00 – 15:00" },
+    { "day": "Sabato",    "time": "Chiuso", "closed": true },
+    { "day": "Domenica",  "time": "Chiuso", "closed": true }
+  ],
   "page_descriptions": {
-    "index.html": "Psicologa e psicoterapeuta a Modena. Percorsi individuali, di coppia e consulenza genitoriale. Prenota un primo colloquio.",
-    "servizi.html": "Terapia individuale, di coppia, supporto psicologico e consulenza genitoriale a Modena. In studio e online.",
+    "index.html": "Psicologa a Modena. Percorsi di sostegno psicologico individuale, di coppia e consulenza genitoriale. Prenota un primo colloquio.",
+    "servizi.html": "Sostegno psicologico individuale, di coppia e consulenza genitoriale a Modena. In studio e online.",
     "contatti.html": "Contatta lo studio per fissare un primo colloquio. Studio a Modena, disponibile anche online.",
-    "utilities.html": "Strumenti interattivi per il benessere emotivo: Mood Meter, termometro dell'ansia e respirazione guidata."
+    "utilities.html": "Strumenti interattivi per il benessere emotivo: Mood Meter, termometro dell'ansia, mappa corporea e respirazione guidata.",
+    "privacy.html": "Informativa privacy e cookie del sito."
   }
 }

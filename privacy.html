@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy &amp; Cookie – Nome Cognome</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Lato:wght@300;400;700&display=swap" />
+  <link rel="stylesheet" href="graphics/style.css" />
+</head>
+
+<body>
+
+  <div id="site-header"></div>
+
+  <!-- ═══════════ PAGE HEADER ═══════════ -->
+  <section class="page-header">
+    <div class="page-header-inner">
+      <p class="hero-eyebrow">Trasparenza</p>
+      <h1>Privacy &amp; Cookie Policy</h1>
+      <p>Come vengono trattati i dati di chi visita questo sito e di chi contatta lo studio.</p>
+    </div>
+  </section>
+
+  <!-- ═══════════ MAIN ═══════════ -->
+  <main>
+
+    <!--
+      NOTA PER CHI AGGIORNA IL SITO:
+      questo è un testo base da far verificare prima della pubblicazione definitiva
+      (es. dal consulente che segue la partita IVA). I dati del titolare vengono
+      compilati automaticamente da resources/config.json.
+    -->
+
+    <div class="section">
+      <p class="section-label">Titolare del trattamento</p>
+      <h2>Chi tratta i tuoi dati</h2>
+      <p>
+        Titolare del trattamento è la <span data-cfg="name">Nome Cognome</span>,
+        <span data-cfg="address_street">Via Esempio 12, interno 3</span>,
+        <span data-cfg="address_city">41100 Modena (MO)</span> —
+        P.IVA <span data-cfg="piva">xxxxxx</span>.<br>
+        Contatti: <a data-cfg="email" data-cfg-href="email_href" href="mailto:email@esempio.it">email@esempio.it</a> ·
+        <a data-cfg="phone" data-cfg-href="phone_href" href="tel:+39000000000">+39 000 000 0000</a>
+      </p>
+    </div>
+
+    <div class="divider"><span class="divider-dot"></span></div>
+
+    <div class="section">
+      <p class="section-label">Navigazione</p>
+      <h2>Dati raccolti da questo sito</h2>
+      <p>Questo è un sito statico: non contiene moduli di registrazione, non richiede account e <strong>non raccoglie né memorizza dati personali dei visitatori</strong>. Gli strumenti interattivi della pagina "Strumenti" funzionano interamente nel tuo browser: ciò che selezioni non viene inviato né salvato da nessuna parte, e scompare chiudendo la pagina.</p>
+      <p>Il sito <strong>non utilizza cookie propri</strong>, né di profilazione né di analisi.</p>
+    </div>
+
+    <div class="divider"><span class="divider-dot"></span></div>
+
+    <div class="section">
+      <p class="section-label">Servizi di terze parti</p>
+      <h2>Contenuti esterni</h2>
+      <p>Alcune risorse sono caricate da server di terze parti, che possono trattare dati tecnici (come l'indirizzo IP) secondo le rispettive informative:</p>
+      <div class="card-grid">
+        <div class="card">
+          <h3>Google Maps</h3>
+          <p>La pagina Contatti incorpora una mappa di Google Maps. Google può raccogliere dati di navigazione secondo la propria <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">informativa privacy</a>.</p>
+        </div>
+        <div class="card">
+          <h3>Google Fonts</h3>
+          <p>I caratteri tipografici sono caricati dai server di Google Fonts, che riceve l'indirizzo IP del visitatore per servire i file.</p>
+        </div>
+        <div class="card">
+          <h3>Hosting</h3>
+          <p>Il sito è ospitato su GitHub Pages, che può registrare log tecnici di accesso secondo la <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">privacy policy di GitHub</a>.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="divider"><span class="divider-dot"></span></div>
+
+    <div class="section">
+      <p class="section-label">Contatti diretti</p>
+      <h2>Se mi scrivi o mi chiami</h2>
+      <p>I dati che fornisci contattando lo studio via email o telefono (nome, recapiti, contenuto del messaggio) sono trattati esclusivamente per rispondere alla tua richiesta e organizzare eventuali appuntamenti, ai sensi dell'art. 6 del Regolamento (UE) 2016/679 (GDPR). Non vengono comunicati a terzi né usati per finalità di marketing.</p>
+      <p>I dati relativi a un eventuale percorso psicologico sono trattati secondo il Codice Deontologico degli Psicologi Italiani e sono coperti da segreto professionale; riceverai un'informativa dedicata e il modulo di consenso informato prima dell'inizio del percorso.</p>
+    </div>
+
+    <div class="divider"><span class="divider-dot"></span></div>
+
+    <div class="section">
+      <p class="section-label">I tuoi diritti</p>
+      <h2>Diritti dell'interessato</h2>
+      <p>In qualsiasi momento puoi esercitare i diritti previsti dagli artt. 15–22 del GDPR (accesso, rettifica, cancellazione, limitazione, opposizione, portabilità) scrivendo a <a data-cfg="email" data-cfg-href="email_href" href="mailto:email@esempio.it">email@esempio.it</a>. Se ritieni che un trattamento violi la normativa, puoi proporre reclamo al <a href="https://www.garanteprivacy.it" target="_blank" rel="noopener">Garante per la Protezione dei Dati Personali</a>.</p>
+    </div>
+
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="js/config.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+
+</html>

@@ -18,6 +18,7 @@
     updateTitle(cfg);
     injectFavicon(cfg);
     injectMetaDescription(cfg, pageName);
+    injectSocialMeta(cfg, pageName);
     injectSchema(cfg);
   }).catch(function (err) {
     console.error('Site init failed:', err);
@@ -72,6 +73,31 @@
       var key = el.dataset.cfgSrc;
       if (cfg[key] !== undefined) el.src = cfg[key];
     });
+    document.querySelectorAll('[data-cfg-alt]').forEach(function (el) {
+      var key = el.dataset.cfgAlt;
+      if (cfg[key] !== undefined) el.alt = cfg[key];
+    });
+    renderHours(cfg);
+    var yearEl = document.getElementById('footer-year');
+    if (yearEl) yearEl.textContent = new Date().getFullYear();
+  }
+
+  function renderHours(cfg) {
+    var list = document.querySelector('[data-cfg-hours]');
+    if (!list || !Array.isArray(cfg.hours)) return;
+    list.innerHTML = '';
+    cfg.hours.forEach(function (h) {
+      var li  = document.createElement('li');
+      var day = document.createElement('span');
+      day.className   = 'day';
+      day.textContent = h.day;
+      var time = document.createElement('span');
+      time.textContent = h.time;
+      if (h.closed) time.className = 'closed';
+      li.appendChild(day);
+      li.appendChild(time);
+      list.appendChild(li);
+    });
   }
 
   function updateTitle(cfg) {
@@ -103,10 +129,39 @@
     meta.content = desc;
   }
 
+  // Open Graph (anteprima nelle condivisioni social/WhatsApp) + theme-color
+  function injectSocialMeta(cfg, page) {
+    var desc = (cfg.page_descriptions && cfg.page_descriptions[page]) || cfg.subtitle || '';
+    var tags = {
+      'og:title':       document.title,
+      'og:description': desc,
+      'og:type':        'website',
+      'og:url':         location.href,
+      'og:image':       new URL('graphics/profilepic.jpg', location.href).href
+    };
+    Object.keys(tags).forEach(function (prop) {
+      var meta = document.querySelector('meta[property="' + prop + '"]');
+      if (!meta) {
+        meta = document.createElement('meta');
+        meta.setAttribute('property', prop);
+        document.head.appendChild(meta);
+      }
+      meta.content = tags[prop];
+    });
+
+    var theme = document.querySelector('meta[name="theme-color"]');
+    if (!theme) {
+      theme = document.createElement('meta');
+      theme.name = 'theme-color';
+      document.head.appendChild(theme);
+    }
+    theme.content = '#FFFFFF'; // come lo sfondo dell'header sticky
+  }
+
   function injectSchema(cfg) {
     var schema = {
       '@context': 'https://schema.org',
-      '@type': 'LocalBusiness',
+      '@type': 'Psychologist',
       'name': cfg.name,
       'description': cfg.subtitle,
       'telephone': cfg.phone,

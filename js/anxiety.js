@@ -14,7 +14,10 @@
 
   fetch('resources/anxiety.json')
     .then(function (r) { return r.json(); })
-    .then(function (data) { init(data.levels); });
+    .then(function (data) { init(data.levels); })
+    .catch(function () {
+      infoEl.innerHTML = '<p class="therm-hint">Impossibile caricare i dati. Apri il sito tramite un server web (non direttamente dal file system).</p>';
+    });
 
   function init(levels) {
     maxLevel = levels[levels.length - 1].level;

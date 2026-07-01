@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Se il sito passa a un dominio personalizzato, aggiornare gli URL qui e in robots.txt -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://therealolds.github.io/dott.ssa-pietri-psicologa/</loc></url>
+  <url><loc>https://therealolds.github.io/dott.ssa-pietri-psicologa/servizi.html</loc></url>
+  <url><loc>https://therealolds.github.io/dott.ssa-pietri-psicologa/utilities.html</loc></url>
+  <url><loc>https://therealolds.github.io/dott.ssa-pietri-psicologa/contatti.html</loc></url>
+  <url><loc>https://therealolds.github.io/dott.ssa-pietri-psicologa/privacy.html</loc></url>
+</urlset>

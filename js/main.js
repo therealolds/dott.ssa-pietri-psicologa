@@ -19,6 +19,7 @@
       b.classList.toggle('active', b.dataset.value === state[group]);
     });
 
+    let visible = 0;
     cards.forEach(function (card) {
       const pillTags = Array.from(card.querySelectorAll('.tag--pill')).map(function (t) { return t.textContent.trim(); });
       const rectTags = Array.from(card.querySelectorAll('.tag--rect')).map(function (t) { return t.textContent.trim(); });
@@ -26,7 +27,12 @@
       const matchPersone  = !state.persone  || pillTags.includes(state.persone);
       const matchModalita = !state.modalita || rectTags.includes(state.modalita);
 
-      card.style.display = (matchPersone && matchModalita) ? '' : 'none';
+      const show = matchPersone && matchModalita;
+      card.style.display = show ? '' : 'none';
+      if (show) visible++;
     });
+
+    const emptyEl = document.getElementById('service-empty');
+    if (emptyEl) emptyEl.hidden = visible > 0;
   });
 })();

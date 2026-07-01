@@ -5,6 +5,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Strumenti – Nome Cognome</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Lato:wght@300;400;700&display=swap" />
   <link rel="stylesheet" href="graphics/style.css" />
 </head>
 
@@ -24,22 +27,26 @@
   <!-- ═══════════ MAIN ═══════════ -->
   <main>
 
+    <div class="tool-disclaimer">
+      <p><strong>Nota:</strong> questi strumenti hanno una funzione psicoeducativa e di auto-osservazione: non forniscono diagnosi e non sostituiscono il confronto con un professionista della salute mentale. Se stai vivendo un momento di forte difficoltà o pensi di essere in pericolo, chiama il numero unico di emergenza <a href="tel:112">112</a> o rivolgiti al pronto soccorso più vicino.</p>
+    </div>
+
     <!-- ── Check-in ── -->
     <div class="section">
       <p class="section-label">Check-in</p>
       <h2>Come stai adesso?</h2>
-      <p>Usa questi tre strumenti per descrivere il tuo stato in questo momento. Il testo generato in fondo può essere inviato al tuo terapeuta prima della seduta.</p>
+      <p>Usa questi tre strumenti per descrivere il tuo stato in questo momento. Il testo generato in fondo può essere copiato e inviato alla tua psicologa prima del colloquio.</p>
 
       <!-- Mood Meter -->
       <h3 class="checkin-h3">Emozione</h3>
-      <p class="checkin-sub-desc">Griglia del <em>Yale Center for Emotional Intelligence</em>: asse verticale energia, asse orizzontale piacevolezza. Seleziona l'emozione che senti adesso — clicca per selezionarla e vederne la descrizione.</p>
+      <p class="checkin-sub-desc">Griglia del <em>Yale Center for Emotional Intelligence</em>: asse verticale energia, asse orizzontale piacevolezza. Tocca l'emozione che senti adesso per selezionarla e vederne la descrizione.</p>
 
       <div class="mm-controls">
         <div class="mm-ctrl-group">
           <button id="mm-lang-it" class="mm-ctrl-btn active" aria-pressed="true">IT</button>
           <button id="mm-lang-en" class="mm-ctrl-btn" aria-pressed="false">EN</button>
         </div>
-        <span class="mm-hint">Scorri · Pizzica per zoomare · Clicca per selezionare</span>
+        <span class="mm-hint">Scorri · Pizzica per zoomare · Tocca per selezionare</span>
         <div class="mm-ctrl-group">
           <button id="mm-zoom-out" class="mm-ctrl-btn" aria-label="Rimpicciolisci">−</button>
           <button id="mm-zoom-fit" class="mm-ctrl-btn" aria-label="Adatta alla finestra">⊡</button>
@@ -102,7 +109,7 @@
       <hr class="checkin-hr">
 
       <!-- Output condiviso -->
-      <h3 class="checkin-h3">Testo per il terapeuta</h3>
+      <h3 class="checkin-h3">Testo per la psicologa</h3>
       <textarea id="checkin-output" class="checkin-output" readonly placeholder="Seleziona almeno uno strumento per generare il testo…"></textarea>
       <div class="checkin-actions">
         <button id="checkin-copy" class="btn btn-sage">Copia</button>
@@ -118,7 +125,7 @@
       <p class="section-label">Regolazione</p>
       <h2>Respirazione guidata</h2>
       <p>La respirazione lenta e consapevole attiva il sistema nervoso parasimpatico, riducendo ansia e tensione. Segui
-        il cerchio: espande durante l'inspiro, si contrae durante l'espiro.</p>
+        il cerchio: si espande durante l'inspiro, si contrae durante l'espiro.</p>
 
       <div class="breath-wrapper">
         <div class="breath-pattern-group">

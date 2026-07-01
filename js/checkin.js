@@ -14,7 +14,8 @@
     if (!mmName && !thermTxt && !bodyTxt) { output.value = ''; return; }
 
     var today   = new Date();
-    var dateStr = today.toLocaleDateString('it-IT', { day: '2-digit', month: '2-digit', year: 'numeric' });
+    var dateStr = today.toLocaleDateString('it-IT', { day: '2-digit', month: '2-digit', year: 'numeric' })
+                + ', ore ' + today.toLocaleTimeString('it-IT', { hour: '2-digit', minute: '2-digit' });
     var lines   = ['Check-in – ' + dateStr, ''];
 
     if (mmName)   lines.push('Emozione: ' + mmName);

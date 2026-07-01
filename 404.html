@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pagina non trovata</title>
+  <!--
+    Questa pagina viene servita da GitHub Pages per QUALSIASI percorso inesistente,
+    anche annidato (es. /cartella/pagina): i percorsi relativi non sono affidabili,
+    quindi lo script qui sotto calcola la radice del sito.
+  -->
+  <script>
+    (function () {
+      var seg = location.pathname.split('/')[1];
+      // Su *.github.io (Pages di progetto) la radice è /<nome-repo>/, altrove è /
+      window.SITE_ROOT = (location.hostname.slice(-10) === '.github.io' && seg)
+        ? '/' + seg + '/'
+        : '/';
+      document.write('<link rel="stylesheet" href="' + window.SITE_ROOT + 'graphics/style.css">');
+    })();
+  </script>
+</head>
+
+<body>
+
+  <section class="page-header">
+    <div class="page-header-inner">
+      <p class="hero-eyebrow">Errore 404</p>
+      <h1>Pagina non trovata</h1>
+      <p>La pagina che cerchi non esiste o è stata spostata.</p>
+    </div>
+  </section>
+
+  <main style="text-align: center;">
+    <div class="section">
+      <p>Puoi tornare alla pagina principale o consultare le altre sezioni del sito.</p>
+      <div class="btn-group" style="margin-top: 1.5rem;">
+        <a id="link-home" href="index.html" class="btn btn-sage">Torna alla home</a>
+        <a id="link-contatti" href="contatti.html" class="btn btn-light">Contatti</a>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    document.getElementById('link-home').href     = window.SITE_ROOT;
+    document.getElementById('link-contatti').href = window.SITE_ROOT + 'contatti.html';
+  </script>
+
+</body>
+
+</html>

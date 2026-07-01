@@ -56,8 +56,14 @@
           'stroke-width': '1.5',
         });
         path.style.cursor = 'pointer';
+        path.setAttribute('tabindex', '0');
+        path.setAttribute('role', 'button');
+        path.setAttribute('aria-label', em.levels[ring] + ' (' + em.name + ')');
         (function (emotion, r) {
           path.addEventListener('click',      function ()  { showInfo(emotion, r); });
+          path.addEventListener('keydown',    function (e) {
+            if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); showInfo(emotion, r); }
+          });
           path.addEventListener('mouseenter', function ()  { this.style.filter = 'brightness(1.1)'; });
           path.addEventListener('mouseleave', function ()  { this.style.filter = ''; });
         }(em, ring));

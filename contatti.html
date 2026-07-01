@@ -5,6 +5,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contatti – Nome Cognome</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Lato:wght@300;400;700&display=swap" />
   <link rel="stylesheet" href="graphics/style.css" />
 </head>
 
@@ -40,6 +43,15 @@
             </div>
           </div>
 
+          <!-- Se non usa WhatsApp, basta eliminare questo blocco -->
+          <div class="contact-item">
+            <div class="contact-icon">💬</div>
+            <div class="contact-body">
+              <strong>WhatsApp</strong>
+              <a data-cfg-href="whatsapp_href" href="https://wa.me/39000000000" target="_blank" rel="noopener">Scrivimi un messaggio</a>
+            </div>
+          </div>
+
           <div class="contact-item">
             <div class="contact-icon">✉</div>
             <div class="contact-body">
@@ -64,7 +76,9 @@
           <p class="section-label">Disponibilità</p>
           <h2>Orari</h2>
 
-          <ul class="hours-list">
+          <!-- Gli orari si modificano in resources/config.json (chiave "hours");
+               quelli qui sotto sono solo un fallback se il JS non viene eseguito. -->
+          <ul class="hours-list" data-cfg-hours>
             <li><span class="day">Lunedì</span> <span>09:00 – 18:00</span></li>
             <li><span class="day">Martedì</span> <span>09:00 – 18:00</span></li>
             <li><span class="day">Mercoledì</span> <span>09:00 – 18:00</span></li>

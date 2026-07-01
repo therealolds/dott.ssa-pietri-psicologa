@@ -1,7 +1,5 @@
-/* ═══════════════════════════════════════════════
-   IMPORT FONT  (Google Fonts)
-═══════════════════════════════════════════════ */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Lato:wght@300;400;700&display=swap');
+/* I font (Google Fonts) sono caricati con <link> nell'head di ogni pagina,
+   insieme al preconnect: più veloce dell'@import da CSS. */
 
 /* ═══════════════════════════════════════════════
    VARIABILI
@@ -51,6 +49,10 @@ body {
 }
 
 img { max-width: 100%; height: auto; display: block; }
+
+/* Placeholder per l'header iniettato via JS: evita il salto di layout
+   mentre _header.html viene caricato (altezza ≈ header reale) */
+#site-header { min-height: 4.3rem; }
 
 a {
   color: var(--sage-dark);
@@ -149,7 +151,7 @@ nav a.active {
 /* ═══════════════════════════════════════════════
    MOBILE NAV
 ═══════════════════════════════════════════════ */
-@media (max-width: 620px) {
+@media (max-width: 720px) {
   .nav-toggle { display: block; }
 
   nav {
@@ -855,6 +857,18 @@ footer a:hover { color: var(--white); }
   font-weight: 700;
 }
 
+/* Messaggio "nessun risultato" dei filtri */
+.service-empty {
+  margin-top: 1.5rem;
+  padding: 1.25rem 1.5rem;
+  background: var(--white);
+  border: 1px dashed var(--border);
+  border-radius: var(--radius);
+  color: var(--mid);
+  font-style: italic;
+  text-align: center;
+}
+
 /* Sezione CTA finale */
 .cta-section {
   background: var(--sage-light);
@@ -910,6 +924,17 @@ footer a:hover { color: var(--white); }
   footer       { padding: 2.5rem 1.25rem 1.25rem; }
 
   .section h2  { font-size: 1.5rem; }
+}
+
+/* Rispetta la preferenza "riduci movimento" (solo effetti decorativi:
+   la respirazione guidata resta animata perché è la funzione dello strumento) */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .card:hover,
+  .service-card:hover,
+  .btn:hover,
+  .mm-cell:hover { transform: none; }
+  .mm-modal { animation: none; }
 }
 
 /* ═══════════════════════════════════════════════
@@ -1545,6 +1570,32 @@ footer a:hover { color: var(--white); }
 .bm-actions {
   display: flex;
   gap: 0.75rem;
+}
+
+/* ═══════════════════════════════════════════════
+   DISCLAIMER STRUMENTI  (utilities.html)
+═══════════════════════════════════════════════ */
+
+.tool-disclaimer {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--terracotta);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  padding: 1rem 1.25rem;
+  margin-bottom: 2.5rem;
+  box-shadow: var(--shadow);
+}
+
+.tool-disclaimer p {
+  font-size: 0.86rem;
+  color: var(--mid);
+  line-height: 1.7;
+  margin: 0;
+}
+
+.tool-disclaimer a {
+  color: var(--terracotta);
+  font-weight: 700;
 }
 
 /* ═══════════════════════════════════════════════

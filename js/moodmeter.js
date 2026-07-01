@@ -61,6 +61,7 @@
   var selectedKey = null;
   var scale = 1, tx = 0, ty = 0;
   var hasDragged = false;
+  var userAdjusted = false; // true se l'utente ha zoomato manualmente
   var GRID_PX = 10 * 72 + 9 * 2; // 738
 
   function gridEl()  { return document.getElementById('mm-grid'); }
@@ -152,6 +153,7 @@
     var oy    = e.clientY - rect.top;
     var delta = e.deltaY < 0 ? 1.12 : 0.9;
     var ns    = Math.max(0.25, Math.min(5, scale * delta));
+    userAdjusted = true;
     tx = ox - (ox - tx) * (ns / scale);
     ty = oy - (oy - ty) * (ns / scale);
     scale = ns;
@@ -212,6 +214,7 @@
       var ox  = mid.x - rect.left;
       var oy  = mid.y - rect.top;
       var ns  = Math.max(0.25, Math.min(5, scale * d / lastDist));
+      userAdjusted = true;
       tx = ox - (ox - tx) * (ns / scale);
       ty = oy - (oy - ty) * (ns / scale);
       scale = ns;
@@ -248,6 +251,7 @@
     var cx = wrap.clientWidth  / 2;
     var cy = wrap.clientHeight / 2;
     var ns = Math.max(0.25, Math.min(5, scale * factor));
+    userAdjusted = true;
     tx = cx - (cx - tx) * (ns / scale);
     ty = cy - (cy - ty) * (ns / scale);
     scale = ns;
@@ -261,14 +265,19 @@
     scale = Math.min(ww, wh) / GRID_PX * 0.97;
     tx = (ww - GRID_PX * scale) / 2;
     ty = (wh - GRID_PX * scale) / 2;
+    userAdjusted = false;
     applyTransform();
   }
 
   // ── Lang toggle ─────────────────────────────────────────────────────────────
   function setLang(l) {
     lang = l;
-    document.getElementById('mm-lang-it').classList.toggle('active', l === 'it');
-    document.getElementById('mm-lang-en').classList.toggle('active', l === 'en');
+    var itBtn = document.getElementById('mm-lang-it');
+    var enBtn = document.getElementById('mm-lang-en');
+    itBtn.classList.toggle('active', l === 'it');
+    enBtn.classList.toggle('active', l === 'en');
+    itBtn.setAttribute('aria-pressed', l === 'it');
+    enBtn.setAttribute('aria-pressed', l === 'en');
     render();
     // Re-apply transform so stage stays in place after re-render
     applyTransform();
@@ -302,6 +311,16 @@
     wrap.addEventListener('touchend',   onTouchEnd,   { passive: false });
     document.addEventListener('mousemove', onMouseMove);
     document.addEventListener('mouseup',   onMouseUp);
+
+    // Riadatta la griglia quando cambia la dimensione del riquadro
+    // (es. rotazione dello smartphone), ma solo se l'utente non ha zoomato.
+    var resizeTimer = null;
+    window.addEventListener('resize', function () {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(function () {
+        if (!userAdjusted) fitToStage();
+      }, 200);
+    });
 
     // Modal
     var closeBtn = document.getElementById('mm-modal-close');

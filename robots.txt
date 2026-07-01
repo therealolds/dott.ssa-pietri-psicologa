@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://therealolds.github.io/dott.ssa-pietri-psicologa/sitemap.xml
